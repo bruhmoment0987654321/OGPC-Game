@@ -15,3 +15,4 @@ coyote_timer = 0;
 coyote_time_amount = 10;
 jumped = true;
 on_ground = false;
+randomize();
