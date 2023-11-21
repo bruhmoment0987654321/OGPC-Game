@@ -1,7 +1,6 @@
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 jump = keyboard_check_pressed(vk_space);
-jump_held = keyboard_check(vk_space);
 
 #region movement functions
 	var move = right-left;
@@ -56,6 +55,7 @@ jump_held = keyboard_check(vk_space);
 		}
 	}
 #endregion 
+
 #region collisions
 //horizontal collision
 if(place_meeting(x+hsp, y,Obj_solid))
@@ -78,6 +78,7 @@ if(place_meeting(x, y+vsp, Obj_solid)){
 y += vsp;
 
 #endregion
+
 #region animations
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion
