@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_zom",
-    "path": "sprites/Spr_zom/Spr_zom.yy",
+    "name": "Spr_caveman",
+    "path": "sprites/Spr_caveman/Spr_caveman.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,7 +23,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],

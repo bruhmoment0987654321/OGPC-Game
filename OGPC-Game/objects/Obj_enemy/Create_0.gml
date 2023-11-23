@@ -1,10 +1,18 @@
-hsp = 0;
+//movement variables
+walk_sp = 1;
+hsp = walk_sp;
 vsp = 0;
-jump_sp = 7;
-walk_sp = 2;
-timer_amount = random_range(30,2*60);
+run_sp = 2;
+dir = image_xscale;
 friction_ = 0.15;
+//jump variables
+jump_sp = 6;
+jumped = false;
+//other variables
 hp = 100;
 state = "norm";
-timer = timer_amount;
 flash = 0;
+grounded = false;
+//chasing variables
+chase_timer = 2*60;
+chase_amount = 2*60;
