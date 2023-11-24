@@ -13,7 +13,14 @@ jump_sp = 7;
 buffer_timer = 0;
 buffer_time_amount = 5;
 coyote_timer = 0;
-coyote_time_amount = 10;
+coyote_time_amount = 20;
 jumped = true;
 on_ground = false;
+//health variables
+max_hp = 100;
+hp = max_hp;
+invincible = false;
+//bomb variables
+bomb_amount = 0;
+bomb_max = 10;
 randomize();

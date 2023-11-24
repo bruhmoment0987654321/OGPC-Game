@@ -35,6 +35,7 @@ if(state == "chase"){
 			
 		}
 	}
+	
 	if(chase_timer<=0)&&(point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){
 		chase_timer = chase_amount;	
 	}else if(!point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){

@@ -1,21 +1,26 @@
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 jump = keyboard_check_pressed(vk_space);
-
+item_use = keyboard_check_pressed(ord("E"));
+#region health and bombs
+if(hp > max_hp){
+	hp = max_hp;	
+}
+if(hp <= 0){
+	game_restart();	
+}
+if(bomb_amount > bomb_max){
+	bomb_amount = bomb_max;
+}
+#endregion
 #region movement functions
 	var move = right-left;
 	if(move != 0){
 		hsp += move*walk_sp;
 		hsp = clamp(hsp,-max_hsp,max_hsp);
 	}else{
-		if(move < 0){
-			if(hsp > -0.1){
-				hsp = 0;	
-			}
-		}else if(move > 0){
-			if(hsp < 0.1){
-				hsp = 0;	
-			}
+		if(abs(hsp) < 0.1){
+			hsp = 0;	
 		}
 		hsp = lerp(hsp,0,friction_);
 	}
@@ -55,7 +60,12 @@ jump = keyboard_check_pressed(vk_space);
 		}
 	}
 #endregion 
-
+#region item usage
+if(item_use)&&(bomb_amount > 0){
+	instance_create_layer(x,y,"Bullets",Obj_bomb);
+	bomb_amount -= 1;	
+}
+#endregion
 #region collisions
 	//horizontal collision
 	if(place_meeting(x+hsp, y,Obj_solid))
