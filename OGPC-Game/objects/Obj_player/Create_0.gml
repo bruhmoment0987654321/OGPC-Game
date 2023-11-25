@@ -23,4 +23,6 @@ invincible = false;
 //bomb variables
 bomb_amount = 0;
 bomb_max = 10;
+//gun varibles
+which_gun = noone;
 randomize();

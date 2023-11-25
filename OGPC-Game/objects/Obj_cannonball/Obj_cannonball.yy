@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_bullet",
-    "path": "sprites/Spr_bullet/Spr_bullet.yy",
+    "name": "Spr_cannonball",
+    "path": "sprites/Spr_cannonball/Spr_cannonball.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,13 +25,16 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"damage","path":"objects/Obj_bullet/Obj_bullet.yy",},"objectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"objectId":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "bullets",
     "path": "folders/Objects/Player(s)/weapons/bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_bullet",
+  "name": "Obj_cannonball",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -13,6 +13,7 @@ if(bomb_amount > bomb_max){
 	bomb_amount = bomb_max;
 }
 #endregion
+
 #region movement functions
 	var move = right-left;
 	if(move != 0){
@@ -60,12 +61,14 @@ if(bomb_amount > bomb_max){
 		}
 	}
 #endregion 
+
 #region item usage
 if(item_use)&&(bomb_amount > 0){
 	instance_create_layer(x,y,"Bullets",Obj_bomb);
 	bomb_amount -= 1;	
 }
 #endregion
+
 #region collisions
 	//horizontal collision
 	if(place_meeting(x+hsp, y,Obj_solid))

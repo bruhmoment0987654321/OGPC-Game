@@ -9,15 +9,12 @@ delay_timer--;
 #region directions
 var hor_shot = right-left;
 var ver_shot = down-up;
-dir = point_direction(0,0,hor_shot,ver_shot)+random_range(-3,3);
+dir = point_direction(0,0,hor_shot,ver_shot);
 direction = (round(dir/45)*45);
 #endregion
 
 if(any)&&(delay_timer<=0){
-	with(instance_create_layer(x,y,"Bullets",Obj_bullet)){
-		speed = Obj_gun.spd;
-		direction = Obj_gun.dir;
-	}
+	Scr_shoot_bullets();
 	delay_timer = delay;
 }
 if(instance_exists(Obj_player)){

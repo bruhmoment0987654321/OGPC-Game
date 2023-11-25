@@ -12,4 +12,5 @@ if(object_index == Obj_bomb_pickup){
 		other.bomb_amount += 4;	
 	}
 }
+
 instance_destroy();

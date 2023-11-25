@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Spr_bullet",
-    "path": "sprites/Spr_bullet/Spr_bullet.yy",
+    "name": "Spr_gun",
+    "path": "sprites/Spr_gun/Spr_gun.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_bullet_par",
-    "path": "objects/Obj_bullet_par/Obj_bullet_par.yy",
+    "name": "Obj_gun_par",
+    "path": "objects/Obj_gun_par/Obj_gun_par.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,15 +23,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bullets",
-    "path": "folders/Objects/Player(s)/weapons/bullets.yy",
+    "name": "weapons",
+    "path": "folders/Objects/Player(s)/weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_bullet",
+  "name": "Obj_arm_gun",
   "tags": [],
   "resourceType": "GMObject",
 }

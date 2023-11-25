@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Spr_bullet",
-    "path": "sprites/Spr_bullet/Spr_bullet.yy",
+    "name": "Spr_cannon_pickup",
+    "path": "sprites/Spr_cannon_pickup/Spr_cannon_pickup.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_bullet_par",
-    "path": "objects/Obj_bullet_par/Obj_bullet_par.yy",
+    "name": "Obj_weapon_par",
+    "path": "objects/Obj_weapon_par/Obj_weapon_par.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bullets",
-    "path": "folders/Objects/Player(s)/weapons/bullets.yy",
+    "name": "weapons",
+    "path": "folders/Objects/Player(s)/weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_bullet",
+  "name": "Obj_cannon_pickup",
   "tags": [],
   "resourceType": "GMObject",
 }

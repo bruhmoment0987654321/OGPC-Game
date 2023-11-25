@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "Spr_cannon",
+    "path": "sprites/Spr_cannon/Spr_cannon.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Obj_gun_par",
+    "path": "objects/Obj_gun_par/Obj_gun_par.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"spd","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "weapons",
+    "path": "folders/Objects/Player(s)/weapons.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Obj_cannon",
+  "tags": [],
+  "resourceType": "GMObject",
+}

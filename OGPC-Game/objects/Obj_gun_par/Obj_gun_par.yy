@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Spr_gun",
-    "path": "sprites/Spr_gun/Spr_gun.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -25,14 +22,17 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":0,"value":"12","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"spd","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"12","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"delay","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "weapons",
+    "path": "folders/Objects/Player(s)/weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_gun",
+  "name": "Obj_gun_par",
   "tags": [],
   "resourceType": "GMObject",
 }
