@@ -6,6 +6,9 @@ item_use = keyboard_check_pressed(ord("E"));
 if(hp > max_hp){
 	hp = max_hp;	
 }
+if(shield > shield_max){
+	shield = shield_max;	
+}
 if(hp <= 0){
 	game_restart();	
 }

@@ -26,7 +26,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"damage","path":"objects/Obj_bullet/Obj_bullet.yy",},"objectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"objectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"damage","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"objectId":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {

@@ -17,6 +17,8 @@ coyote_time_amount = 20;
 jumped = true;
 on_ground = false;
 //health variables
+shield = 0;
+shield_max = 100;
 max_hp = 100;
 hp = max_hp;
 invincible = false;
