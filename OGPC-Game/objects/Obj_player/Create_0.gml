@@ -26,5 +26,7 @@ invincible = false;
 bomb_amount = 0;
 bomb_max = 10;
 //gun varibles
-which_gun = noone;
+which_gun = noone; 
+//state variable
+state="normal"
 randomize();

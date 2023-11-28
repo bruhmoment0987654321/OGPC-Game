@@ -1,7 +1,11 @@
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
+up = keyboard_check(ord("W"));
+down = keyboard_check(ord("S"));
 jump = keyboard_check_pressed(vk_space);
 item_use = keyboard_check_pressed(ord("E"));
+
+if(state=="normal"){
 #region health and bombs
 if(hp > max_hp){
 	hp = max_hp;	
@@ -64,7 +68,12 @@ if(bomb_amount > bomb_max){
 		}
 	}
 #endregion 
-
+if up && place_meeting(x,y,Obj_ladder){
+	state = "ladder"
+}
+if down && place_meeting(x,y,Obj_ladder){
+	state = "ladder"
+}
 #region item usage
 if(item_use)&&(bomb_amount > 0){
 	instance_create_layer(x,y,"Bullets",Obj_bomb);
@@ -93,7 +102,33 @@ if(item_use)&&(bomb_amount > 0){
 
 	y += vsp;
 #endregion
+}
+if state=="ladder"{
+	if up {
+	vsp -= walk_sp	
+	}else{
+	vsp = 0	
+	} 
+	if down {
+	vsp += walk_sp	
+	}else{
+	vsp = 0	
+	}
+	if jump { 
+		state = "normal"
+	}
+	
+	
+	//vertical collision
+	if(place_meeting(x, y+vsp, Obj_solid)){
+	    while(!place_meeting(x,y+sign(vsp),Obj_solid)){
+	        y += sign(vsp);
+	    }
+	    vsp = 0;
+	}
 
+	y += vsp;
+}
 #region animations
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion
