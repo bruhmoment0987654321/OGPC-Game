@@ -18,19 +18,31 @@ if(any)&&(delay_timer<=0){
 	delay_timer = delay;
 }
 if(instance_exists(Obj_player)){
-	if(Obj_player.image_xscale < 0)||(direction > 90)&&(direction<270){
+
+	if(Obj_player.image_xscale > 0){
+		
+	if(direction > 90)&&(direction<270){
 		image_yscale = -1;
 	}else{
 		image_yscale = 1;	
 	}
-	if(Obj_player.image_xscale > 0){
-		image_angle = direction;		
+	
+	image_angle = direction;
+	
 	}else if(Obj_player.image_xscale < 0){
 		if(!any){
-		  image_angle = direction+180;
+			image_angle = direction+180;
+			image_yscale = -1;
 		}else{
-		image_angle = direction;	
+			image_angle = direction;
+			if(direction > 90)&&(direction<270){
+				image_yscale = -1;
+			}else{
+				image_yscale = 1;	
+			}
 		}
+		
+		
 	}
 }
 

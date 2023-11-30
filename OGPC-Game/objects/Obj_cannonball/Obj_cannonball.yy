@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_cannonball",
   "spriteId": {
     "name": "Spr_cannonball",
     "path": "sprites/Spr_cannonball/Spr_cannonball.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -26,15 +30,11 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"objectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"damage","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"objectId":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damage","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"objectId":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"value":"30",},
   ],
   "parent": {
     "name": "bullets",
-    "path": "folders/Objects/Player(s)/weapons/bullets.yy",
+    "path": "folders/Objects/Player/weapons/bullets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_cannonball",
-  "tags": [],
-  "resourceType": "GMObject",
 }

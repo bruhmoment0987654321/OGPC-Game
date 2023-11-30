@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_bullet",
   "spriteId": {
     "name": "Spr_bullet",
     "path": "sprites/Spr_bullet/Spr_bullet.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -28,10 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "bullets",
-    "path": "folders/Objects/Player(s)/weapons/bullets.yy",
+    "path": "folders/Objects/Player/weapons/bullets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_bullet",
-  "tags": [],
-  "resourceType": "GMObject",
 }

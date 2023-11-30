@@ -16,4 +16,4 @@ grounded = false;
 //chasing variables
 chase_timer = 2*60;
 chase_amount = 2*60;
-which_item = irandom_range(0,2);
+which_item = irandom_range(0,3);

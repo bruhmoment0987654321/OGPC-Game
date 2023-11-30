@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_arm_gun",
   "spriteId": {
     "name": "Spr_gun",
     "path": "sprites/Spr_gun/Spr_gun.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "weapons",
-    "path": "folders/Objects/Player(s)/weapons.yy",
+    "path": "folders/Objects/Player/weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_arm_gun",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -92,7 +92,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "OGPC-Game",
-    "path": "OGPC-Game.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_cannon",
   "spriteId": {
     "name": "Spr_cannon",
     "path": "sprites/Spr_cannon/Spr_cannon.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,19 +28,15 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"spd","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"20",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"30",},
   ],
   "parent": {
     "name": "weapons",
-    "path": "folders/Objects/Player(s)/weapons.yy",
+    "path": "folders/Objects/Player/weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_cannon",
-  "tags": [],
-  "resourceType": "GMObject",
 }

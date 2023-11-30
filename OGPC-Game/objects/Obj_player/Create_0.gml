@@ -28,5 +28,5 @@ bomb_max = 10;
 //gun varibles
 which_gun = noone; 
 //state variable
-state="normal"
+state="normal";
 randomize();

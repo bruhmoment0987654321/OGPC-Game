@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_armgun_pickup",
   "spriteId": {
     "name": "Spr_arm_pickup",
     "path": "sprites/Spr_arm_pickup/Spr_arm_pickup.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -28,10 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "weapons",
-    "path": "folders/Objects/Player(s)/weapons.yy",
+    "path": "folders/Objects/Player/weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_armgun_pickup",
-  "tags": [],
-  "resourceType": "GMObject",
 }

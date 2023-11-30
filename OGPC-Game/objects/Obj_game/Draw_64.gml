@@ -7,6 +7,10 @@ if(instance_exists(Obj_player)){
 	}
 	if(Obj_player.shield > 0){
 		draw_set_color(c_blue);
-		draw_text(50,30,"Shield: "+string(Obj_player.shield));
+		draw_text(50,30,"Shield: "+ string(Obj_player.shield));
 	}
+}
+if(money > 0){
+	draw_set_color(c_green);
+	draw_text(50,10,"Money: "+ string(money));	
 }

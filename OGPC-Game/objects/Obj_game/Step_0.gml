@@ -1,4 +1,4 @@
-if(room == Room1){
+if(room == Rm_level1){
 	if(!instance_exists(Obj_enemy)){
 		level_completed = true;
 	}
