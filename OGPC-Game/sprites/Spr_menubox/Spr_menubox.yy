@@ -19,7 +19,7 @@
   "For3D": false,
   "DynamicTexturePage": false,
   "width": 32,
-  "height": 32,
+  "height": 31,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -67,9 +67,9 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"858a1a0c-b154-41a6-8a28-1cf29948f860","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": {
-    "left": 1,
-    "top": 1,
-    "right": 1,
+    "left": 2,
+    "top": 2,
+    "right": 2,
     "bottom": 2,
     "guideColour": [
       4294902015,
@@ -79,7 +79,7 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "enabled": false,
+    "enabled": true,
     "tileMode": [
       0,
       0,
