@@ -1,8 +1,12 @@
-//inputs
 up = keyboard_check_pressed(vk_up);
 down = keyboard_check_pressed(vk_down);
 select = keyboard_check_pressed(vk_enter);
-
+var s = id
+if(global.cantpress){
+	up = 0;
+	down = 0;
+	select = 0;
+}
 //store number of options into current menu
 op_length = array_length(options[menu_level]);
 
@@ -11,7 +15,7 @@ pos += down-up;
 if(pos >= op_length) pos = 0;
 if(pos < 0) pos = op_length-1;
 
-//selecting options
+#region selecting options
 if(select){
 	var sml = menu_level;
 	switch(menu_level){
@@ -43,7 +47,11 @@ if(select){
 		case 2:
 			switch(pos){
 				//shopkeeper talks about who he is 
-				case 0: break;
+				case 0:
+				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+					GameText(s.text_id)
+				}
+				break;
 				//shopkeeper talks about where you are
 				case 1: break;
 				//shopkeeper talks about why he works at this place
@@ -58,3 +66,4 @@ if(select){
 	//store number of options again
 	op_length = array_length(options[menu_level]);
 }
+#endregion

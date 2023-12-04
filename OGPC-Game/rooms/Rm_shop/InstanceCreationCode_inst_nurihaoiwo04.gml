@@ -1,0 +1,1 @@
+text_id = "shopkeeper1";
