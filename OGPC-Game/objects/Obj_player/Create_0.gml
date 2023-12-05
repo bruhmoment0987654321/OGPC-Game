@@ -29,4 +29,7 @@ bomb_max = 10;
 which_gun = noone; 
 //state variable
 state="normal";
+//ladder variable
+laddersp=(5)
+on_ladder = false;
 randomize();

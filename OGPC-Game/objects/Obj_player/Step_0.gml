@@ -32,7 +32,9 @@ if(bomb_amount > bomb_max){
 		}
 		hsp = lerp(hsp,0,friction_);
 	}
-	vsp += global.grv;
+	if(!on_ladder){
+		vsp += global.grv;
+	}
 	vsp = clamp(vsp,-max_vsp,max_vsp);
 #endregion
 
@@ -70,12 +72,19 @@ if(bomb_amount > bomb_max){
 #endregion 
 
 #region state entries
-if(up && place_meeting(x,y,Obj_ladder)){
-	state = "ladder"
+if(place_meeting(x+hsp,y+vsp,Obj_ladder)){
+	on_ladder = true 
+	var move1 = down-up;
+	if(move1!=0){
+		vsp += move1*laddersp;
+		vsp = clamp(vsp,-(max_vsp*0.75),(max_vsp*0.75));
+	}else{
+		vsp = 0;	
+	}
+}else{
+	on_ladder = false	
 }
-if(down && place_meeting(x,y,Obj_ladder)){
-	state = "ladder"
-}
+
 #endregion
 
 if(up && place_meeting(x,y,Obj_shop_door)){
@@ -110,30 +119,7 @@ if(item_use)&&(bomb_amount > 0){
 	y += vsp;
 #endregion
 }
-if(state == "ladder"){
-	if(up){
-		vsp -= walk_sp;
-	}else{
-		vsp = 0;
-	} 
-	if(down){
-		vsp += walk_sp	
-	}else{
-		vsp = 0;
-	}
-	if(jump){ 
-		state = "normal";
-	}
-	//vertical collision
-	if(place_meeting(x,y+vsp, Obj_solid)){
-	    while(!place_meeting(x,y+sign(vsp),Obj_solid)){
-	        y += sign(vsp);
-	    }
-	    vsp = 0;
-	}
 
-	y += vsp;
-}
 #region animations
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion
