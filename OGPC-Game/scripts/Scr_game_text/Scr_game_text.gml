@@ -1,8 +1,8 @@
 ///@param text id
 function GameText(text_id){
 	switch(text_id){
-		//---------------------text for the first shopkeeper-------------------------//
-		case "shopkeeper1":
+		//--------------------- practice shop keep dialogue -------------------------//
+		case "shopkeeper0":
 		Text("I'm a man of glory!");
 		Text_Color(0,19,c_red,c_red,c_red,c_red);
 		Text("HARHA, HARHAR!");
@@ -14,7 +14,10 @@ function GameText(text_id){
 		Text("long long long long long long long long long long long. long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long");
 		break;
 		
-		case "shopkeeper2":
+		//--------------------- Caveman shopkeep dialogue ---------------------//
+		case "shopkeeper1":
+		Text("Hello");
+		Text_Shake(0,10);
 		
 		break;
 	}
