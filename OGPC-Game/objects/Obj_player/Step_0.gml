@@ -6,21 +6,6 @@ jump = keyboard_check_pressed(vk_space);
 item_use = keyboard_check_pressed(ord("E"));
 
 if(state == "normal"){
-#region health and bombs
-if(hp > max_hp){
-	hp = max_hp;	
-}
-if(shield > shield_max){
-	shield = shield_max;	
-}
-if(hp <= 0){
-	game_restart();	
-}
-if(bomb_amount > bomb_max){
-	bomb_amount = bomb_max;
-}
-#endregion
-
 #region movement functions
 	var move = right-left;
 	if(move != 0){
@@ -91,9 +76,9 @@ if(up && place_meeting(x,y,Obj_shop_door)){
 	room_goto(Rm_shop);
 }
 #region item usage
-if(item_use)&&(bomb_amount > 0){
+if(item_use)&&(global.bomb_amount > 0){
 	instance_create_layer(x,y,"Bullets",Obj_bomb);
-	bomb_amount -= 1;	
+	global.bomb_amount -= 1;	
 }
 #endregion
 
