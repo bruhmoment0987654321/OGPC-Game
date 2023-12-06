@@ -1,4 +1,8 @@
 next_page = keyboard_check_pressed(vk_space);
+if(space_timer>0){
+	space_timer--;
+	next_page = 0;
+}
 //text box position
 x = camera_get_view_x(view_camera[0])+32;
 y = camera_get_view_y(view_camera[0])+150;

@@ -1,6 +1,6 @@
-up = keyboard_check_pressed(vk_up);
-down = keyboard_check_pressed(vk_down);
-select = keyboard_check_pressed(vk_enter);
+up = keyboard_check_pressed(ord("W"));
+down = keyboard_check_pressed(ord("S"));
+select = keyboard_check_pressed(vk_space);
 var s = id
 if(global.cantpress){
 	up = 0;
@@ -34,11 +34,38 @@ if(select){
 		case 1:
 			switch(pos){
 				//buy first option
-				case 0: break;
+				case 0:
+					if(global.money < 15){
+						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							GameText(s.poor_text_id);
+						}
+					}else{
+						global.money -= 15;
+						global.hp += 10;
+					}
+				break;
 				//buy second option
-				case 1: break;
+				case 1: 
+					if(global.money < 5){
+						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							GameText(s.poor_text_id);
+						}
+					}else{
+						global.money -= 5;
+						global.bomb_amount += 1;
+					}
+				break;
 				//buy third option
-				case 2: break;
+				case 2: 
+					if(global.money < 10){
+						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							GameText(s.poor_text_id);
+						}
+					}else{
+						global.money -= 10;
+						global.shield += 20;
+					}
+				break;
 				//go back to the main shop menu
 				case 3: menu_level = 0; break;
 			}

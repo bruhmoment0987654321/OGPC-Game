@@ -1,4 +1,6 @@
 text_id = "";
+poor_text_id = "";
+toomuch_text_id = "";
 width = 128;
 height = 168;
 scale = 2;

@@ -14,6 +14,8 @@ global.cantpress = true;
 with(Obj_shop_menu){
 	alpha = 0;	
 }
+
+space_timer = 3;
 //text variables
 page = 0;
 page_number = 0;
