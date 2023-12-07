@@ -41,6 +41,7 @@
     {"id":{"name":"Spr_gun","path":"sprites/Spr_gun/Spr_gun.yy",},"order":1,},
     {"id":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"order":1,},
     {"id":{"name":"Spr_shop_sign","path":"sprites/Spr_shop_sign/Spr_shop_sign.yy",},"order":0,},
+    {"id":{"name":"Obj_Start_menu","path":"objects/Obj_Start_menu/Obj_Start_menu.yy",},"order":4,},
     {"id":{"name":"Obj_shop_sign","path":"objects/Obj_shop_sign/Obj_shop_sign.yy",},"order":3,},
     {"id":{"name":"F_Silver","path":"fonts/F_Silver/F_Silver.yy",},"order":0,},
     {"id":{"name":"Obj_item_par","path":"objects/Obj_item_par/Obj_item_par.yy",},"order":2,},
@@ -84,9 +85,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},},
     {"roomId":{"name":"Rm_level1","path":"rooms/Rm_level1/Rm_level1.yy",},},
     {"roomId":{"name":"Rm_shop","path":"rooms/Rm_shop/Rm_shop.yy",},},
-    {"roomId":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
