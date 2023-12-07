@@ -8,7 +8,6 @@ alpha = 1;
 op_border = 16;
 op_space = 32;
 
-
 pos = 0;
 change_dialouge = irandom_range(0,2);
 change_dialouge2 = irandom_range(0,2);

@@ -2,7 +2,7 @@
 walk_sp = 1;
 hsp = walk_sp;
 vsp = 0;
-run_sp = 2;
+run_sp = 1.5;
 dir = image_xscale;
 friction_ = 0.15;
 //jump variables

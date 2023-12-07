@@ -1,7 +1,7 @@
 if(instance_exists(Obj_player)){
 	with(Obj_player){
 		if(!invincible){
-			if(shield > 0){
+			if(global.shield > 0){
 				global.shield -= 50;
 			}else{
 				global.hp -= 50;	
