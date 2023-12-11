@@ -10,7 +10,7 @@ if(state == "norm"){
 	if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
 		hsp = -hsp;
 	}
-	sprite_index=Spr_caveman
+	sprite_index = Spr_caveman
 }
 	
 if(state == "chase"){

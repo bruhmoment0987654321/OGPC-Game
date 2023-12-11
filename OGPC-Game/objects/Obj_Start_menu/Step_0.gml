@@ -1,8 +1,6 @@
 up = keyboard_check_pressed(ord("W"));
 down = keyboard_check_pressed(ord("S"));
 select = keyboard_check_pressed(vk_space);
-x = 256
-y=128
 if(global.cantpress){
 	up = 0;
 	down = 0;
@@ -23,14 +21,32 @@ if(select){
 		//main shop menu
 		case 0:
 			switch(pos){
-				//open the options to buy
-				case 0: room_goto(Rm_level1)  break;
-				//talk to the shopkeeper
-				case 1:   break;
-				//go back to the level you were in
-				case 2: game_end() break;
+				//start game
+				case 0: room_goto(Rm_level1);  break;
+				//pick options
+				case 1:  menu_level = 1 break;
+				//get out of the game
+				case 2: game_end();  break;
 			}
 		break;
+		
+		case 1:
+		switch(pos){
+			//go fullscreen
+			case 0:
+				if(!active){
+					window_set_fullscreen(true);
+					active = true;
+				}else{
+					window_set_fullscreen(false);
+					active = false;
+				}
+			break;
+			//sound
+			case 1: break;
+			//go back
+			case 2: menu_level = 0; break;
+		}
 		
 	}
 	//setting position back to the top

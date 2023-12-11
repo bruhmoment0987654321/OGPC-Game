@@ -1,4 +1,13 @@
 vsp += global.grv;
+timer--;
+if(place_meeting(x,y,Obj_enemy)){
+	timer = 0;	
+}
+
+if(timer <= 0){
+	instance_create_layer(x,y,"Bullets",Obj_explosion);
+	instance_destroy();	
+}
 #region collisions
 	//horizontal collision
 	if(place_meeting(x+hsp, y,Obj_solid)){

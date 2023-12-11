@@ -1,7 +1,7 @@
 up = keyboard_check_pressed(ord("W"));
 down = keyboard_check_pressed(ord("S"));
 select = keyboard_check_pressed(vk_space);
-var s = id
+var s = id;
 if(global.cantpress){
 	up = 0;
 	down = 0;

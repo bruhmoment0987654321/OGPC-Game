@@ -13,7 +13,7 @@ jump_sp = 7;
 buffer_timer = 0;
 buffer_time_amount = 5;
 coyote_timer = 0;
-coyote_time_amount = 20;
+coyote_time_amount = 7;
 jumped = true;
 on_ground = false;
 //health variables
@@ -22,8 +22,8 @@ invincible = false;
 //gun varibles
 which_gun = noone; 
 //state variable
-state="normal";
+state = "normal";
 //ladder variable
-laddersp=(5)
+laddersp = 5;
 on_ladder = false;
 randomize();

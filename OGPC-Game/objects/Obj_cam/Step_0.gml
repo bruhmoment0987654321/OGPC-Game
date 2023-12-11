@@ -1,10 +1,10 @@
 if(instance_exists(follow)){
-	xTo = follow.x;
-	yTo = follow.y;
+	xTo = follow.x+camera_offset_x;
+	yTo = follow.y+camera_offset_y;
 }
 
-x += (xTo - x)/25;
-y += (yTo - y)/25;
+x += (xTo - x)/cam_spd;
+y += (yTo - y)/cam_spd;
 
 x = clamp(x,view_w_half,room_width-view_w_half);
 y = clamp(y,view_h_half,room_height-view_h_half);

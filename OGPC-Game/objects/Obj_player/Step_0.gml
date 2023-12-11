@@ -29,6 +29,7 @@ if(state == "normal"){
 	}else{
 		on_ground = false;	
 	}
+	
 	if(!on_ground){
 		if(coyote_timer > 0){
 			coyote_timer--;
@@ -40,14 +41,17 @@ if(state == "normal"){
 			}
 		}
 	}else{
-		jumped = true;
+		jumped = false;
 		coyote_timer = coyote_time_amount;
 	}
+	
 	if(jump){
 		buffer_timer = buffer_time_amount;	
 	}
+	
 	if(buffer_timer > 0){
 		buffer_timer--;
+		
 		if(on_ground){
 			vsp -= jump_sp;
 			buffer_timer = 0;
@@ -75,6 +79,7 @@ if(place_meeting(x+hsp,y+vsp,Obj_ladder)){
 if(up && place_meeting(x,y,Obj_shop_door)){
 	room_goto(Rm_shop);
 }
+
 #region item usage
 if(item_use)&&(global.bomb_amount > 0){
 	instance_create_layer(x,y,"Bullets",Obj_bomb);
