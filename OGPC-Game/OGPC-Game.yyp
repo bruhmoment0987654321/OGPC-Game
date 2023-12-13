@@ -54,6 +54,8 @@
     {"id":{"name":"Spr_weapoon_iconpu","path":"sprites/Spr_weapoon_iconpu/Spr_weapoon_iconpu.yy",},"order":3,},
     {"id":{"name":"Obj_breakable_solid","path":"objects/Obj_breakable_solid/Obj_breakable_solid.yy",},"order":7,},
     {"id":{"name":"Rm_shop","path":"rooms/Rm_shop/Rm_shop.yy",},"order":1,},
+    {"id":{"name":"Obj_chest","path":"objects/Obj_chest/Obj_chest.yy",},"order":6,},
+    {"id":{"name":"Spr_chest","path":"sprites/Spr_chest/Spr_chest.yy",},"order":9,},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},"order":2,},
     {"id":{"name":"Spr_cannonball","path":"sprites/Spr_cannonball/Spr_cannonball.yy",},"order":1,},
     {"id":{"name":"Obj_shield","path":"objects/Obj_shield/Obj_shield.yy",},"order":4,},

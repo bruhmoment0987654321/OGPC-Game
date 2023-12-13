@@ -14,7 +14,7 @@ if(object_index == Obj_shield){
 }
 if(object_index == Obj_metal_currency){
 	if(image_index = 0){
-		global.money += 1;	
+		global.money += 5;	
 	}
 	if(image_index = 1){
 		global.money += 10;

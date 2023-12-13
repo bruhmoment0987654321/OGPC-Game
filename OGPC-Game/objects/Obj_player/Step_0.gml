@@ -60,7 +60,8 @@ if(state == "normal"){
 	}
 #endregion 
 
-#region state entries
+#region entering places
+//ladder
 if(place_meeting(x+hsp,y+vsp,Obj_ladder)){
 	on_ladder = true 
 	var move1 = down-up;
@@ -74,16 +75,22 @@ if(place_meeting(x+hsp,y+vsp,Obj_ladder)){
 	on_ladder = false	
 }
 
-#endregion
-
+//shop door
 if(up && place_meeting(x,y,Obj_shop_door)){
 	room_goto(Rm_shop);
 }
+#endregion
+
 
 #region item usage
 if(item_use)&&(global.bomb_amount > 0){
 	instance_create_layer(x,y,"Bullets",Obj_bomb);
 	global.bomb_amount -= 1;	
+}
+if(up)&&(place_meeting(x,y,Obj_chest)){
+	with(Obj_chest){
+		open = true;	
+	}
 }
 #endregion
 
