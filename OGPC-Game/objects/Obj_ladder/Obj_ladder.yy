@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_ladder",
   "spriteId": {
     "name": "Spr_ladder",
     "path": "sprites/Spr_ladder/Spr_ladder.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Obj_ladder",
-  "tags": [],
-  "resourceType": "GMObject",
 }

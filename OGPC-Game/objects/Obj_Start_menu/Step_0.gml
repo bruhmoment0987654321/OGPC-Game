@@ -22,7 +22,7 @@ if(select){
 		case 0:
 			switch(pos){
 				//start game
-				case 0: room_goto(Rm_level1);  break;
+				case 0: room_goto_next();  break;
 				//pick options
 				case 1:  menu_level = 1 break;
 				//get out of the game
