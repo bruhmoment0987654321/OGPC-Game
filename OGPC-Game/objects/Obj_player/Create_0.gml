@@ -17,13 +17,13 @@ coyote_time_amount = 7;
 jumped = true;
 on_ground = false;
 //health variables
-
 invincible = false;
 //gun varibles
-which_gun = noone; 
+which_weapon = noone; 
 //state variable
 state = "normal";
 //ladder variable
 laddersp = 5;
 on_ladder = false;
+
 randomize();

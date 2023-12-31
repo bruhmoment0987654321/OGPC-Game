@@ -14,7 +14,7 @@ if(state == "norm"){
 }
 	
 if(state == "chase"){
-	chase_timer--;
+	//chase_timer--;
 	if(instance_exists(Obj_player)){
 		if(x<Obj_player.x-10){
 			hsp = run_sp;	
@@ -36,7 +36,7 @@ if(state == "chase"){
 			
 		}
 	}
-	
+	/*
 	if(chase_timer<=0)&&(point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){
 		chase_timer = chase_amount;	
 	}else if(!point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){
@@ -44,9 +44,18 @@ if(state == "chase"){
 		chase_timer = chase_amount;
 		hsp = walk_sp;
 	}
-	sprite_index=Spr_caveman_angry
+	*/
+	sprite_index= Spr_caveman_angry
 }
-	
+
+if(state == "stunned"){
+	sprite_index = Spr_caveman_stunned;
+	stun_timer--;
+	if(stun_timer <=0){
+		stun_timer = stun_amount;
+		state = "chase";
+	}
+}
 if(state == "dead"){
 	instance_destroy();
 }

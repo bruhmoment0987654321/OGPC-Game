@@ -36,7 +36,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"30",},
   ],
   "parent": {
-    "name": "weapons",
-    "path": "folders/Objects/Player/weapons.yy",
+    "name": "Guns",
+    "path": "folders/Objects/Player/weapons/Guns.yy",
   },
 }

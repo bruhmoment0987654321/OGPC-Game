@@ -1,4 +1,4 @@
-if(!invincible){
+if(!invincible)&&(other.state != "stunned"){
 	if(global.shield > 0){
 		global.shield -= 15;	
 	}else{

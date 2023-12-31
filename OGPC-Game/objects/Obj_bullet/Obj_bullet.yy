@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "bullets",
-    "path": "folders/Objects/Player/weapons/bullets.yy",
+    "path": "folders/Objects/Player/weapons/Guns/bullets.yy",
   },
 }

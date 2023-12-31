@@ -12,8 +12,10 @@ jumped = false;
 hp = 100;
 state = "norm";
 flash = 0;
+stun_timer = 9;
+stun_amount = 9;
 grounded = false;
 //chasing variables
-chase_timer = 2*60;
-chase_amount = 2*60;
+//chase_timer = 2*60;
+//chase_amount = 2*60;
 which_item = irandom_range(0,3);

@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_weapon_par",
-    "path": "objects/Obj_weapon_par/Obj_weapon_par.yy",
+    "name": "Obj_weapon_pickup_par",
+    "path": "objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "weapons",
-    "path": "folders/Objects/Player/weapons.yy",
+    "name": "Guns",
+    "path": "folders/Objects/Player/weapons/Guns.yy",
   },
 }

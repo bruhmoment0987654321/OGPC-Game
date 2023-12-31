@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_weapon_par",
+  "name": "Obj_weapon_pickup_par",
   "spriteId": null,
   "solid": false,
   "visible": true,
