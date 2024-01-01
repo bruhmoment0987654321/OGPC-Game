@@ -64,8 +64,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 34,
-    "yorigin": 22,
+    "xorigin": 32,
+    "yorigin": 20,
     "eventToFunction": {},
     "eventStubScript": null,
   },
@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Melee",
-    "path": "folders/Sprites/items/weapon/Melee.yy",
+    "name": "stick",
+    "path": "folders/Sprites/items/weapon/Melee/stick.yy",
   },
 }

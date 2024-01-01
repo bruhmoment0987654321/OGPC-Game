@@ -7,7 +7,7 @@
     "path": "sprites/Spr_hitbox/Spr_hitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

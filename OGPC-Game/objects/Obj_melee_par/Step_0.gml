@@ -8,7 +8,6 @@ left_released = keyboard_check_released(vk_left);
 right_released = keyboard_check_released(vk_right);
 
 var anykey = left||right||up||down||left_hold||right_hold;
-var released = left_released||right_released;
 if(Obj_player.image_xscale = 1) front = 1; else front = -1; 
 if(anykey){
 	if(!is_swinging){
@@ -17,29 +16,33 @@ if(anykey){
 			attack_type = "hit";
 			if(attack_type == "hit"){
 				Hit_attack();	
-			}
-					
+			}		
 		}
 		//hittng behind you	
-			//try figuring out how to charge an attack. having a visual indication by having particle arount it and having the attack loop the first 2 frames
-			if((left_hold) && (front = 1))||((right_hold) && (front = -1)){
-				attack_type = "charge"
-				sprite_index = Spr_bonk_attack_behind_charge;
-				if(attack_type == "charge"){
-					Charging_attack();
-				}
-			}else if((left_hold) && (front = -1))||((right_hold) && (front = -1)){
+		if((left_hold) && (front = 1))||((right_hold) && (front = -1)){
+			attack_type = "charge";
+			sprite_index = Spr_bonk_attack_behind_charge;
+			if(attack_type == "charge"){
+				Charging_attack();
+			}
+		}else if((left_hold) && (front = -1))||((right_hold) && (front = -1)){
 			if(charge > 0)&&(attack_type == "charge"){
 				Charging_attack();	
 			}
 		}
 		//hitting on top of you
 		if(up){
-				
+			attack_type = "up";
+			if(attack_type == "up"){
+				Up_attack();	
+			}
 		}
 		//a "boost" (breaks depending on what item you have)
 		if(down){
-			
+			attack_type = "down";
+			if(attack_type == "down"){
+				Down_attack();
+			}
 		}
 	}
 }else{
@@ -47,25 +50,7 @@ if(anykey){
 	
 }
 if(attack_type == "charge"){
-	if(charged){
-		if(released){
-			sprite_index = Spr_bonk_attack_behind;
-			image_index = 0;
-			is_swinging = true;
-			charge = 0;
-			attack_multiplier = 2;
-			alarm_set(1,1);
-		}
-	}else{
-		if(released){
-			sprite_index = Spr_bonk_attack_behind;
-			image_index = 0;
-			is_swinging = true;
-			attack_multiplier = 1;
-			charged = 0;
-			alarm_set(1,1);
-		}	
-	}
+	Charge_attack();
 }
 if(is_swinging){
 	if(image_index >= image_number-1){
