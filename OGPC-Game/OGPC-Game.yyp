@@ -36,6 +36,7 @@
     {"id":{"name":"Obj_cam","path":"objects/Obj_cam/Obj_cam.yy",},"order":6,},
     {"id":{"name":"Spr_cannon_pickup","path":"sprites/Spr_cannon_pickup/Spr_cannon_pickup.yy",},"order":5,},
     {"id":{"name":"Spr_arm_pickup","path":"sprites/Spr_arm_pickup/Spr_arm_pickup.yy",},"order":1,},
+    {"id":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},"order":3,},
     {"id":{"name":"Obj_shop_menu","path":"objects/Obj_shop_menu/Obj_shop_menu.yy",},"order":1,},
     {"id":{"name":"Spr_bonk_attack","path":"sprites/Spr_bonk_attack/Spr_bonk_attack.yy",},"order":1,},
     {"id":{"name":"Spr_health","path":"sprites/Spr_health/Spr_health.yy",},"order":4,},
@@ -98,6 +99,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},},
+    {"roomId":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},},
     {"roomId":{"name":"Rm_level1","path":"rooms/Rm_level1/Rm_level1.yy",},},
     {"roomId":{"name":"Rm_shop","path":"rooms/Rm_shop/Rm_shop.yy",},},
   ],
