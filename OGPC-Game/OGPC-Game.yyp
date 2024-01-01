@@ -56,6 +56,7 @@
     {"id":{"name":"Scr_shoot_bullets","path":"scripts/Scr_shoot_bullets/Scr_shoot_bullets.yy",},"order":0,},
     {"id":{"name":"Spr_caveman","path":"sprites/Spr_caveman/Spr_caveman.yy",},"order":1,},
     {"id":{"name":"Spr_menubox","path":"sprites/Spr_menubox/Spr_menubox.yy",},"order":8,},
+    {"id":{"name":"Spr_bonk_attack_behind_charge","path":"sprites/Spr_bonk_attack_behind_charge/Spr_bonk_attack_behind_charge.yy",},"order":3,},
     {"id":{"name":"Obj_hitbox","path":"objects/Obj_hitbox/Obj_hitbox.yy",},"order":11,},
     {"id":{"name":"Obj_cannon","path":"objects/Obj_cannon/Obj_cannon.yy",},"order":3,},
     {"id":{"name":"Obj_bomb","path":"objects/Obj_bomb/Obj_bomb.yy",},"order":0,},
@@ -72,6 +73,7 @@
     {"id":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},"order":2,},
     {"id":{"name":"Spr_bonk_stick","path":"sprites/Spr_bonk_stick/Spr_bonk_stick.yy",},"order":0,},
     {"id":{"name":"Obj_bomb_pickup","path":"objects/Obj_bomb_pickup/Obj_bomb_pickup.yy",},"order":1,},
+    {"id":{"name":"Scr_attack_type","path":"scripts/Scr_attack_type/Scr_attack_type.yy",},"order":3,},
     {"id":{"name":"Scr_text","path":"scripts/Scr_text/Scr_text.yy",},"order":1,},
     {"id":{"name":"Snd_caveman","path":"sounds/Snd_caveman/Snd_caveman.yy",},"order":0,},
     {"id":{"name":"Rm_level1","path":"rooms/Rm_level1/Rm_level1.yy",},"order":0,},
@@ -99,8 +101,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},},
-    {"roomId":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},},
     {"roomId":{"name":"Rm_level1","path":"rooms/Rm_level1/Rm_level1.yy",},},
+    {"roomId":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},},
     {"roomId":{"name":"Rm_shop","path":"rooms/Rm_shop/Rm_shop.yy",},},
   ],
   "Folders": [
