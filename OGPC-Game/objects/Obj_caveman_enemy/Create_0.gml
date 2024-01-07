@@ -1,3 +1,4 @@
+event_inherited();
 //movement variables
 walk_sp = 1;
 hsp = walk_sp;
@@ -8,6 +9,12 @@ friction_ = 0.15;
 //jump variables
 jump_sp = 6;
 jumped = false;
+//attack variables
+activation = true;
+attack_radius = 30
+hit_radius = 10;
+attack_distance = 8;
+tween_speed = 0.3;
 //other variables
 hp = 100;
 state = "norm";
@@ -15,7 +22,4 @@ flash = 0;
 stun_timer = 9;
 stun_amount = 9;
 grounded = false;
-//chasing variables
-//chase_timer = 2*60;
-//chase_amount = 2*60;
-which_item = irandom_range(0,3);
+

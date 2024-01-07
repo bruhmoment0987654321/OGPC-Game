@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "caveman",
+    "path": "folders/Sprites/enemies/caveman.yy",
   },
 }

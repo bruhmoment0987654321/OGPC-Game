@@ -1,3 +1,4 @@
+event_inherited();
 if(state == "norm"){
 	if(place_meeting(x+hsp,y,Obj_solid)){
 		hsp = -hsp;	
@@ -10,7 +11,7 @@ if(state == "norm"){
 	if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
 		hsp = -hsp;
 	}
-	sprite_index = Spr_caveman
+	sprite_index = Spr_rockman
 }
 	
 if(state == "chase"){
@@ -45,11 +46,11 @@ if(state == "chase"){
 		hsp = walk_sp;
 	}
 	*/
-	sprite_index= Spr_caveman_angry
+	sprite_index= Spr_rockman_angry
 }
 
 if(state == "stunned"){
-	sprite_index = Spr_caveman_stunned;
+	sprite_index = Spr_rockman_stunned;
 	stun_timer--;
 	if(stun_timer <=0){
 		stun_timer = stun_amount;
@@ -92,8 +93,4 @@ vsp += global.grv;
 	}
 
 	y += vsp;
-#endregion
-#region animations
-	if(hsp != 0) image_xscale = sign(hsp);
-	flash--;
 #endregion
