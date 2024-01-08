@@ -1,1 +1,1 @@
-flash = 2;
+Enemy_damaged(other.damage,"Hitbox");

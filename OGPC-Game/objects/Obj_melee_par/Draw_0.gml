@@ -1,2 +1,2 @@
 draw_self();
-draw_text(x,y-10,charge);
+if(global.debug) draw_text(x,y-10,charge);

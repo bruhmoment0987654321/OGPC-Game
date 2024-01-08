@@ -1,1 +1,1 @@
-other.hp -= 100;
+Enemy_damaged(100,0,true);

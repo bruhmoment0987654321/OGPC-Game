@@ -1,4 +1,5 @@
 interact = keyboard_check_pressed(ord("Q"));
+
 if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50) && (interact){
 	if(instance_exists(Obj_player)){
 		if(object_index == Obj_armgun_pickup){

@@ -10,12 +10,12 @@ friction_ = 0.15;
 jump_sp = 6;
 jumped = false;
 //other variables
-hp = 100;
+hp = 80;
 state = "norm";
 flash = 0;
 stun_timer = 9;
 stun_amount = 9;
 grounded = false;
-//chasing variables
-//chase_timer = 2*60;
-//chase_amount = 2*60;
+//attack variables
+throw_speed = 15;
+active = false;

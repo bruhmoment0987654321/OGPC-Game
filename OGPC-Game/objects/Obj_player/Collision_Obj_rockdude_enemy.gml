@@ -1,3 +1,1 @@
-if(!global.debug){
-	Attacked(15);
-}
+if(!global.debug) Player_attacked(15);

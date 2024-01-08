@@ -50,8 +50,7 @@ switch(state){
 			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
 			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
 				with(Obj_player){
-					hsp += Obj_caveman_enemy.knockb*Obj_caveman_enemy.image_xscale;
-					Attacked(20);
+					Player_attacked(20,Obj_caveman_enemy.knockb*Obj_caveman_enemy.image_xscale);
 				}
 			}
 		}
@@ -61,8 +60,10 @@ switch(state){
 		if(image_index >= image_number-1){
 			state = "chase";	
 		}
+		
 	break;
 	case "stunned":
+		hsp = 0;
 		sprite_index = Spr_caveman_stunned;
 		stun_timer--;
 		if(stun_timer <=0){
@@ -85,7 +86,6 @@ switch(state){
 if(hp <= 0){
 	state = "dead";	
 }
-
 vsp += global.grv;
 
 #region collisions

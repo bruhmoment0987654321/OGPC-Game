@@ -1,64 +1,59 @@
 event_inherited();
-if(state == "norm"){
-	if(place_meeting(x+hsp,y,Obj_solid)){
-		hsp = -hsp;	
-	}
-	if(place_meeting(x,y+1,Obj_solid)){
-		grounded = true;	
-	}else{
-		grounded = false;	
-	}
-	if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
-		hsp = -hsp;
-	}
-	sprite_index = Spr_rockman
-}
-	
-if(state == "chase"){
-	//chase_timer--;
-	if(instance_exists(Obj_player)){
-		if(x<Obj_player.x-10){
-			hsp = run_sp;	
-		}else if (x>Obj_player.x+10){
-			hsp = -run_sp;
-		}else{
-			hsp = lerp(hsp,0,friction_);	
-		}
-	}
-	if(place_meeting(x,y+1,Obj_solid)){
-		jumped = false;	
-	}else{
-		jumped = true;	
-	}
-	if(!jumped){
+switch(state){
+	case "norm":
 		if(place_meeting(x+hsp,y,Obj_solid)){
-			vsp -= jump_sp;
-			jumped = true;
-			
+			hsp = -hsp;	
 		}
-	}
-	/*
-	if(chase_timer<=0)&&(point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){
-		chase_timer = chase_amount;	
-	}else if(!point_in_circle(Obj_player.x,Obj_player.y,x,y,150)){
-		state = "norm";
-		chase_timer = chase_amount;
-		hsp = walk_sp;
-	}
-	*/
-	sprite_index= Spr_rockman_angry
-}
-
-if(state == "stunned"){
-	sprite_index = Spr_rockman_stunned;
-	stun_timer--;
-	if(stun_timer <=0){
-		stun_timer = stun_amount;
-		state = "chase";
-	}
-}
-if(state == "dead"){
-	instance_destroy();
+		if(place_meeting(x,y+1,Obj_solid)){
+			grounded = true;	
+		}else{
+			grounded = false;	
+		}
+		if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
+			hsp = -hsp;
+		}
+		sprite_index = Spr_rockman;
+		/*
+		if(point_in_rectangle(Obj_player.x,Obj_player.y,x-10,y-40,x+100,y))&&(image_xscale == 1){
+			active = false;
+			state = "attack";
+		}else if(point_in_rectangle(Obj_player.x,Obj_player.y,x+10,y+40,x-100,y))&&(image_xscale == -1){
+			active = false;
+			state = "attack";	
+		}
+		*/
+	break;
+	
+	case "attack":
+		sprite_index = Spr_rockman_attack;
+		if(!active){
+			image_index = 0;
+			active = true;	
+		}
+		if(image_index >= 3){
+			with(instance_create_layer(x,y,"Bullets",Obj_rock)){
+				speed = Obj_rockdude_enemy.throw_speed*Obj_rockdude_enemy.image_xscale;
+				attacker = "enemy";
+			}
+		}
+		if(image_index >= image_number-1){
+			state = "norm";	
+		}
+	break;
+	
+	case "stunned":
+		hsp = 0;
+		sprite_index = Spr_rockman_stunned;
+		stun_timer--;
+		if(stun_timer <=0){
+			stun_timer = stun_amount;
+			state = "norm";
+		}
+	break;
+	
+	case "dead":
+		instance_destroy();
+	break;
 }
 	
 if(place_meeting(x,y+1,Obj_solid)){
@@ -72,7 +67,6 @@ if(hp <= 0){
 }
 
 vsp += global.grv;
-
 
 #region collisions
 	//horizontal collision

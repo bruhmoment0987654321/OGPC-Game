@@ -1,0 +1,1 @@
+Enemy_damaged(damage,0,"Bullet",true);

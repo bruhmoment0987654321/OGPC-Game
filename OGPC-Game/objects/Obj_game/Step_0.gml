@@ -20,7 +20,7 @@ if(global.shield > shield_max){
 	global.shield = shield_max;	
 }
 if(global.hp <= 0){
-	game_restart();	
+	Obj_player.state = "dead";	
 }
 if(global.bomb_amount > bomb_max){
 	global.bomb_amount = bomb_max;
