@@ -1,1 +1,1 @@
-if(!global.debug) Player_attacked(15);
+if(!global.debug) Player_attacked(15,0);
