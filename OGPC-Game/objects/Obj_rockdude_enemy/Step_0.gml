@@ -25,7 +25,9 @@ switch(state){
 	break;
 	
 	case "attack":
-		sprite_index = Spr_rockman_attack;
+		throw_count--;
+		if(throw_count <= 0) active = false;
+		
 		if(!active){
 			image_index = 0;
 			active = true;	
@@ -35,9 +37,6 @@ switch(state){
 				speed = Obj_rockdude_enemy.throw_speed*Obj_rockdude_enemy.image_xscale;
 				attacker = "enemy";
 			}
-		}
-		if(image_index >= image_number-1){
-			state = "norm";	
 		}
 	break;
 	

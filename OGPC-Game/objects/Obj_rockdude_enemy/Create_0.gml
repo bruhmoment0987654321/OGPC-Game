@@ -18,4 +18,5 @@ stun_amount = 9;
 grounded = false;
 //attack variables
 throw_speed = 15;
+throw_count = 20;
 active = false;
