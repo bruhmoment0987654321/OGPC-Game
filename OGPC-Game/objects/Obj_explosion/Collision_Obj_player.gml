@@ -1,1 +1,1 @@
-Player_attacked(other.hp*0.5,0);
+Player_attacked(50,0);
