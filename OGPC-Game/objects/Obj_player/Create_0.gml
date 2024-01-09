@@ -25,5 +25,6 @@ state = "normal";
 //ladder variable
 laddersp = 5;
 on_ladder = false;
-
+//sound variables
+sound = false
 randomize();

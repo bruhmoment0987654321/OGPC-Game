@@ -119,7 +119,10 @@ if(open_up)&&(place_meeting(x,y,Obj_chest)){
 	
 	case "dead":
 	global.cantpress = true;
-		audio_play_sound(Snd_Death_scream,10,false);
+		if(!sound){
+			audio_play_sound(Snd_Death_scream,10,false);
+			sound = true;
+		}
 		image_alpha -= 0.03;
 		instance_destroy(which_weapon)
 	break;
