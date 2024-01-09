@@ -1,6 +1,5 @@
 //global variables
 global.grv = 0.3;
-global.debug = false;
 //movement variables
 hsp = 0;
 vsp = 0;

@@ -40,8 +40,14 @@ if(select){
 							GameText(s.poor_text_id);
 						}
 					}else{
-						global.money -= 15;
-						global.hp += 10;
+						if(global.hp <= global.max_hp){
+							global.money -= 15;
+							global.hp += 10;
+						}else{
+							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+								GameText(s.toomuch_text_id);
+							}		
+						}
 					}
 				break;
 				//buy second option
@@ -51,8 +57,14 @@ if(select){
 							GameText(s.poor_text_id);
 						}
 					}else{
-						global.money -= 5;
-						global.bomb_amount += 1;
+						if(global.bomb_amount <= global.bomb_max){
+							global.money -= 5;
+							global.bomb_amount += 1;
+						}else{
+							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+								GameText(s.toomuch_text_id);
+							}
+						}
 					}
 				break;
 				//buy third option
@@ -62,8 +74,14 @@ if(select){
 							GameText(s.poor_text_id);
 						}
 					}else{
-						global.money -= 10;
-						global.shield += 20;
+						if(global.shield <= global.shield_max){
+							global.money -= 10;
+							global.shield += 20;
+						}else{
+							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+								GameText(s.toomuch_text_id);
+							}	
+						}
 					}
 				break;
 				//go back to the main shop menu
@@ -73,16 +91,24 @@ if(select){
 		//talk sub menu
 		case 2:
 			switch(pos){
-				//shopkeeper talks about who he is 
+				//shopkeeper talks about first thing 
 				case 0:
 				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
 					GameText(s.text_id)
 				}
 				break;
-				//shopkeeper talks about where you are
-				case 1: break;
-				//shopkeeper talks about why he works at this place
-				case 2: break;
+				//shopkeeper talks 2nd thing
+				case 1: 
+				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+					GameText(s.text2_id);
+				}
+				break;
+				//shopkeeper talks about 3rd thing 
+				case 2: 
+				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+					GameText(s.text3_id);
+				}
+				break;
 				//go back to the main shop menu
 				case 3: menu_level = 0;break;
 			}

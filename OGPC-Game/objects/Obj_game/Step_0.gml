@@ -13,16 +13,7 @@ if(level_completed){
 	}
 }
 #region health and bombs
-if(global.hp > max_hp){
-	global.hp = max_hp;	
-}
-if(global.shield > shield_max){
-	global.shield = shield_max;	
-}
 if(global.hp <= 0){
 	Obj_player.state = "dead";	
-}
-if(global.bomb_amount > bomb_max){
-	global.bomb_amount = bomb_max;
 }
 #endregion
