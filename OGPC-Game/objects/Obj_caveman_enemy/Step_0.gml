@@ -49,9 +49,7 @@ switch(state){
 		if(image_index >= 3){
 			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
 			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
-				with(Obj_player){
-					Player_attacked(20,Obj_caveman_enemy.knockb*Obj_caveman_enemy.image_xscale);
-				}
+				Player_attacked(20,Obj_caveman_enemy.knockb*Obj_caveman_enemy.image_xscale);
 			}
 		}
 		if(image_index >= 4) && (point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){

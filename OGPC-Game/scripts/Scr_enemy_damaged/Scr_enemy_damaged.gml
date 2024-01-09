@@ -21,6 +21,14 @@ function Enemy_damaged(_damage_amount,_knockback,_attacker,_stunned){
 				hsp += _knockback;
 				//no instance destroy because the hitbox already destroys itself
 			break;
+			case "Explosion":
+				stunned = 
+				other.hp -= _damage_amount;
+				other.flash = 2;
+				if(_stunned) other.state = "stunned";
+				else if(argument_count > 4) other.state = argument[4];
+				other.hsp += _knockback;	
+			break;
 		}
 		
 		
