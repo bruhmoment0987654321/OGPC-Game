@@ -1,1 +1,1 @@
-Player_attacked(50,0);
+Player_attacked(50,0,);

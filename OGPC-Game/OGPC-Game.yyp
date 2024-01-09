@@ -121,9 +121,9 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Rm_title","path":"rooms/Rm_title/Rm_title.yy",},},
+    {"roomId":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},},
     {"roomId":{"name":"Rm_level3","path":"rooms/Rm_level3/Rm_level3.yy",},},
     {"roomId":{"name":"Rm_level1","path":"rooms/Rm_level1/Rm_level1.yy",},},
-    {"roomId":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},},
     {"roomId":{"name":"Rm_shop","path":"rooms/Rm_shop/Rm_shop.yy",},},
   ],
   "Folders": [
