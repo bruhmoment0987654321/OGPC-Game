@@ -16,7 +16,9 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"FX","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"FX","instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F0A589A","properties":[],"isDnd":false,"objectId":{"name":"Obj_rockdude_enemy","path":"objects/Obj_rockdude_enemy/Obj_rockdude_enemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":640.0,},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Guns","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27C61DD3","properties":[],"isDnd":false,"objectId":{"name":"Obj_bonkstick_pickup","path":"objects/Obj_bonkstick_pickup/Obj_bonkstick_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":608.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -164,6 +166,7 @@
     {"name":"inst_38EEE05D","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_1F19404A","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_253C744B","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_2F0A589A","path":"rooms/Rm_level1/Rm_level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

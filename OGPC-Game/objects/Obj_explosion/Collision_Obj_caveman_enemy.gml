@@ -1,1 +1,1 @@
-Enemy_damaged(100,0,"Explosion",true);
+Enemy_damaged(false,100,0,"Explosion",true);

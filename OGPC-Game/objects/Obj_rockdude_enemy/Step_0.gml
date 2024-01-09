@@ -13,31 +13,7 @@ switch(state){
 			hsp = -hsp;
 		}
 		sprite_index = Spr_rockman;
-		/*
-		if(point_in_rectangle(Obj_player.x,Obj_player.y,x-10,y-40,x+100,y))&&(image_xscale == 1){
-			active = false;
-			state = "attack";
-		}else if(point_in_rectangle(Obj_player.x,Obj_player.y,x+10,y+40,x-100,y))&&(image_xscale == -1){
-			active = false;
-			state = "attack";	
-		}
-		*/
-	break;
-	
-	case "attack":
-		throw_count--;
-		if(throw_count <= 0) active = false;
 		
-		if(!active){
-			image_index = 0;
-			active = true;	
-		}
-		if(image_index >= 3){
-			with(instance_create_layer(x,y,"Bullets",Obj_rock)){
-				speed = Obj_rockdude_enemy.throw_speed*Obj_rockdude_enemy.image_xscale;
-				attacker = "enemy";
-			}
-		}
 	break;
 	
 	case "stunned":
@@ -51,6 +27,7 @@ switch(state){
 	break;
 	
 	case "dead":
+		with(rock_gun) instance_destroy();
 		instance_destroy();
 	break;
 }

@@ -1,1 +1,1 @@
-Enemy_damaged(damage,0,"Bullet",false,"chase");
+Enemy_damaged(false,damage,0,"Bullet",false,"chase");

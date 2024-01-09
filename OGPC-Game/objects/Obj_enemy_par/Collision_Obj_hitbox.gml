@@ -1,1 +1,1 @@
-Enemy_damaged(other.damage,"Hitbox");
+Enemy_damaged(false,other.damage,other.kb,"Hitbox",true);

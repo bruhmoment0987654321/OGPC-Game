@@ -16,7 +16,6 @@ flash = 0;
 stun_timer = 9;
 stun_amount = 9;
 grounded = false;
-//attack variables
-throw_speed = 15;
-throw_count = 20;
+//rock variables
+rock_gun = instance_create_layer(x,y,"Guns",Obj_rock_shooter);	
 active = false;
