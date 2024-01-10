@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "console",
-    "path": "folders/Scripts/console.yy",
+    "name": "esscential console stuff",
+    "path": "folders/Scripts/console/esscential console stuff.yy",
   },
 }

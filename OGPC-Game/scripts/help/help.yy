@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "enemy_spawn",
+  "name": "help",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "console",
-    "path": "folders/Scripts/console.yy",
+    "name": "commands",
+    "path": "folders/Scripts/console/commands.yy",
   },
 }

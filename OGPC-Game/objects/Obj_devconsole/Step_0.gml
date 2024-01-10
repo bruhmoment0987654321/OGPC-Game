@@ -7,8 +7,10 @@ delete_ = keyboard_check(vk_delete);
 if(enable_key) Console_enable();
 
 //command handling
-if(!enable) exit;
-
+if(!enable){ 
+	global.cantpress = false;
+	exit;
+}else global.cantpress = true;
 //backspacing
 if(backspace)&&(string_length(text_currentline) > 3){
 	if(erase >= 1){
@@ -76,6 +78,7 @@ if(enter)&& (string_length(text_currentline) > 3){
 //conflict keys
 if(keyboard_lastkey != -1){
 	switch(keyboard_lastkey){
+		case 96:
 		case vk_shift:
 		case vk_lshift:
 		case vk_rshift:

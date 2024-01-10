@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "fullscreen",
+  "name": "room_select",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

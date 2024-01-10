@@ -14,7 +14,7 @@ var text_lines = array_length(text_);
 
 for (var i = 0; i < text_lines; i++){
 	var line_size;
-	line_size = string_height(string_hash_to_newline(text_[i]));
+	line_size = string_height(string_hash_to_newline(text_[i]))/2;
 	draw_text_ext_color(4,hsize-(i*line_size)-10,string_hash_to_newline(text_[i]),-1,wsize,text_primaryColor,text_primaryColor,text_primaryColor,text_primaryColor,text_primaryAlpha);
 }
 //draw line text

@@ -12,4 +12,10 @@ global.shield_max = 100;
 //health
 global.max_hp = 100;
 global.hp = global.max_hp;
+//main objective
+global.battery = 0;
+//debug stuff
+global.show_hitboxes = false;
+global.show_invis = false;
+global.show_timer = false;
 scale = 2;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "fullscreen",
+  "name": "create_object",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

@@ -4,7 +4,21 @@ up = keyboard_check(ord("W"));
 down = keyboard_check(ord("S"));
 jump = keyboard_check_pressed(vk_space);
 item_use = keyboard_check_pressed(ord("E"));
-open_up = keyboard_check_pressed(ord("Q"))
+open_up = keyboard_check_pressed(ord("Q"));
+restart = keyboard_check_pressed(ord("R"));
+if(global.cantpress){
+	left = 0;
+	right = 0;
+	up = 0;
+	down = 0;
+	jump = 0;
+	item_use = 0;
+	open_up = 0;
+	restart = 0;
+}
+if(restart){
+	game_restart();	
+}
 switch(state){
 	case "normal":
 #region movement functions
@@ -128,15 +142,7 @@ if(open_up)&&(place_meeting(x,y,Obj_chest)){
 	break;
 }
 
-if(global.cantpress){
-	left = 0;
-	right = 0;
-	up = 0;
-	down = 0;
-	jump = 0;
-	item_use = 0;
-	open_up = 0;
-}
+
 #region animations
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion

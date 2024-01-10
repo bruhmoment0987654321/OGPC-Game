@@ -17,6 +17,7 @@ jumped = true;
 on_ground = false;
 //health variables
 invincible = false;
+dont_die = false;
 //gun varibles
 which_weapon = noone; 
 //state variable

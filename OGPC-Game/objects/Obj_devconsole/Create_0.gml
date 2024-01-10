@@ -4,7 +4,7 @@ text_def = ">. ";
 text_[0] = "";
 text_currentline = text_def;
 erase = -1;
-enable = true;
+enable = false;
 //line cursor
 cursor = "_";
 cursor_delay = 15;

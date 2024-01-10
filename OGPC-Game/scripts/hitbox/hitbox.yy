@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "item_spawn",
+  "name": "hitbox",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "console",
-    "path": "folders/Scripts/console.yy",
+    "name": "commands",
+    "path": "folders/Scripts/console/commands.yy",
   },
 }
