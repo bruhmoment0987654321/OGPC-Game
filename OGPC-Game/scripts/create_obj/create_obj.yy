@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "room_select",
+  "name": "create_obj",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "commands",
-    "path": "folders/Scripts/console/commands.yy",
+    "name": "debugging",
+    "path": "folders/Scripts/console/commands/debugging.yy",
   },
 }

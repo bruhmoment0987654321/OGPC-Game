@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "kill_all",
+  "name": "show_num",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

@@ -3,6 +3,7 @@
 function hitbox(_bool){
 	var Bool = bool(_bool);
 	if(Bool){
-		global.show_hitboxes = true;	
+		if(Bool != -1) global.show_hitboxes = true;	
+		else Log("Boolean not recongnized. Did you use 0 and 1?");	
 	}
 }

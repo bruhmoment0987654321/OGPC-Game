@@ -5,6 +5,7 @@ text_[0] = "";
 text_currentline = text_def;
 erase = -1;
 enable = false;
+past_command = ""
 //line cursor
 cursor = "_";
 cursor_delay = 15;

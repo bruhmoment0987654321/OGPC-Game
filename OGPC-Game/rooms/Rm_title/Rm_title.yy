@@ -27,9 +27,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_108FBF2B","path":"rooms/Rm_title/Rm_title.yy",},
     {"name":"inst_51E05DB9","path":"rooms/Rm_title/Rm_title.yy",},
     {"name":"inst_45E15ECF","path":"rooms/Rm_title/Rm_title.yy",},
-    {"name":"inst_108FBF2B","path":"rooms/Rm_title/Rm_title.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

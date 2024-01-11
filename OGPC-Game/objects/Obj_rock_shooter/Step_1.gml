@@ -4,7 +4,7 @@ y = d.y-16;
 
 if(instance_exists(Obj_player)){
 	if(Obj_player.x < x) image_yscale = -image_yscale;
-	if(point_direction(Obj_player.x,Obj_player.y,x,y)>100){
+	if(point_direction(Obj_player.x,Obj_player.y-16,x,y-16)>dist){
 		image_angle = point_direction(Obj_player.x,Obj_player.y,x,y);
 		countdown--;
 		if(countdown <= 0){
@@ -19,3 +19,6 @@ if(instance_exists(Obj_player)){
 		}
 	}
 }
+
+if(global.show_invis) visible = true;
+else visible = false;

@@ -18,4 +18,6 @@ global.battery = 0;
 global.show_hitboxes = false;
 global.show_invis = false;
 global.show_timer = false;
+global.show_lines = false;
+global.show_fps = false;
 scale = 2;

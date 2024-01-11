@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "commands",
-    "path": "folders/Scripts/console/commands.yy",
+    "name": "cheats",
+    "path": "folders/Scripts/console/commands/cheats.yy",
   },
 }

@@ -7,3 +7,4 @@ if(instance_exists(follow)){
 	y = follow.y + offset_y;
 	image_xscale = follow.image_xscale;
 }
+if(!instance_exists(Obj_melee_par)) instance_destroy();

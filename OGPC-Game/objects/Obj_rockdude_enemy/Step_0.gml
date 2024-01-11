@@ -17,7 +17,6 @@ switch(state){
 	break;
 	
 	case "stunned":
-		hsp = 0;
 		sprite_index = Spr_rockman_stunned;
 		stun_timer--;
 		if(stun_timer <=0){

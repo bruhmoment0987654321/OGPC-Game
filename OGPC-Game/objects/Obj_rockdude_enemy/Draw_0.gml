@@ -1,6 +1,7 @@
 event_inherited();
-	//draw_text(x,y-26,hp);
-	if(global.show_hitboxes){
-		draw_set_color(c_yellow);
-		draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true);
-	}
+if(global.show_lines){
+	if((point_direction(Obj_player.x,Obj_player.y,x,y) > dist)){
+		draw_set_color(c_red);
+	}else draw_set_color(c_lime);	
+	draw_line(Obj_player.x,Obj_player.y-16,x,y-16);
+}

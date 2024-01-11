@@ -13,9 +13,10 @@ jumped = false;
 hp = 80;
 state = "norm";
 flash = 0;
-stun_timer = 9;
-stun_amount = 9;
+stun_amount = 4;
+stun_timer = stun_amount;
 grounded = false;
 //rock variables
 rock_gun = instance_create_layer(x,y,"Guns",Obj_rock_shooter);	
 active = false;
+dist = 100;

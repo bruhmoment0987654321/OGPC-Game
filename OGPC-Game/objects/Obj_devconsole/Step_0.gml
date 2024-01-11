@@ -2,6 +2,7 @@ enable_key = keyboard_check_pressed(192);
 backspace = keyboard_check(vk_backspace);
 enter = keyboard_check_released(vk_enter);
 delete_ = keyboard_check(vk_delete);
+up_key = keyboard_check(vk_up)
 
 //console enabling
 if(enable_key) Console_enable();
@@ -13,10 +14,10 @@ if(!enable){
 }else global.cantpress = true;
 //backspacing
 if(backspace)&&(string_length(text_currentline) > 3){
-	if(erase >= 1){
+	if(erase >= 3){
 		text_currentline = string_copy(text_currentline,1,string_length(text_currentline)-1);
 		erase = 0;
-	}else erase ++;
+	}else erase = 3;
 }
 if(delete_)&&(string_length(text_currentline) > 3){
 	if(erase >= 1){
@@ -30,6 +31,11 @@ var command = "";
 var arg;
 arg[0] = "";
 var argCount = 0;
+
+//putting previous command
+if(up_key){
+	text_currentline = past_command;	
+}
 
 //execute command
 if(enter)&& (string_length(text_currentline) > 3){
@@ -69,6 +75,7 @@ if(enter)&& (string_length(text_currentline) > 3){
 	}
 	//execute 
 	if(script_exists(asset_get_index(command))){
+		past_command = text_currentline;
 		Log(text_currentline);
 		script_execute_ext(asset_get_index(command),arg);
 		
@@ -82,14 +89,13 @@ if(keyboard_lastkey != -1){
 		case vk_shift:
 		case vk_lshift:
 		case vk_rshift:
-		case enter:
-		case enable_key:
 		case vk_lalt:
 		case vk_alt:
 		case vk_control:
 		case vk_lcontrol:
 		case vk_rcontrol:
 		case vk_escape:
+		case vk_enter:
 		case vk_up:
 		case vk_down:
 		case vk_right:
@@ -107,7 +113,7 @@ if(keyboard_lastkey != -1){
 		case vk_f10:
 		case vk_f11:
 		case vk_f12:
-		case backspace:
+		case vk_backspace:
 			keyboard_lastkey = -1;
 			keyboard_lastchar = -1;
 			exit;
