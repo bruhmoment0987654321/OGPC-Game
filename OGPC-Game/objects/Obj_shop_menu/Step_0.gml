@@ -2,7 +2,7 @@ up = keyboard_check_pressed(vk_up);
 down = keyboard_check_pressed(vk_down);
 select = keyboard_check_pressed(vk_space);
 var s = id;
-if(global.cantpress){
+if(global.cantpress)||(global.cantpress_commands){
 	up = 0;
 	down = 0;
 	select = 0;

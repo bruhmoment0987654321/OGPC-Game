@@ -9,9 +9,9 @@ if(enable_key) Console_enable();
 
 //command handling
 if(!enable){ 
-	global.cantpress = false;
+	global.cantpress_commands = false;	
 	exit;
-}else global.cantpress = true;
+}else global.cantpress_commands = true;
 //backspacing
 if(backspace)&&(string_length(text_currentline) > 3){
 	if(erase >= 3){

@@ -6,7 +6,7 @@ jump = keyboard_check_pressed(vk_space);
 item_use = keyboard_check_pressed(ord("E"));
 open_up = keyboard_check_pressed(ord("Q"));
 restart = keyboard_check_pressed(ord("R"));
-if(global.cantpress){
+if(global.cantpress)||(global.cantpress_commands){
 	left = 0;
 	right = 0;
 	up = 0;
@@ -19,7 +19,9 @@ if(global.cantpress){
 if(restart){
 	game_restart();	
 }
+
 switch(state){
+	
 	case "normal":
 #region movement functions
 	var move = right-left;
@@ -77,19 +79,16 @@ switch(state){
 
 #region entering places
 //ladder
-if(place_meeting(x+hsp,y+vsp,Obj_ladder)){
-	on_ladder = true 
-	var move1 = down-up;
-	if(move1!=0){
-		vsp += move1*laddersp;
-		vsp = clamp(vsp,-(max_vsp*0.75),(max_vsp*0.75));
-	}else{
-		vsp = 0;	
-	}
+if(place_meeting(x,y,Obj_ladder)) && (up){
+	on_ladder = true;
+	inst = instance_place(x,y,Obj_ladder);
 }else{
 	on_ladder = false	
 }
 
+if(on_ladder){
+	state = "ladder";	
+}
 //shop door
 if(up && place_meeting(x,y,Obj_shop_door)){
 	room_goto(Rm_shop);
@@ -131,6 +130,47 @@ if(open_up)&&(place_meeting(x,y,Obj_chest)){
 #endregion
 	break;
 	
+	case "ladder":	
+		x = inst.x+16
+		on_ground = false;
+		
+		var move1 = down-up;
+		if(move1!=0){
+			vsp += move1*laddersp;
+			vsp = clamp(vsp,-(max_vsp*0.75),(max_vsp*0.75));
+		}else{
+			vsp = 0;	
+		}
+		if(jump){
+			vsp -= jump_sp;	
+			jumped = true;
+			state = "normal";	
+		}
+		if(!place_meeting(x,y,Obj_ladder)){
+			state = "normal";	
+		}
+		#region collisions 
+		//horizontal collision
+		if(place_meeting(x+hsp, y,Obj_solid))
+		{
+		    while(!place_meeting(x+sign(hsp),y,Obj_solid)){
+		        x+= sign(hsp);
+		    }
+		    hsp = 0;
+		}
+		x += hsp;
+
+		//vertical collision
+		if(place_meeting(x, y+vsp, Obj_solid)){
+		    while(!place_meeting(x,y+sign(vsp),Obj_solid)){
+		        y += sign(vsp);
+		    }
+		    vsp = 0;
+		}
+
+		y += vsp;
+	#endregion
+	break;
 	case "dead":
 	global.cantpress = true;
 		if(!sound){

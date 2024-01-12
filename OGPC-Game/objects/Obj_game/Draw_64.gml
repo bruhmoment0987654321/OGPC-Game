@@ -21,5 +21,5 @@ if(global.show_timer){
 }
 if(global.show_fps){
 	draw_set_color(c_green);
-	draw_text(500,50,fps);	
+	draw_text(500,50,"FPS: " + string(fps));	
 }
