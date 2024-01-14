@@ -17,7 +17,7 @@ if(backspace)&&(string_length(text_currentline) > 3){
 	if(erase >= 3){
 		text_currentline = string_copy(text_currentline,1,string_length(text_currentline)-1);
 		erase = 0;
-	}else erase = 3;
+	}else erase++;
 }
 if(delete_)&&(string_length(text_currentline) > 3){
 	if(erase >= 1){

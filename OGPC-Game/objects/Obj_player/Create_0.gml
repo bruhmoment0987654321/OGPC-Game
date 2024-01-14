@@ -17,7 +17,8 @@ jumped = true;
 on_ground = false;
 //health variables
 invincible = false;
-dont_die = false;
+dont_die = false; //for cheat
+death_timer = 100;
 //gun varibles
 which_weapon = noone; 
 //state variable

@@ -95,6 +95,8 @@ if(text_pause_timer <= 0){
 if(next_page){
 	//if text is done typing
 	if(draw_char == text_length[page]){
+		//show icon
+		draw_sprite(Spr_text_click,0,x+width-50,y+height-50);
 		//go to next page
 		if(page < page_number-1){
 			page++;
@@ -114,6 +116,7 @@ if(next_page){
 //draw the text box
 draw_sprite_ext(sprite_index,image_index,x,y,width/sprite_width,height/sprite_height,0,c_white,1);
 
+draw_sprite(Spr_text_click,0,sprite_width-50,sprite_height-50);
 //draw text
 for(var t = 0; t < draw_char; t++){
 	//cool effects
@@ -143,4 +146,8 @@ for(var t = 0; t < draw_char; t++){
 	
 	//the text
 	draw_text_transformed_color(char_x[t][page]+shake_x,char_y[t][page]+shake_y+float_y,char[t][page],scale,scale,0,col_1[t][page],col_2[t][page],col_3[t][page],col_4[t][page],1);
+}
+if(draw_char == text_length[page]){
+	//show icon
+	draw_sprite(Spr_text_click,0,x+width-35,y+height-25);
 }

@@ -13,7 +13,7 @@ jumped = false;
 hp = 80;
 state = "norm";
 flash = 0;
-stun_amount = 4;
+stun_amount = 3;
 stun_timer = stun_amount;
 grounded = false;
 //rock variables

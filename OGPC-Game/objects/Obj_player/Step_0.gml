@@ -5,6 +5,7 @@ down = keyboard_check(ord("S"));
 jump = keyboard_check_pressed(vk_space);
 item_use = keyboard_check_pressed(ord("E"));
 open_up = keyboard_check_pressed(ord("Q"));
+ladder_up = keyboard_check_pressed(ord("W"));
 restart = keyboard_check_pressed(ord("R"));
 if(global.cantpress)||(global.cantpress_commands){
 	left = 0;
@@ -21,7 +22,6 @@ if(restart){
 }
 
 switch(state){
-	
 	case "normal":
 #region movement functions
 	var move = right-left;
@@ -79,7 +79,7 @@ switch(state){
 
 #region entering places
 //ladder
-if(place_meeting(x,y,Obj_ladder)) && (up){
+if(place_meeting(x,y,Obj_ladder)) && (ladder_up){
 	on_ladder = true;
 	inst = instance_place(x,y,Obj_ladder);
 }else{
@@ -172,13 +172,22 @@ if(open_up)&&(place_meeting(x,y,Obj_chest)){
 	#endregion
 	break;
 	case "dead":
-	global.cantpress = true;
+		global.cantpress = true;
+		hsp = 0;
+		vsp = 0;
 		if(!sound){
 			audio_play_sound(Snd_Death_scream,10,false);
 			sound = true;
 		}
 		image_alpha -= 0.03;
-		instance_destroy(which_weapon)
+		instance_destroy(which_weapon);
+		death_timer--;
+		if(death_timer <= 0){
+			var _x = camera_get_view_x(view_camera[0]);
+			var _y = camera_get_view_y(view_camera[0]);
+			layer_sequence_create("Game_over",_x,_y,Sq_game_over);
+			
+		}
 	break;
 }
 

@@ -1,6 +1,6 @@
 vsp += global.grv;
 timer--;
-if(place_meeting(x,y,Obj_caveman_enemy)){
+if(place_meeting(x,y,Obj_caveman)){
 	timer = 0;	
 }
 

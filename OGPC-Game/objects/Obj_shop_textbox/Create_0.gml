@@ -25,7 +25,7 @@ char[0][0] = "";
 char_x[0][0] = 0;
 char_y[0][0] = 0;
 draw_char = 0;
-text_spd = 1;
+text_spd = 0.3;
 setup = false;
 
 //sound
@@ -34,5 +34,5 @@ snd_count = snd_delay;
 //effects
 Set_defaults_for_text();
 last_free_space = 0;
-text_pause_time = 16;
+text_pause_time = 7;
 text_pause_timer = 0;

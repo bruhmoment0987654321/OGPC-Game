@@ -13,9 +13,6 @@ width = (new_w + op_border*2)*scale;
 x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2-width/2;
 y = camera_get_view_y(view_camera[0]) + camera_get_view_width(view_camera[0])/2-height;
 
-//menu background
-//draw_sprite_ext(sprite_index,image_index,x,y,width/sprite_width,height/sprite_height,0,c_white,alpha);
-
 //setting up the text
 draw_set_colour(c_white);
 draw_set_valign(fa_top);

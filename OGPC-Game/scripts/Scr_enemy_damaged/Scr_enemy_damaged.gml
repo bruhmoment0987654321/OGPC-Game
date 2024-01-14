@@ -1,3 +1,4 @@
+///@param instakill
 ///@param damage_amount
 ///@param knockback_amount
 ///@param attacker
