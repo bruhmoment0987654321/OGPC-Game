@@ -2,7 +2,7 @@ if(room == Rm_level1){
 	if(!instance_exists(Obj_caveman)){
 		level_completed = true;
 		if(create_end_level){
-			instance_create_depth(721,486,-999999,Obj_level_end);
+			instance_create_depth(735,139,-999999,Obj_level_end);
 			create_end_level = false;
 		}
 	}

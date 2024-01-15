@@ -1,0 +1,1 @@
+Player_attacked(damage,0);

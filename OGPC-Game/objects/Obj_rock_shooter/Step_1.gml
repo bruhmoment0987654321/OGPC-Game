@@ -1,4 +1,4 @@
-var d = Obj_rockdude_enemy.id;
+var d = Obj_rockman.id;
 x = d.x;
 y = d.y-16;
 
