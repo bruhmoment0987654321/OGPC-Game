@@ -10,7 +10,7 @@ function help(){
 	Log("chug_jug - max health and shield"); 
 	Log("demoman - max bombs"); //done
 	Log("money_up - 999999 money");//done
-	Log("dist_look - look at some of the distances for enemy detection");
+	Log("hard_mode - lose all your shield and have 1 hp")
 	Log("get_batt - get a battery, the main objective");//done
 	Log("show_fps - show frames per second");
 	Log("tele - telport anywhere in the room");

@@ -1,4 +1,4 @@
-destroy_timer_amount = 60;
+destroy_timer_amount = 45;
 destroy_timer = destroy_timer_amount;
 destroy_limit = 2;
 

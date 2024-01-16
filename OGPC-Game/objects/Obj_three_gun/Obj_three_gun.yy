@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Obj_three_gun",
+  "spriteId": {
+    "name": "Spr_three_gun",
+    "path": "sprites/Spr_three_gun/Spr_three_gun.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Obj_gun_par",
+    "path": "objects/Obj_gun_par/Obj_gun_par.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"15",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"10",},
+  ],
+  "parent": {
+    "name": "Guns",
+    "path": "folders/Objects/Player/weapons/Guns.yy",
+  },
+}

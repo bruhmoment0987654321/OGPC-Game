@@ -1,30 +1,22 @@
 vsp += global.grv;
 timer--;
-if(place_meeting(x,y,Obj_caveman)){
+if(place_meeting(x,y,Obj_enemy_par)){
 	timer = 0;	
+}
+//friction
+if(abs(hsp)>0.1){
+	hsp = max(0,abs(hsp) - fric) * sign(hsp)
+}else{
+	hsp = 0;	
 }
 
 if(timer <= 0){
 	instance_create_layer(x,y,"Bullets",Obj_explosion);
 	instance_destroy();	
 }
+//bouncing
+if(place_meeting(x+hsp,y,Obj_solid)) hsp *= -bounce_decay;
+if(place_meeting(x,y+vsp,Obj_solid)) vsp *= -bounce_decay;
 #region collisions
-	//horizontal collision
-	if(place_meeting(x+hsp, y,Obj_solid)){
-	    while(!place_meeting(x+sign(hsp),y,Obj_solid)){
-	        x+= sign(hsp);
-	    }
-	    hsp = 0;
-	}
-	x += hsp;
-
-	//vertical collision
-	if(place_meeting(x, y+vsp, Obj_solid)){
-	    while(!place_meeting(x,y+sign(vsp),Obj_solid)){
-	        y += sign(vsp);
-	    }
-	    vsp = 0;
-	}
-
-	y += vsp;
+	collision(true,true);
 #endregion

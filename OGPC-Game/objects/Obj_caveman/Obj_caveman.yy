@@ -38,7 +38,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "caveman",
+    "path": "folders/Objects/enemies/caveman.yy",
   },
 }

@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "rockman",
+    "path": "folders/Objects/enemies/rockman.yy",
   },
 }

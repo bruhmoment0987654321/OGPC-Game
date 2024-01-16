@@ -1,10 +1,13 @@
 if(open){
 	if(!triggered){
-		repeat(3){
-			if(loot == 1) instance_create_layer(x,y-16,"Items",Obj_bomb_pickup);
-			if(loot == 2) instance_create_layer(x,y-16,"Items",Obj_shield);
-			if(loot == 3) instance_create_layer(x,y-16,"Items",Obj_metal_currency);	
-			loot = choose(1,1,1,2,2,3,3,3);
+		if(item_count <= item_amount){
+			Chest_chance(0.8,Obj_shield);
+			Chest_chance(0.6,Obj_metal_currency);
+			Chest_chance(0.6,Obj_bomb_pickup);
+			Chest_chance(0.2,Obj_bonkstick_pickup);
+			Chest_chance(0.4,Obj_cannon_pickup);
+			Chest_chance(0.3,Obj_threegun_pickup);
+			Chest_chance(0.1,Obj_grenade_pickup);
 		}
 	}
 	triggered = true;

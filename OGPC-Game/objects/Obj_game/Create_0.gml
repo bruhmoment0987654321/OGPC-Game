@@ -1,6 +1,5 @@
 level_completed = false;
 create_end_level = true;
-draw_tryagain = false;
 //money
 global.money = 0;
 //bomb variables
@@ -18,9 +17,8 @@ global.battery = 0;
 global.show_hitboxes = false;
 global.show_invis = false;
 global.show_timer = false;
-global.show_lines = false;
 global.show_fps = false;
-//can't press commands
+//can't press any buttons
 global.cantpress = false;
 global.cantpress_commands = false;
 scale = 2;

@@ -16,6 +16,7 @@ if(global.hp > 0)&&(instance_exists(Obj_player)){
 			draw_text_transformed(50,90,"Money: "+ string(global.money),scale,scale,0);	
 		}
 	}
+	
 }
 if(global.show_timer){
 	draw_set_color(c_black);

@@ -14,6 +14,7 @@ direction = (round(dir/45)*45);
 #endregion
 
 if(any)&&(delay_timer<=0){
+	burst_dir = direction;
 	Scr_shoot_bullets();
 	delay_timer = delay;
 }

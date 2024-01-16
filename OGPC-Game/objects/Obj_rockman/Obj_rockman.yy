@@ -10,8 +10,8 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "Spr_caveman",
-    "path": "sprites/Spr_caveman/Spr_caveman.yy",
+    "name": "Spr_rockman",
+    "path": "sprites/Spr_rockman/Spr_rockman.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -39,7 +39,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "rockman",
+    "path": "folders/Objects/enemies/rockman.yy",
   },
 }
