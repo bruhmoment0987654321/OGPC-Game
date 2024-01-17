@@ -42,10 +42,8 @@ if(select){
 					active = false;
 				}
 			break;
-			//sound
-			case 1: break;
 			//go back
-			case 2: menu_level = 0; break;
+			case 1: menu_level = 0; break;
 		}
 		
 	}

@@ -97,7 +97,7 @@ if(up && place_meeting(x,y,Obj_shop_door)){
 
 #region item usage
 if(item_use)&&(global.bomb_amount > 0){
-	instance_create_layer(x,y,"Bullets",Obj_bomb);
+	instance_create_layer(x,y-16,"Bullets",Obj_bomb);
 	global.bomb_amount -= 1;	
 }
 if(open_up)&&(place_meeting(x,y,Obj_chest)){

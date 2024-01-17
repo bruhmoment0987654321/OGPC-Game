@@ -58,7 +58,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 5,
+    "xorigin": 6,
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -70,6 +70,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Guns",
-    "path": "folders/Sprites/items/weapon/Guns.yy",
+    "path": "folders/Sprites/player/weapon/Guns.yy",
   },
 }

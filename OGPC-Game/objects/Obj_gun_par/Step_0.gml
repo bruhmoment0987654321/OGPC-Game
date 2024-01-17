@@ -18,6 +18,33 @@ if(any)&&(delay_timer<=0){
 	Scr_shoot_bullets();
 	delay_timer = delay;
 }
+#region animation curve for gun recoil
+switch(object_index){
+	case Obj_arm_gun: curve_type = A_armgun; break;
+	case Obj_cannon: curve_type = A_cannon; break;
+	case Obj_three_gun: curve_type = A_threegun break;
+	case Obj_grenade_launcher: curve_type = A_grenade; break;
+}
+curve_pos += curve_spd;
+
+var curveStruct = animcurve_get(curve_type);
+//change gun's angle
+var channel = animcurve_get_channel(curveStruct,"angle");
+var angvalue = animcurve_channel_evaluate(channel,curve_pos);
+_img_angle = image_angle - (angvalue*sign(image_yscale));
+
+//move gun's x position
+var channel = animcurve_get_channel(curveStruct,"x");
+var xvalue = animcurve_channel_evaluate(channel,curve_pos);
+_x = x + lengthdir_x(xvalue,_img_angle);
+
+//reset animation curve position
+if(curve_pos >= 1){
+	curve_spd = 0;
+	curve_pos = 0;
+	curve_type = noone;
+}
+#endregion
 if(instance_exists(Obj_player)){
 
 	if(Obj_player.image_xscale > 0){

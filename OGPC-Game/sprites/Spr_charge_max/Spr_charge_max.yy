@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "fx",
-    "path": "folders/Sprites/fx.yy",
+    "name": "weapon charge",
+    "path": "folders/Sprites/fx/weapon charge.yy",
   },
 }

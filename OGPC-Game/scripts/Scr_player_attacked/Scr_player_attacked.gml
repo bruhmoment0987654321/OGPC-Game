@@ -7,6 +7,7 @@ function Player_attacked(_damage,_knockback){
 				if(global.shield > 0) global.shield -= _damage;	else global.hp -= _damage;
 				state = "normal";
 				invincible = true;
+				Screenshake(5,15);
 				alarm[0] = 60;
 			}
 			hsp += _knockback;	

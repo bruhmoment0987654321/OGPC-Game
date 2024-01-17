@@ -1,3 +1,4 @@
+Screenshake(3,10)
 if(which_item == 0){
 	instance_create_layer(x,y-32,"Items",Obj_bomb_pickup);	
 }else if(which_item == 1){

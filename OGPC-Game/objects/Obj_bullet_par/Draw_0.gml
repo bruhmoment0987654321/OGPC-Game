@@ -1,3 +1,4 @@
+image_angle = direction;
 draw_self();
 if(global.show_hitboxes){
 	draw_set_color(c_yellow);

@@ -73,6 +73,6 @@
   "nineSlice": null,
   "parent": {
     "name": "stick",
-    "path": "folders/Sprites/items/weapon/Melee/stick.yy",
+    "path": "folders/Sprites/player/weapon/Melee/stick.yy",
   },
 }
