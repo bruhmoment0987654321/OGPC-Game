@@ -6,7 +6,7 @@
     "name": "Spr_breakable_solid",
     "path": "sprites/Spr_breakable_solid/Spr_breakable_solid.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

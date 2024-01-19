@@ -2,7 +2,7 @@ left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
-any = left||right||up||down;
+var any = left||right||up||down;
 
 delay_timer--;
 
@@ -12,7 +12,9 @@ var ver_shot = down-up;
 dir = point_direction(0,0,hor_shot,ver_shot);
 direction = (round(dir/45)*45);
 #endregion
-
+if(global.cantpress)||(global.cantpress_commands){
+	any = 0;	
+}
 if(any)&&(delay_timer<=0){
 	burst_dir = direction;
 	Scr_shoot_bullets();

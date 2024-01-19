@@ -17,7 +17,7 @@ repeat(3){
 }
 
 //create debris
-repeat(irandom_range(3,5)){
+repeat(irandom_range(2,4)){
 	with(instance_create_layer(x,y,"FX",Obj_gun_fx)){
 		sprite_index = Spr_sam_debris;
 		image_index = irandom_range(0,image_number-1);

@@ -8,7 +8,7 @@ if(global.show_hitboxes){
 	draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true);
 }
 if(flash>0){
-	shader_set(Sh_White);
+	shader_set(Sh_red);
 	draw_self();
 	shader_reset();
 }

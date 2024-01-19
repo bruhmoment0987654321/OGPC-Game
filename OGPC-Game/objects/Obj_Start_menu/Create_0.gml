@@ -8,8 +8,6 @@ op_space = 32;
 
 pos = 0;
 
-active = false;
-
 #region text for the menu
 //main menu
 options[0][0] = "Start";

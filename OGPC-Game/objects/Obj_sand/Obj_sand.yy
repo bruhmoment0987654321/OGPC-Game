@@ -6,7 +6,7 @@
     "name": "Spr_sand_block",
     "path": "sprites/Spr_sand_block/Spr_sand_block.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

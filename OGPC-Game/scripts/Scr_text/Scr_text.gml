@@ -21,7 +21,7 @@ function Set_defaults_for_text(){
 		shake_dir[i][page_number] = irandom(360);
 		shake_timer[i][page_number] = irandom(4);
 	}
-	snd[page_number] = Snd_caveman;
+	snd[page_number] = Snd_caveman_talk;
 }
 //text vfx
 
@@ -77,7 +77,7 @@ function Text(_text){
 	if(argument_count > 1){
 		switch(argument[1]){
 			case "caveman":
-				snd[page_number] = Snd_caveman;
+				snd[page_number] = Snd_caveman_talk;
 			break;
 			
 			case "":

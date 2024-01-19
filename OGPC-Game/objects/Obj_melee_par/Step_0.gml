@@ -8,6 +8,12 @@ left_released = keyboard_check_released(vk_left);
 right_released = keyboard_check_released(vk_right);
 
 var anykey = left||right||up||down||left_hold||right_hold;
+
+if(global.cantpress)||(global.cantpress_commands){
+	anykey = 0;
+	left_released = 0;
+	right_released = 0;
+}
 if(Obj_player.image_xscale = 1) front = 1; else front = -1; 
 if(anykey){
 	if(!is_swinging){

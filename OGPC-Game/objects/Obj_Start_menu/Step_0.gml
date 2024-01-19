@@ -33,15 +33,7 @@ if(select){
 		case 1:
 		switch(pos){
 			//go fullscreen
-			case 0:
-				if(!active){
-					window_set_fullscreen(true);
-					active = true;
-				}else{
-					window_set_fullscreen(false);
-					active = false;
-				}
-			break;
+			case 0: window_set_fullscreen(!window_get_fullscreen()); break;
 			//go back
 			case 1: menu_level = 0; break;
 		}
