@@ -18,5 +18,5 @@ grounded = false;
 //shoot variables
 countdown_rate = 40;
 countdown = countdown_rate;
-spd = 10;
+spd = 11;
 dist = 250;

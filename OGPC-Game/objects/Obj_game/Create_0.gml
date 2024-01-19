@@ -1,5 +1,6 @@
 level_completed = false;
 create_end_level = true;
+
 //money
 global.money = 0;
 //bomb variables
