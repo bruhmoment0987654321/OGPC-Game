@@ -155,18 +155,6 @@ if(open_up)&&(place_meeting(x,y,Obj_chest)){
 	break;
 }
 
-#region fly timer
-	if(hsp == 0){
-		fly_timer--;	
-	}else{
-		fly_timer = fly_timer_max;	
-	}
-	if(fly_timer <= 0){
-		Spawn_off_camera(Obj_fly);
-		fly_timer = fly_timer_max/2;
-	}
-#endregion
-
 #region animations
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion

@@ -29,8 +29,5 @@ on_ladder = false;
 inst = noone;
 //sound variables
 sound = false;
-//fly variables so the player can't stay still
-fly_timer_max = 10*60;
-fly_timer = fly_timer_max;
 
 randomize();

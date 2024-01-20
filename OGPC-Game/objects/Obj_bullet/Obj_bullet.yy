@@ -29,6 +29,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_solid","path":"objects/Obj_solid/Obj_solid.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_flytrap","path":"objects/Obj_flytrap/Obj_flytrap.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],

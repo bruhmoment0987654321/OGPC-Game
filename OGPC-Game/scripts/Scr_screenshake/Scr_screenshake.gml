@@ -11,6 +11,7 @@ function Screenshake(_magnitude,_frames){
 				shake_magnitude = _magnitude;
 				shake_remain = _magnitude;
 				shake_length = _frames;
+				shake_angle = _magnitude/3
 			}
 		}
 	}

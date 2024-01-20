@@ -1,5 +1,7 @@
-hsp = 0;
-vsp = 0;
-spd = 0.07;
-limit_speed = true;
-max_sp = 2.5;
+// Inherit the parent event
+event_inherited();
+spd = 0.1;
+decrease = 0.8;
+max_sp = 2.2;
+follow = Obj_flytrap;
+
