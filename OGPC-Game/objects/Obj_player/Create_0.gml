@@ -1,5 +1,7 @@
-//global variables
+//gravity variables
 global.grv = 0.3;
+fall_muliplied = 1.1;
+fall_sp = 1;
 //movement variables
 hsp = 0;
 vsp = 0;
@@ -29,5 +31,4 @@ on_ladder = false;
 inst = noone;
 //sound variables
 sound = false;
-
 randomize();

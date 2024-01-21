@@ -10,18 +10,24 @@ delay_timer--;
 var hor_shot = right-left;
 var ver_shot = down-up;
 dir = point_direction(0,0,hor_shot,ver_shot);
+if instance_exists(Obj_cam) {
+	with(Obj_cam){
+		aim_x = hor_shot;	
+		aim_y = ver_shot;
+	}
+}
 direction = (round(dir/45)*45);
 #endregion
-if(global.cantpress)||(global.cantpress_commands){
+if global.cantpress || global.cantpress_commands {
 	any = 0;	
 }
-if(any)&&(delay_timer<=0){
+if any && delay_timer<=0 {
 	burst_dir = direction;
 	Scr_shoot_bullets();
 	delay_timer = delay;
 }
 #region animation curve for gun recoil
-switch(object_index){
+switch object_index {
 	case Obj_arm_gun: curve_type = A_armgun; break;
 	case Obj_cannon: curve_type = A_cannon; break;
 	case Obj_three_gun: curve_type = A_threegun break;

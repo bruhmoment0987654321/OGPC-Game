@@ -1,17 +1,19 @@
-if(instance_exists(follow)){
+if instance_exists(follow){
 	xTo = follow.x+camera_offset_x;
 	yTo = follow.y+camera_offset_y;
 	angleTo = follow.image_angle;
 }
 
 //follow the target at a certain speed
-x += (xTo - x)/cam_spd;
-y += (yTo - y)/cam_spd;
+x += ((xTo - x)/cam_spd)+aim_x*aim_amount;
+y += (yTo - y)/cam_spd+aim_y*aim_amount;
 image_angle = (angleTo-image_angle)/cam_spd;
 
 //keep camera inside room
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff);
+
+//aim influence
 
 //screen shake
 x += random_range(-shake_remain,shake_remain);

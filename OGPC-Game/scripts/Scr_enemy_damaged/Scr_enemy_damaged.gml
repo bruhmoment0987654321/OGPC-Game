@@ -35,7 +35,7 @@ function Enemy_damaged(_insta_kill,_damage_amount,_knockback,_attacker,_stunned)
 					if(_stunned) other.state = "stunned";
 					else if(argument_count > 5) other.state = argument[5];
 				}
-				if(variable_instance_exists(other,hsp)){
+				if(variable_instance_exists(other,other.hsp)){
 					other.hsp += _knockback;	
 				}
 			break;
