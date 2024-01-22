@@ -21,4 +21,6 @@ flash = 0;
 stun_timer = 9;
 stun_amount = 9;
 grounded = false;
-
+//sound variables
+hurt_sound[0] = Snd_Caveman_hurt;
+hurt_sound[1] = Snd_Caveman_hurt2;

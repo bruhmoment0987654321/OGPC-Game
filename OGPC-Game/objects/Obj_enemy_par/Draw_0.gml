@@ -1,4 +1,4 @@
-draw_self();
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*xscale,image_yscale*yscale,image_angle,image_blend,image_alpha);
 if(global.show_timer){
 	draw_set_color(c_black);
 	draw_text(x,y-26,"Hp: " + string(hp));
@@ -9,6 +9,6 @@ if(global.show_hitboxes){
 }
 if(flash>0){
 	shader_set(Sh_red);
-	draw_self();
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*xscale,image_yscale*yscale,image_angle,image_blend,image_alpha);
 	shader_reset();
 }

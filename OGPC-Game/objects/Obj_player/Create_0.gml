@@ -31,4 +31,7 @@ on_ladder = false;
 inst = noone;
 //sound variables
 sound = false;
+//animation variables
+xscale = 1;
+yscale = 1;
 randomize();

@@ -1,9 +1,9 @@
 var interval = 12;
 if((alarm[0] % interval)<= interval/2){
-	draw_self();
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*xscale,image_yscale*yscale,image_angle,image_blend,image_alpha);
 }else{
 	shader_set(Sh_White);
-	draw_self();
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*xscale,image_yscale*yscale,image_angle,image_blend,image_alpha);
 	shader_reset();
 }
 if(global.show_hitboxes){

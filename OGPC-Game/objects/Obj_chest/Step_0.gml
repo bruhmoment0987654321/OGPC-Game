@@ -8,9 +8,15 @@ if(open){
 			Chest_chance(0.4,Obj_cannon_pickup);
 			Chest_chance(0.3,Obj_threegun_pickup);
 			Chest_chance(0.1,Obj_grenade_pickup);
+			Gummy(1.3,0.8)
 		}
 	}
 	triggered = true;
 	image_index = 1;
 	image_blend = c_gray;
 }
+
+#region animation
+	xscale = Approach(xscale,1,0.05);
+	yscale = Approach(yscale,1,0.05);
+#endregion

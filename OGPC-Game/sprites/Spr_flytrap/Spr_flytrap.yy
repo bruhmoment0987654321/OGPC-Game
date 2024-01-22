@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "flytrap n flies",
+    "path": "folders/Sprites/enemies/flytrap n flies.yy",
   },
 }

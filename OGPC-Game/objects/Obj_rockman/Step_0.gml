@@ -8,14 +8,17 @@ switch(state){
 		&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "shoot";
 		
 		hsp = walk_sp*image_xscale;
+		
 		if(place_meeting(x+hsp,y,Obj_solid)){
 			hsp = -hsp;	
 		}
+		
 		if(place_meeting(x,y+1,Obj_solid)){
 			grounded = true;	
 		}else{
 			grounded = false;	
 		}
+		
 		if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
 			hsp = -hsp;
 		}

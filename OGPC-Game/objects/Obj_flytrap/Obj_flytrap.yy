@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "flytrap_and_flys",
+    "path": "folders/Objects/enemies/flytrap_and_flys.yy",
   },
 }

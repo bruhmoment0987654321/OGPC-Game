@@ -38,7 +38,8 @@ switch(state){
 			}
 			if(!on_ladder){
 				if(vsp > 0){
-					fall_sp = fall_muliplied;	
+					fall_sp = fall_muliplied;
+					
 				}
 				vsp += global.grv*fall_sp;
 			}
@@ -49,7 +50,12 @@ switch(state){
 			if(place_meeting(x,y+1,Obj_solid)){
 				on_ground = true;
 			}else{
-				on_ground = false;	
+				on_ground = false;
+				if(vsp < 0){
+					Gummy(0.8,1.2);
+				}else{
+					Gummy(1.25,0.9);	
+				}
 			}
 	
 			if(!on_ground){
@@ -65,6 +71,7 @@ switch(state){
 			}else{
 				jumped = false;
 				coyote_timer = coyote_time_amount;
+				
 			}
 	
 			if(jump){
@@ -185,5 +192,9 @@ switch(state){
 }
 
 #region animations
+	//gummmy animation
+	xscale = Approach(xscale,1,0.05);
+	yscale = Approach(yscale,1,0.05);
+	
 	if(hsp != 0) image_xscale = sign(hsp);
 #endregion
