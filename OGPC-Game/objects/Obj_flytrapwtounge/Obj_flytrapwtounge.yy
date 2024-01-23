@@ -39,7 +39,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"knockb","path":"objects/Obj_enemy_par/Obj_enemy_par.yy",},"objectId":{"name":"Obj_enemy_par","path":"objects/Obj_enemy_par/Obj_enemy_par.yy",},"value":"0",},
   ],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
 }

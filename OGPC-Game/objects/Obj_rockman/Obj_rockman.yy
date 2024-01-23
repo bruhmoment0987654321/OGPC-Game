@@ -41,6 +41,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "rockman",
-    "path": "folders/Objects/enemies/rockman.yy",
+    "path": "folders/Objects/Enemies/rockman.yy",
   },
 }
