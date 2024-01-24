@@ -13,12 +13,6 @@ switch(state){
 			hsp = -hsp;	
 		}
 		
-		if(place_meeting(x,y+1,Obj_solid)){
-			grounded = true;	
-		}else{
-			grounded = false;	
-		}
-		
 		if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
 			hsp = -hsp;
 		}
@@ -54,19 +48,17 @@ switch(state){
 		instance_destroy();
 	break;
 }
-	
-if(place_meeting(x,y+1,Obj_solid)){
-	grounded = false;	
-}else{
-	grounded = true;	
-}
 
 if(hp <= 0){
 	state = "dead";	
 }
 
 vsp += global.grv;
-
+if(place_meeting(x,y+1,Obj_solid)){
+	grounded = true;	
+}else{
+	grounded = false;	
+}
 #region collisions
 	collision(true,true);
 #endregion

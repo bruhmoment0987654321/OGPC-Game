@@ -17,7 +17,6 @@ tween_speed = 0.3;
 //other variables
 hp = 100;
 state = "norm";
-flash = 0;
 stun_timer = 9;
 stun_amount = 9;
 grounded = false;

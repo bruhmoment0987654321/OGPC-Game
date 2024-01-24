@@ -4,6 +4,7 @@ hp = 100;
 state = "norm";
 king_fly = instance_create_layer(x+10*choose(-1,1),y+15*choose(-1,1),"Enemy",Obj_kingfly);
 fly_count = irandom_range(6,12);
+fly_count_max = 50;
 spawn_timer_max = 200;
 spawn_timer = spawn_timer_max;
 with(king_fly){
@@ -14,5 +15,3 @@ with(king_fly){
 		}
 	}
 }	
-flash = 0;
-which_item = irandom_range(0,2);

@@ -1,11 +1,9 @@
+// Inherit the parent event
+event_inherited();
 with(king_fly){
-	follow = Obj_player;	
-}
-Screenshake(3,10)
-if(which_item == 0){
-	instance_create_layer(x,y-32,"Items",Obj_bomb_pickup);	
-}else if(which_item == 1){
-	instance_create_layer(x,y-16,"Items",Obj_shield);
-}else if(which_item == 2){
-	instance_create_layer(x,y-16,"Items",Obj_metal_currency);
+	follow = Obj_player;
+	if(!variable_instance_exists(self,"fly_count")){
+		fly_count = other.fly_count;
+		fly_count_max = other.fly_count_max;
+	}
 }

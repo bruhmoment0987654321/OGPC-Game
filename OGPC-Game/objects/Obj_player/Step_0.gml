@@ -122,6 +122,9 @@ switch(state){
 		#region collisions
 			collision(true,true);
 		#endregion
+		
+		//sprite 
+		sprite_index = Spr_player;
 	break;
 	#endregion
 	
@@ -187,6 +190,13 @@ switch(state){
 		case "stuck":
 			hsp = 0;
 			vsp = 0;
+		break;
+	#endregion
+	
+	#region pinned down state
+		case "pinned":
+			hsp = 0;
+			sprite_index = Spr_player_pinned;
 		break;
 	#endregion
 }
