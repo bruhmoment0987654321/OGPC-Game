@@ -11,6 +11,7 @@ if instance_exists(near_flytrap) {
 			with instance_create_layer(x+random_range(-5,5),y+random_range(-5,5),"Enemy",Obj_fly){
 				follow = other;	
 			}
+			spawn_timer = spawn_timer_max
 		}
 	}
 }

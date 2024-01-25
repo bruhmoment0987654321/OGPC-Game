@@ -36,7 +36,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "corseplant_and_flys",
-    "path": "folders/Objects/Enemies/corseplant_and_flys.yy",
+    "name": "corpseplant_and_flys",
+    "path": "folders/Objects/Enemies/corpseplant_and_flys.yy",
   },
 }
