@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Initialize_room",
+  "name": "Scr_Initialize_room",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "room generator",
+    "path": "folders/Scripts/room generator.yy",
   },
 }

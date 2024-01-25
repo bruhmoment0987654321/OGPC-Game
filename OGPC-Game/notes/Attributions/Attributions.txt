@@ -1,2 +1,4 @@
+Procederual (idk how to spell) generation: How Spelunky does it.
+Go check out the game, our procederal generation comes from that game.
 Attributions:
 The font we used: Silver by Poppy Works
