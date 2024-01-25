@@ -34,4 +34,3 @@ sound = false;
 //animation variables
 xscale = 1;
 yscale = 1;
-randomize();

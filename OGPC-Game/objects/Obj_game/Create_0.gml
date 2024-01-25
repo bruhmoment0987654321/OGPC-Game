@@ -25,3 +25,4 @@ global.cantpress_commands = false;
 scale = 2;
 
 window_set_caption("Project: Time?");
+randomize();
