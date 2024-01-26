@@ -3,12 +3,12 @@ depth = -9999;
 width = 576;
 height = 160;
 
-border = 22;
+Border = 22;
 space = 14;
 
 scale = 2;
 
-line_width = (width/scale) - border*2;
+line_width = (width/scale) - Border*2;
 
 global.cantpress = true;
 with(Obj_shop_menu){

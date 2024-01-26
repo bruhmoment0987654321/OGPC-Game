@@ -44,8 +44,8 @@ if(!setup){
 		for(var j = 0; j < text_length[i]; j++){
 			var char_pos = j+1;
 			//coordinates
-			var text_x = x + border;
-			var text_y = y + border;
+			var text_x = x + Border;
+			var text_y = y + Border;
 			
 			//get current width of line
 			var text_up_to_char = string_copy(text[i],1,char_pos);

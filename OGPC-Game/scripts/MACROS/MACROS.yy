@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_start_over",
+  "name": "MACROS",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
