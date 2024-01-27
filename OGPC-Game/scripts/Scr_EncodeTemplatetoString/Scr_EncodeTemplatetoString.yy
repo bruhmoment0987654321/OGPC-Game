@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "room generator",
-    "path": "folders/Scripts/room generator.yy",
+    "name": "turn rooms into strings",
+    "path": "folders/Scripts/essencial/level generation/turn rooms into strings.yy",
   },
 }

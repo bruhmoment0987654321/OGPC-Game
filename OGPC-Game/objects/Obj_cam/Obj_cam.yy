@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Essencials",
-    "path": "folders/Objects/Essencials.yy",
+    "name": "camera",
+    "path": "folders/Objects/Essencials/camera.yy",
   },
 }

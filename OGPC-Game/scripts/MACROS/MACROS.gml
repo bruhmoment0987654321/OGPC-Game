@@ -7,7 +7,5 @@
 #macro sectionTilesX 10 //size of section from left to right
 #macro sectionTilesY 8 //size of section from top to bottom
 
-#macro border 2 // the block border around the room
-
 #macro sectionWidth (sectionTilesX*Gridsize) //width of seciton in pixels
 #macro sectionHeight (sectionTilesY*Gridsize) //height of section in pixels

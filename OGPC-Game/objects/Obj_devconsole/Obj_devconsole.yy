@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Essencials",
-    "path": "folders/Objects/Essencials.yy",
+    "name": "menu ui",
+    "path": "folders/Objects/Essencials/menu ui.yy",
   },
 }

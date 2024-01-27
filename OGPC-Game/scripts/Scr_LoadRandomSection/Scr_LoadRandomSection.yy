@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_CreateMainPath",
+  "name": "Scr_LoadRandomSection",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

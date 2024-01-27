@@ -41,7 +41,6 @@ function GameText(text_id){
 		break;
 		case "Shopkeeper1-nomoney":
 		Text("Poor. Get money up. Not FUNNY up");
-		Text_Color(15,20,c_lime,c_lime,c_lime,c_lime);
 		Text_Float(33,38,3,20);
 		break;
 		

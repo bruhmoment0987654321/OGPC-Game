@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_CreateMainPath",
+  "name": "Scr_reverse_string",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "level generation",
-    "path": "folders/Scripts/essencial/level generation.yy",
+    "name": "text",
+    "path": "folders/Scripts/essencial/text.yy",
   },
 }

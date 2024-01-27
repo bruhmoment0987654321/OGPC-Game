@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Essencials",
-    "path": "folders/Objects/Essencials.yy",
+    "name": "level essencials",
+    "path": "folders/Objects/Essencials/level essencials.yy",
   },
 }

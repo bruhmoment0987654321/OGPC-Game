@@ -18,7 +18,6 @@ function CreateMainPath(){
 				
 				//cant move left, go down and change current room into 2 and next room into 3
 				if currentY < ySections-1 {
-					
 					sections[currentX][currentY] = Right;  //type 2 makes it so that there is an exit in floor
 					sections[currentX][++currentY] = Down;//type 3 makes it so that there is an entrance in the ceiling
 					newDir = choose(Right,Right,Down); //has less probablility going down when path reaches left edge
@@ -28,7 +27,6 @@ function CreateMainPath(){
 			}
 			
 		}else if newDir == Right {  //move right if it doesnt go left
-			
 			if(currentX < xSections-1){
 				sections[++currentX][currentY] = Left; 
 				newDir = newDir = choose(Right,Right,Right,Down);
@@ -44,9 +42,7 @@ function CreateMainPath(){
 			}
 			
 		}else if newDir == Down { //move down
-			
 			if currentY < ySections-1 {
-				
 				sections[currentX][currentY] = Right;
 				sections[currentX][++currentY] = Down;
 				newDir = choose(Right,Right,Right,Down);

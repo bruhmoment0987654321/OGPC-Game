@@ -1,0 +1,4 @@
+This is where you would place your chunks for the level tiles. 
+You dont have to save them or actually put them in these folders. 
+It's only to be organized. But you have to put Obj_template_ctrler and open the room in-game to
+convert them into a string. 

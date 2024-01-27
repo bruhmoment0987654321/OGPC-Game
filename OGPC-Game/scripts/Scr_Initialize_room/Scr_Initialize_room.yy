@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "room generator",
-    "path": "folders/Scripts/room generator.yy",
+    "name": "level generation",
+    "path": "folders/Scripts/essencial/level generation.yy",
   },
 }
