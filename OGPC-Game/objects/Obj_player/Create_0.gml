@@ -23,6 +23,13 @@ dont_die = false; //for cheat
 death_timer = 100;
 //gun varibles
 which_weapon = noone; 
+if(Obj_game.current_weapon == noone){
+	which_weapon = Obj_arm_gun;
+	instance_create_layer(x,y-13,"Guns",which_weapon);
+}else{
+	which_weapon = Obj_game.current_weapon;	
+	instance_create_layer(x,y-13,"Guns",which_weapon);
+}
 //state variable
 state = "normal";
 //ladder variable

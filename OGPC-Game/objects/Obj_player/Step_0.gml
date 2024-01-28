@@ -7,7 +7,7 @@ item_use = keyboard_check_pressed(ord("E"));
 open_up = keyboard_check_pressed(ord("Q"));
 ladder_up = keyboard_check_pressed(ord("W"));
 restart = keyboard_check_pressed(ord("R"));
-if(global.cantpress)||(global.cantpress_commands){
+if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	left = 0;
 	right = 0;
 	up = 0;
@@ -89,7 +89,7 @@ switch(state){
 			}
 		#endregion 
 
-		#region entering places
+		#region entering ladder
 		//ladder
 		if(place_meeting(x,y,Obj_ladder)) && (ladder_up){
 			on_ladder = true;
@@ -100,10 +100,6 @@ switch(state){
 
 		if(on_ladder){
 			state = "ladder";	
-		}
-		//shop door
-		if(up && place_meeting(x,y,Obj_shop_door)){
-			room_goto(Rm_shop);
 		}
 		#endregion
 

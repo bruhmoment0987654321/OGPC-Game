@@ -6,12 +6,12 @@ function kill_all(_obj){
 		if(variable_instance_exists(OBJ,"state")){
 			if(OBJ != undefined){
 				state = "dead";
-				Log("All of "+string(OBJ)+ "gone!");
+				Log("All of them dead!");
 			}
 			else Log("Wrong instance used");
 		}else{
 			instance_destroy(OBJ);
-			Log("All instances of "+string(OBJ)+ "gone!");
+			Log("All instances of object gone!");
 		}
 		
 	}

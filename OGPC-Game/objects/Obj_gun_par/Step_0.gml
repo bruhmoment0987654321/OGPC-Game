@@ -18,7 +18,7 @@ if instance_exists(Obj_cam) {
 }
 direction = (round(dir/45)*45);
 #endregion
-if global.cantpress || global.cantpress_commands {
+if global.cantpress || global.cantpress_commands || global.playercant {
 	any = 0;	
 }
 if any && delay_timer<=0 {

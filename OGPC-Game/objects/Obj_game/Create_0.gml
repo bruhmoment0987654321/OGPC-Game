@@ -12,6 +12,8 @@ global.shield_max = 100;
 //health
 global.max_hp = 100;
 global.hp = global.max_hp;
+//gun held
+current_weapon = noone;
 //main objective
 global.battery = 0;
 //debug stuff
@@ -22,6 +24,7 @@ global.show_fps = false;
 //can't press any buttons
 global.cantpress = false;
 global.cantpress_commands = false;
+global.playercant = false;
 scale = 2;
 
 window_set_caption("Project: Time?");

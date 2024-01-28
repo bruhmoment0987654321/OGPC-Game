@@ -9,7 +9,7 @@ right_released = keyboard_check_released(vk_right);
 
 var anykey = left||right||up||down||left_hold||right_hold;
 
-if(global.cantpress)||(global.cantpress_commands){
+if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	anykey = 0;
 	left_released = 0;
 	right_released = 0;

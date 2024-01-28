@@ -31,4 +31,7 @@ options[2][3] = "Back";
 
 op_length = 0;
 menu_level = 0;
+if(instance_exists(Obj_gun_fx)){
+	instance_destroy(Obj_gun_fx);	
+}
 

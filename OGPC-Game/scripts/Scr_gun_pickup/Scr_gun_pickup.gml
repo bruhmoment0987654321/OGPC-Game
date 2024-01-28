@@ -1,5 +1,6 @@
 ///@param gun_pickup
 ///@param the_gun
+///@desc only used for Obj_weapon_pickup_par
 function Gun_pickup(_pickup,_gun){
 	if(object_index == _pickup){
 		if(Obj_player.which_weapon != noone){
@@ -11,6 +12,6 @@ function Gun_pickup(_pickup,_gun){
 		}
 		
 		Obj_player.which_weapon = _gun;
-		instance_create_layer(x,y,"Guns",_gun);
+		instance_create_layer(x,y-13,"Guns",_gun);
 	}
 }

@@ -9,7 +9,6 @@ if(global.cantpress)||(global.cantpress_commands){
 }
 //store number of options into current menu
 op_length = array_length(options[menu_level]);
-
 //moving though menu
 pos += down-up;
 if(pos >= op_length) pos = 0;
@@ -27,7 +26,10 @@ if(select){
 				//talk to the shopkeeper
 				case 1: menu_level = 2; break;
 				//go back to the level you were in
-				case 2: room_goto(Rm_level1); break;
+				case 2:
+					global.playercant = false;
+					instance_deactivate_object(self);
+				break;
 			}
 		break;
 		//buy sub menu

@@ -1,7 +1,6 @@
 function CreateMainPath(){
 	//select starting room from the top row 
 	var currentX = irandom(xSections-1);//initialize starting x
-	spawn_player_x = currentX;
 	var currentY = 0;					 //initialize starting y
 	var newDir = 0;						 //keep track on which direction to move
 	sections[currentX][currentY] = Left; //start with room type exit left to right
