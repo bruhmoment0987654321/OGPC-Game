@@ -1,8 +1,16 @@
 function LoadRandomSection(_x,_y,_section){
 	sectionType = _section;
 	//you can add a case for zero but for now, you can add a random room for zero
-	if(sectionType == 0) return "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
 	switch(sectionType){
+		case 0:
+			var _return_string = ds_list_find_value(sectionZero,irandom(ds_list_size(sectionZero)-1));
+			//this is for the shop that appears in the right
+			if(_y < 3)&&(sections[clamp(_x-1,0,sectionTilesX)][_y] != 0)&&(shop_count < 1)&&(Chance(0.3)){
+				var _return_string = ds_list_find_value(sectionShopRight,irandom(ds_list_size(sectionShopRight)-1));
+				shop_count++;
+			}
+			return _return_string;
+		break;
 		case Left:
 			var _return_string = ds_list_find_value(sectionLeftRight, irandom(ds_list_size(sectionLeftRight)-1));
 			if(sections[_x][clamp(_y-1,0,sectionTilesY)] == 2){

@@ -17,11 +17,6 @@ if(room == Rm_level2){
 		}
 	}
 }
-if(level_completed){
-	with(Obj_shop_sign){
-		image_alpha = 1;	
-	}
-}
 
 #region health and bombs
 if(instance_exists(Obj_player)){

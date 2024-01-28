@@ -2,11 +2,12 @@ event_inherited();
 switch(state){
 	case "norm":
 		//going to shoot state
-		if(sign(Obj_player.x - x) == image_xscale)
-		&&((abs(Obj_player.y - y) < 16))
-		&&(abs(Obj_player.x-x) <= dist)
-		&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "shoot";
-		
+		if(instance_exists(Obj_player)){
+			if(sign(Obj_player.x - x) == image_xscale)
+			&&((abs(Obj_player.y - y) < 16))
+			&&(abs(Obj_player.x-x) <= dist)
+			&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "shoot";
+		}
 		hsp = walk_sp*image_xscale;
 		
 		if(place_meeting(x+hsp,y,Obj_solid)){

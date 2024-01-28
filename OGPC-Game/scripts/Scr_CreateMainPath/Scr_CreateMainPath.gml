@@ -1,16 +1,15 @@
 function CreateMainPath(){
 	//select starting room from the top row 
-	var currentX = irandom(xSections-1); //initialize starting x
+	var currentX = irandom(xSections-1);//initialize starting x
+	spawn_player_x = currentX;
 	var currentY = 0;					 //initialize starting y
-	
 	var newDir = 0;						 //keep track on which direction to move
-	sections[currentX][currentY] = Left;	 //start with room type exit left to right
+	sections[currentX][currentY] = Left; //start with room type exit left to right
 	
 	while currentY < ySections { //if the current y position of the path goes below 4 (path usually goes down)
 		if(newDir == 0) newDir = choose(Left,Left,Right,Right,Down); 
 		
 		if newDir == Left { //move left
-			
 			if(currentX > 0){
 				sections[--currentX][currentY] = Left; // set room type to entrance left and right
 				newDir = choose(Left,Left,Left,Down);

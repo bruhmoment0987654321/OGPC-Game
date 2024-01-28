@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "essencial",
-    "path": "folders/Scripts/essencial.yy",
+    "name": "other",
+    "path": "folders/Scripts/essencial/other.yy",
   },
 }

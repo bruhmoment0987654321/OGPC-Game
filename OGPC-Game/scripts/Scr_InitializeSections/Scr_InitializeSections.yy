@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_InitializeSection",
+  "name": "Scr_InitializeSections",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

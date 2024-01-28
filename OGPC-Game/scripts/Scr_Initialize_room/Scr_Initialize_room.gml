@@ -3,10 +3,14 @@ function Initialize_room(){
 	
 	border = 2 // the block border around the room
 	
+	spawn_player = true; // spawn the player in the left-right sections
+	
 	sections = []; // declare room array
 	
-	xSections = 4; //amount of sections in a room left to right
-	ySections = 4; //amount of sections in a room top to bottom
+	xSections = 5; //amount of sections in a room left to right
+	ySections = 5; //amount of sections in a room top to bottom
+	
+	shop_count = 0; //have a max shop number so they won't spawn over and over again
 	
 	room_width = (xSections*sectionWidth) + (Gridsize*border); //size of room, width edition
 	room_height = (ySections*sectionHeight) + (Gridsize*border); //size of room, height edition
@@ -29,5 +33,5 @@ function Initialize_room(){
 	ds_list_destroy(sectionLeftBottomRight);
 	ds_list_destroy(sectionLeftRight);
 	ds_list_destroy(sectionLeftTopRight);
-	
+	ds_list_destroy(sectionZero);
 }

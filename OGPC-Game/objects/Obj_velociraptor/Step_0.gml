@@ -7,10 +7,12 @@ switch(state){
 			hsp = -hsp;
 		}
 		sprite_index = Spr_velociraptor;
-		if(sign(Obj_player.x - x) == image_xscale)
-		&&((abs(Obj_player.y - y) < 16))
-		&&(abs(Obj_player.x-x) <= dist)
-		&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "chase";
+		if(instance_exists(Obj_player)){
+			if(sign(Obj_player.x - x) == image_xscale)
+			&&((abs(Obj_player.y - y) < 16))
+			&&(abs(Obj_player.x-x) <= dist)
+			&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "chase";
+		}
 	break;
 	
 	case "chase":

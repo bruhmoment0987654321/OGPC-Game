@@ -9,3 +9,6 @@
 
 #macro sectionWidth (sectionTilesX*Gridsize) //width of seciton in pixels
 #macro sectionHeight (sectionTilesY*Gridsize) //height of section in pixels
+
+#macro CamWidth 640
+#macro CamHeight 320

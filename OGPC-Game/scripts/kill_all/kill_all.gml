@@ -3,7 +3,16 @@
 function kill_all(_obj){
 	var OBJ = asset_get_index(_obj);
 	with(OBJ){
-		if(OBJ.state != undefined) state = "dead";
-		else Log("Wrong instance used");
+		if(variable_instance_exists(OBJ,"state")){
+			if(OBJ != undefined){
+				state = "dead";
+				Log("All of "+string(OBJ)+ "gone!");
+			}
+			else Log("Wrong instance used");
+		}else{
+			instance_destroy(OBJ);
+			Log("All instances of "+string(OBJ)+ "gone!");
+		}
+		
 	}
 }

@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "level essencials",
-    "path": "folders/Objects/Essencials/level essencials.yy",
+    "name": "converting section into string",
+    "path": "folders/Objects/Essencials/level essencials/converting section into string.yy",
   },
 }
