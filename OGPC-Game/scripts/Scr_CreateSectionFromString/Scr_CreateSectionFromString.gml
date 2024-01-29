@@ -31,7 +31,6 @@ function CreateSectionFromString(_x,_y,_sectionString){
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_breakable_solid);
 				break;
 				case "*":
-				
 					if(spawn_player){
 						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_spawn_point);
