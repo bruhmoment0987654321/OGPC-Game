@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bomb",
-    "path": "folders/Objects/Items/bomb.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
 }
