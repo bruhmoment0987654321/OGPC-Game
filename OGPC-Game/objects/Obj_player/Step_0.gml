@@ -1,11 +1,11 @@
-left = keyboard_check(ord("A"));
-right = keyboard_check(ord("D"));
-up = keyboard_check(ord("W"));
-down = keyboard_check(ord("S"));
-jump = keyboard_check_pressed(vk_space);
-item_use = keyboard_check_pressed(ord("E"));
-open_up = keyboard_check_pressed(ord("Q"));
-ladder_up = keyboard_check_pressed(ord("W"));
+left = keyboard_check(global.left);
+right = keyboard_check(global.right);
+up = keyboard_check(global.up);
+down = keyboard_check(global.down);
+jump = keyboard_check_pressed(global.jump);
+item_use = keyboard_check_pressed(global.bomb_place);
+open_up = keyboard_check_pressed(global.action);
+ladder_up = keyboard_check_pressed(global.up);
 restart = keyboard_check_pressed(ord("R"));
 if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	left = 0;
@@ -192,6 +192,14 @@ switch(state){
 	#region pinned down state
 		case "pinned":
 			hsp = 0;
+			if(vsp > 0){
+					fall_sp = fall_muliplied;
+					
+			}
+			vsp += global.grv*fall_sp;
+			vsp = clamp(vsp,-max_vsp,max_vsp);
+			//collision
+			collision(true,true);
 			sprite_index = Spr_player_pinned;
 		break;
 	#endregion

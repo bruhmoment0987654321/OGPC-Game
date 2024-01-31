@@ -1,5 +1,21 @@
 level_completed = false;
 create_end_level = true;
+//controls
+global.shoot_up = vk_up;
+global.shoot_down = vk_down;
+global.shoot_left = vk_left;
+global.shoot_right = vk_right;
+global.up = ord("W");
+global.down = ord("S");
+global.left = ord("A");
+global.right = ord("D");
+global.jump = vk_space;
+global.action = ord("Q");
+global.bomb_place = ord("E");
+global.select = vk_space;
+global.scroll_up = vk_up;
+global.scroll_down = vk_down;
+global.console = 192; // ~ key
 
 //money
 global.money = 0;

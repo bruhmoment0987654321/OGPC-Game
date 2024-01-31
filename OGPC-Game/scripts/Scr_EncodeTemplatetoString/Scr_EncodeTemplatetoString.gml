@@ -13,7 +13,7 @@ function EncodeTemplateToString(){
 			
 			switch(inst){
 				case noone: levelData += "0"; break;
-				//thse don't work?
+				//these don't work?
 				case Obj_shop_door1x1: levelData += "D" break;
 				case Obj_shop_sign: levelData += "=" break;
 				//--------//
@@ -21,7 +21,7 @@ function EncodeTemplateToString(){
 				case Obj_solid: levelData += "1"; break;
 				case Obj_sand: levelData += "2"; break;
 				case Obj_breakable_solid: levelData += "3"; break;
-				
+				case Obj_ladder: levelData += "H";
 			}
 		}
 	saveDir = get_save_filename("*.txt","Section_"+ room_get_name(room)+".txt");
@@ -29,5 +29,4 @@ function EncodeTemplateToString(){
 	file_text_write_string(file,levelData);
 	file_text_close(file);
 	show_message("Level Data Saved! ["+string(levelData)+"]");
-	//open all the rooms to save them in the git repository :)
 }

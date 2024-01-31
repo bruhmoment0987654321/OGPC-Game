@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shop",
-    "path": "folders/Objects/Shop.yy",
+    "path": "folders/Objects/Essencials/Shop.yy",
   },
 }

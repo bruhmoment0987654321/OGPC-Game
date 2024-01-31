@@ -1,8 +1,8 @@
-enable_key = keyboard_check_pressed(192);
+enable_key = keyboard_check_pressed(global.console);
 backspace = keyboard_check(vk_backspace);
 enter = keyboard_check_released(vk_enter);
 delete_ = keyboard_check(vk_delete);
-up_key = keyboard_check(vk_up)
+up_key = keyboard_check(vk_up);
 
 //console enabling
 if(enable_key) Console_enable();

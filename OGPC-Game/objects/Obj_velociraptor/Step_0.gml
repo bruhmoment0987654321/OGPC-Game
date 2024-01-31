@@ -9,6 +9,7 @@ switch(state){
 		sprite_index = Spr_velociraptor;
 		if(instance_exists(Obj_player)){
 			if(sign(Obj_player.x - x) == image_xscale)
+			&&(global.hp > 0)
 			&&((abs(Obj_player.y - y) < 16))
 			&&(abs(Obj_player.x-x) <= dist)
 			&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "chase";

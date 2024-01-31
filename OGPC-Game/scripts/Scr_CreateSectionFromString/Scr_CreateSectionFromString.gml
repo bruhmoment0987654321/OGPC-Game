@@ -37,6 +37,10 @@ function CreateSectionFromString(_x,_y,_sectionString){
 						spawn_player = false;
 					}
 				break;
+				case "H":
+					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
+					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_ladder);
+				break;
 			}
 		}
 		

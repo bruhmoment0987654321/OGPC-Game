@@ -4,7 +4,7 @@ switch(state){
 		if(place_meeting(x+hsp,y,Obj_solid)){
 			hsp = -hsp;	
 		}
-		if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid)){
+		if(grounded)&&(!place_meeting(x+sprite_width/2,y+1,Obj_solid))&&(global.hp > 0){
 			hsp = -hsp;
 		}
 		sprite_index = Spr_caveman;

@@ -13,7 +13,7 @@ switch state {
 	case "pull":
 		with tounge {
 			image_yscale -= other.tounge_spd;
-			if image_yscale <= 0 {
+			if image_yscale <= 16 {
 				other.state = "eat";
 			}
 		}

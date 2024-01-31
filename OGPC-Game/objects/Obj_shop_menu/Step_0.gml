@@ -1,6 +1,6 @@
-up = keyboard_check_pressed(vk_up);
-down = keyboard_check_pressed(vk_down);
-select = keyboard_check_pressed(vk_space);
+up = keyboard_check_pressed(global.scroll_up);
+down = keyboard_check_pressed(global.scroll_down);
+select = keyboard_check_pressed(global.select);
 var s = id;
 if(global.cantpress)||(global.cantpress_commands){
 	up = 0;

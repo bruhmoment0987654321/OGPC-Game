@@ -1,7 +1,7 @@
-left = keyboard_check(vk_left);
-right = keyboard_check(vk_right);
-up = keyboard_check(vk_up);
-down = keyboard_check(vk_down);
+left = keyboard_check(global.shoot_left);
+right = keyboard_check(global.shoot_right);
+up = keyboard_check(global.shoot_up);
+down = keyboard_check(global.shoot_down);
 var any = left||right||up||down;
 
 delay_timer--;

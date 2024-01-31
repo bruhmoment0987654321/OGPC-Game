@@ -1,11 +1,11 @@
-left = keyboard_check_pressed(vk_left);
-right = keyboard_check_pressed(vk_right);
-up = keyboard_check_pressed(vk_up);
-down = keyboard_check_pressed(vk_down);
-left_hold = keyboard_check(vk_left);
-right_hold = keyboard_check(vk_right);
-left_released = keyboard_check_released(vk_left);
-right_released = keyboard_check_released(vk_right);
+left = keyboard_check_pressed(global.shoot_left);
+right = keyboard_check_pressed(global.shoot_right);
+up = keyboard_check_pressed(global.shoot_up);
+down = keyboard_check_pressed(global.shoot_down);
+left_hold = keyboard_check(global.shoot_left);
+right_hold = keyboard_check(global.shoot_right);
+left_released = keyboard_check_released(global.shoot_left);
+right_released = keyboard_check_released(global.shoot_right);
 
 var anykey = left||right||up||down||left_hold||right_hold;
 

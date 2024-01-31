@@ -1,4 +1,4 @@
-next_page = keyboard_check_pressed(vk_space);
+next_page = keyboard_check_pressed(global.select);
 if(space_timer>0){
 	space_timer--;
 	next_page = 0;
