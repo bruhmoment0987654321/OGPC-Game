@@ -95,6 +95,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C43D526","properties":[],"isDnd":false,"objectId":{"name":"Obj_solid","path":"objects/Obj_solid/Obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":16.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":-480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3BCD842B","properties":[],"isDnd":false,"objectId":{"name":"Obj_solid","path":"objects/Obj_solid/Obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":704.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1321DD47","properties":[],"isDnd":false,"objectId":{"name":"Obj_breakable_solid","path":"objects/Obj_breakable_solid/Obj_breakable_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1280.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_581EA679","properties":[],"isDnd":false,"objectId":{"name":"Obj_spring","path":"objects/Obj_spring/Obj_spring.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":640.0,},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Other","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6CB59272","properties":[],"isDnd":false,"objectId":{"name":"Obj_shop_sign","path":"objects/Obj_shop_sign/Obj_shop_sign.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":704.0,},
@@ -179,6 +180,7 @@
     {"name":"inst_3C12495A","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_14CC628F","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_1A58A3E3","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_581EA679","path":"rooms/Rm_level1/Rm_level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

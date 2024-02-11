@@ -11,7 +11,7 @@ function LoadRandomSection(_x,_y,_section){
 			}
 			return _return_string;
 		break;
-		case Left:
+		case LR:
 			var _return_string = ds_list_find_value(sectionLeftRight, irandom(ds_list_size(sectionLeftRight)-1));
 			if(sections[_x][clamp(_y-1,0,sectionTilesY)] == 2){
 				_return_string = string_set_byte_at(_return_string,floor(sectionTilesX/2)+1,ord("0"));
@@ -19,7 +19,7 @@ function LoadRandomSection(_x,_y,_section){
 			}
 			return _return_string;
 		break;
-		case Right:
+		case Intersect:
 			var _return_string = ds_list_find_value(sectionLeftBottomRight, irandom(ds_list_size(sectionLeftBottomRight)-1));
 			if(sections[_x][clamp(_y-1,0,sectionTilesY)] == 2){
 				_return_string = string_set_byte_at(_return_string,floor(sectionTilesX/2)+1,ord("0"));

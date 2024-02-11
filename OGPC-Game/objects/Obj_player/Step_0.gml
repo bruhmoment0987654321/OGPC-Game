@@ -3,6 +3,7 @@ right = keyboard_check(global.right);
 up = keyboard_check(global.up);
 down = keyboard_check(global.down);
 jump = keyboard_check_pressed(global.jump);
+jump_held = keyboard_check(global.jump);
 item_use = keyboard_check_pressed(global.bomb_place);
 open_up = keyboard_check_pressed(global.action);
 ladder_up = keyboard_check_pressed(global.up);
@@ -57,7 +58,17 @@ switch(state){
 					Gummy(1.25,0.9);	
 				}
 			}
-	
+			with(Obj_spring){
+				if(place_meeting(x,y,other.id)){
+					if(other.vsp > 0){
+						image_speed = 1;
+						var jump_velocity_multiplied = 2;
+						if(other.jump_held) jump_velocity_multiplied = 5;
+						other.vsp -= other.jump_sp*jump_velocity_multiplied;
+						other.jumped = true;
+					}	
+				}	
+			}
 			if(!on_ground){
 				if(coyote_timer > 0){
 					coyote_timer--;

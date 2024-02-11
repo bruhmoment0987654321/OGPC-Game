@@ -1,5 +1,5 @@
-#macro Left 1  //left direction for path
-#macro Right 2 //right direction for path       //All three of these are for path directions
+#macro LR 1  //the left/right path direction for path
+#macro Intersect 2 // the intersections for path      
 #macro Down 3 //down direction for path
 
 #macro Gridsize 32 //size of tiles

@@ -34,4 +34,5 @@ function Initialize_room(){
 	ds_list_destroy(sectionLeftRight);
 	ds_list_destroy(sectionLeftTopRight);
 	ds_list_destroy(sectionZero);
+	ds_list_destroy(sectionShopRight)
 }

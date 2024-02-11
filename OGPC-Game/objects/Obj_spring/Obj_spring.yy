@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_enemy_rand",
+  "name": "Obj_spring",
   "spriteId": {
-    "name": "Spr_EnemySpawn",
-    "path": "sprites/Spr_EnemySpawn/Spr_EnemySpawn.yy",
+    "name": "Spr_spring",
+    "path": "sprites/Spr_spring/Spr_spring.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -25,12 +25,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1x1 objects for procedural generation",
-    "path": "folders/Objects/1x1 objects for procedural generation.yy",
+    "name": "Solids",
+    "path": "folders/Objects/Solids.yy",
   },
 }

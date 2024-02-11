@@ -49,7 +49,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "section templates",
-    "path": "folders/Rooms/section templates.yy",
+    "name": "left-right",
+    "path": "folders/Rooms/section templates/left-right.yy",
   },
 }
