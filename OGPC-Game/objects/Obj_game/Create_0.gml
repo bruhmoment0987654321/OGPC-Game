@@ -31,7 +31,8 @@ global.hp = global.max_hp;
 //gun held
 current_weapon = noone;
 //main objective
-global.battery = 0;
+global.battery_amount = 0;
+global.holding_battery = false;
 //debug stuff
 global.show_hitboxes = false;
 global.show_invis = false;

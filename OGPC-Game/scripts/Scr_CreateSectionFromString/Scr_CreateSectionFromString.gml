@@ -33,8 +33,10 @@ function CreateSectionFromString(_x,_y,_sectionString){
 				case "*":
 					if(spawn_player){
 						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
-						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_spawn_point);
+						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Player",Obj_spawn_point);
 						spawn_player = false;
+						spawn_player_x = _currentXsection;
+						spawn_player_y = _currentYsection;
 					}
 				break;
 				case "H":
@@ -43,11 +45,19 @@ function CreateSectionFromString(_x,_y,_sectionString){
 				break;
 				case "E":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
-					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_enemy_rand);
+					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Enemy",Obj_enemy_rand);
 				break;
 				case "T":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_spring);
+				break;
+				case "B":
+					if In_between(_currentXsection,clamp(spawn_player_x-1,0,sectionTilesX),clamp(spawn_player_x+1,0,sectionTilesX))
+					&& In_between(_currentXsection,clamp(spawn_player_y-1,0,sectionTilesY),clamp(spawn_player_y+1,0,sectionTilesY))
+					&& sections[_currentXsection][_currentYsection] != 0 {
+						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
+					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_battery1x1);
+					}
 				break;
 			}
 		}

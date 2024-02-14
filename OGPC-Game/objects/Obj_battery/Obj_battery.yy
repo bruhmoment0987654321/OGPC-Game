@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_level_end",
+  "name": "Obj_battery",
   "spriteId": {
     "name": "Spr_battery_3d",
     "path": "sprites/Spr_battery_3d/Spr_battery_3d.yy",
