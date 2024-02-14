@@ -18,6 +18,10 @@ function EncodeTemplateToString(){
 				case Obj_shop_sign: levelData += "=" break;
 				case Obj_enemy_rand: levelData += "E" break;
 				//--------//
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4bd03b3ec7b1ff17169c2ee6d34f85d1f82d24d2
 				case Obj_spawn_point: levelData += "*" break;
 				case Obj_solid: levelData += "1"; break;
 				case Obj_sand: levelData += "2"; break;

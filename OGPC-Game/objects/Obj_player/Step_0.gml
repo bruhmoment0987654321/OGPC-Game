@@ -69,6 +69,9 @@ switch(state){
 					}	
 				}	
 			}
+		
+			if place_meeting(x,y +1, Obj_ice) friction_ = ice_friction else friction_ = normal_friction;
+		
 			if(!on_ground){
 				if(coyote_timer > 0){
 					coyote_timer--;

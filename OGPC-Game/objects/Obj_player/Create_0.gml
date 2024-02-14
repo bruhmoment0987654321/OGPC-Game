@@ -8,7 +8,9 @@ vsp = 0;
 max_hsp = 3.7;
 max_vsp = 8;
 walk_sp = 0.7;
-friction_ = 0.15;
+normal_friction = 0.15;
+friction_ = normal_friction;
+ice_friction = 0.01;
 //jump variables
 jump_sp = 7;
 buffer_timer = 0;
