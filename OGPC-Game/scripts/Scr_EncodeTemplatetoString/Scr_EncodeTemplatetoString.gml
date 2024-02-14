@@ -18,16 +18,13 @@ function EncodeTemplateToString(){
 				case Obj_shop_sign: levelData += "=" break;
 				case Obj_enemy_rand: levelData += "E" break;
 				//--------//
-<<<<<<< HEAD
-=======
-
->>>>>>> 4bd03b3ec7b1ff17169c2ee6d34f85d1f82d24d2
 				case Obj_spawn_point: levelData += "*" break;
 				case Obj_solid: levelData += "1"; break;
 				case Obj_sand: levelData += "2"; break;
 				case Obj_breakable_solid: levelData += "3"; break;
 				case Obj_ladder: levelData += "H";
 				case Obj_spring: levelData += "T" break;
+				case Obj_battery1x1: levelData += "B"
 			}
 		}
 	saveDir = get_save_filename("*.txt","Section_"+ room_get_name(room)+".txt");

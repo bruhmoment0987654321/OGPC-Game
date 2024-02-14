@@ -6,6 +6,11 @@ function Initialize_room(){
 	spawn_player = true; // spawn the player in the left-right sections
 	spawn_player_x = 0; //data on which section the player is in x-axis
 	spawn_player_y = 0; //data on which section the player is in y-axis
+	spawn_end = true;
+	spawn_end_x = 0;
+	spawn_end_y = 0;
+	
+	make_battery = true;
 	
 	sections = []; // declare room array
 	

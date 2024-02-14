@@ -52,11 +52,13 @@ function CreateSectionFromString(_x,_y,_sectionString){
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_spring);
 				break;
 				case "B":
-					if In_between(_currentXsection,clamp(spawn_player_x-1,0,sectionTilesX),clamp(spawn_player_x+1,0,sectionTilesX))
-					&& In_between(_currentXsection,clamp(spawn_player_y-1,0,sectionTilesY),clamp(spawn_player_y+1,0,sectionTilesY))
-					&& sections[_currentXsection][_currentYsection] != 0 {
+					if In_between(_currentXsection,spawn_player_x-1,spawn_player_x+1)
+					&& In_between(_currentXsection,spawn_player_y-1,spawn_player_y+1)
+					&& sections[_currentXsection][_currentYsection] != 0 
+					&& make_battery == true {
 						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
-					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_battery1x1);
+						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_battery1x1);
+						make_battery = false;
 					}
 				break;
 			}
