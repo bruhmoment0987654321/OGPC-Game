@@ -44,6 +44,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3C12495A","properties":[],"isDnd":false,"objectId":{"name":"Obj_velociraptor","path":"objects/Obj_velociraptor/Obj_velociraptor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14CC628F","properties":[],"isDnd":false,"objectId":{"name":"Obj_flytrapwtounge","path":"objects/Obj_flytrapwtounge/Obj_flytrapwtounge.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A58A3E3","properties":[],"isDnd":false,"objectId":{"name":"Obj_flytrap","path":"objects/Obj_flytrap/Obj_flytrap.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":480.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C1A5E10","properties":[],"isDnd":false,"objectId":{"name":"Obj_chieftan","path":"objects/Obj_chieftan/Obj_chieftan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":736.0,},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Walls","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_550B5B1D","properties":[],"isDnd":false,"objectId":{"name":"Obj_solid","path":"objects/Obj_solid/Obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":33.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":736.0,},
@@ -181,6 +182,7 @@
     {"name":"inst_14CC628F","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_1A58A3E3","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_581EA679","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_2C1A5E10","path":"rooms/Rm_level1/Rm_level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

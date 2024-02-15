@@ -1,6 +1,7 @@
 if(global.hp <= 0){
 	state = "norm";	
 }
+
 #region animations
 	//gummy
 	xscale = Approach(xscale,1,0.05);
