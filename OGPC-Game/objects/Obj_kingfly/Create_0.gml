@@ -1,5 +1,6 @@
 hsp = 0;
 vsp = 0;
+damage_ = 9;
 spd = 0.03;
 follow = Obj_flytrap;
 limit_speed = true;

@@ -1,2 +1,2 @@
-room_goto_next();
-global.battery_amount += 1;
+global.holding_battery = true;
+instance_destroy();

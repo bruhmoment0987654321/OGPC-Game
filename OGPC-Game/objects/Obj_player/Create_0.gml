@@ -8,6 +8,7 @@ vsp = 0;
 max_hsp = 3.7;
 max_vsp = 8;
 walk_sp = 0.7;
+decrease_amount = 0.1;
 normal_friction = 0.15;
 friction_ = normal_friction;
 ice_friction = 0.01;

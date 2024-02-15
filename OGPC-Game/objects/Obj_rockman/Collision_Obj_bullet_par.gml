@@ -1,2 +1,3 @@
 event_inherited();
-Enemy_damaged(false,other.damage,0,"Bullet",true);
+if state != "chase" Enemy_damaged(false,other.damage,0,"Bullet",false,"chase");
+else Enemy_damaged(false,other.damage,0,"Bullet",false,"shoot");

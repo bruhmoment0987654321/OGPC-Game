@@ -28,8 +28,10 @@ switch(state){
 		#region movement functions
 			
 			var move = right-left;
+			var decrease_sp = 1;
+			if place_meeting(x,y,Obj_kingfly) decrease_sp = decrease_amount;
 			if(move != 0){
-				hsp += move*walk_sp;
+				hsp += move*walk_sp*decrease_sp;
 				hsp = clamp(hsp,-max_hsp,max_hsp);
 			}else{
 				if(abs(hsp) < 0.1){

@@ -49,7 +49,7 @@ switch(state){
 		if(image_index >= 3){
 			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
 			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
-				Player_attacked(20,Obj_caveman.knockb*Obj_caveman.image_xscale);
+				Player_attacked(Damage,Obj_caveman.knockb*Obj_caveman.image_xscale);
 			}
 		}
 		if(image_index >= 4) && (point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
@@ -60,16 +60,6 @@ switch(state){
 		}
 		
 	break;
-	case "stunned":
-		hsp = 0;
-		sprite_index = Spr_caveman_stunned;
-		stun_timer--;
-		if(stun_timer <=0){
-			stun_timer = stun_amount;
-			state = "chase";
-		}
-	break;
-	
 	case "dead":
 		instance_destroy();
 	break;
@@ -81,6 +71,33 @@ switch(state){
 		grounded = false;	
 	}
 #endregion
+#region buffing the cavemen
+if collision_circle(x,y-16,buff_radius,Obj_caveman,false,true) != noone {
+	with(Obj_caveman){
+		if !buff {
+			Damage = Damage * other.buff_amount;
+			buff = true;
+		}
+		if buff_create {
+			instance_create_depth(x,y-(sprite_height+10),depth-1,Obj_buff_FX);	
+			buff_create = false;
+		}
+	}
+}
+if collision_circle(x,y-16,buff_radius,Obj_rockman,false,true) != noone {
+	with(Obj_rockman){
+		if !buff {
+			Damage = Damage * other.buff_amount;
+			buff = true;
+		}
+		if buff_create {
+			instance_create_depth(x,y-(sprite_height+10),depth-1,Obj_buff_FX);	
+			buff_create = false;
+		}
+	}	
+}
+#endregion 
+
 if(hp <= 0){
 	state = "dead";	
 }

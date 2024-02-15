@@ -14,6 +14,10 @@ attack_radius = 30
 hit_radius = 10;
 attack_distance = 8;
 tween_speed = 0.3;
+Damage = 20;
+//buff variables
+buff_amount = 1.3;
+buff_radius = 100;
 //other variables
 hp = 200;
 state = "norm";

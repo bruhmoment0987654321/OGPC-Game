@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_battery1x1",
+  "name": "Obj_buff_FX",
   "spriteId": {
-    "name": "Spr_battery1x1",
-    "path": "sprites/Spr_battery1x1/Spr_battery1x1.yy",
+    "name": "Spr_buff_icon",
+    "path": "sprites/Spr_buff_icon/Spr_buff_icon.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,12 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1x1 objects for procedural generation",
-    "path": "folders/Objects/1x1 objects for procedural generation.yy",
+    "name": "FX",
+    "path": "folders/Objects/FX.yy",
   },
 }

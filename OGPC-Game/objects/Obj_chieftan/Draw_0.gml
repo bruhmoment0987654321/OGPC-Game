@@ -5,4 +5,6 @@ if(global.show_hitboxes){
 		draw_circle(x,y-16,attack_radius,true);
 		draw_circle(x+15*image_xscale,y-16,hit_radius,true);	
 	}
+	draw_set_color(c_blue);
+	draw_circle(x,y-16,buff_radius,true);
 }

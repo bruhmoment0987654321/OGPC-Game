@@ -4,7 +4,7 @@ function Player_attacked(_damage,_knockback){
 	with(Obj_player){
 		if(!dont_die){
 			if(!invincible){
-				if(global.shield > 0) global.shield -= _damage;	else global.hp -= _damage;
+				if(global.shield > 0) global.shield -= round(_damage);	else global.hp -= round(_damage);
 				state = "normal";
 				invincible = true;
 				Screenshake(5,15);

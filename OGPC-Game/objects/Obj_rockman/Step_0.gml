@@ -1,6 +1,7 @@
 event_inherited();
 switch(state){
 	case "norm":
+		countdown = countdown_rate;
 		//going to shoot state
 		if(instance_exists(Obj_player)){
 			if(sign(Obj_player.x - x) == image_xscale)
@@ -31,16 +32,9 @@ switch(state){
 			with(instance_create_layer(x,y-32,"Guns",Obj_rock)){
 				image_xscale = other.image_xscale;
 				speed = other.spd*image_xscale;
+				damage = other.Damage;
 			}
 			countdown = countdown_rate;
-			state = "norm";
-		}
-	break;
-	case "stunned":
-		sprite_index = Spr_rockman_stunned;
-		stun_timer--;
-		if(stun_timer <=0){
-			stun_timer = stun_amount;
 			state = "norm";
 		}
 	break;

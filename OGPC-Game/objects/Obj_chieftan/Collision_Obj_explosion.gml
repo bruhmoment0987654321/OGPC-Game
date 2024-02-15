@@ -1,1 +1,1 @@
-Enemy_damaged(false,explosion_damage,0,"Explosion",false,"dead");
+Enemy_damaged(false,explosion_damage,0,"Explosion",false,"chase");
