@@ -6,11 +6,14 @@ function Initialize_room(){
 	spawn_player = true; // spawn the player in the left-right sections
 	spawn_player_x = 0; //data on which section the player is in x-axis
 	spawn_player_y = 0; //data on which section the player is in y-axis
+	
+	make_battery = true;
+	battery_x = 0;
+	battery_y = 0;
+	
 	spawn_end = true;
 	spawn_end_x = 0;
 	spawn_end_y = 0;
-	
-	make_battery = true;
 	
 	sections = []; // declare room array
 	
@@ -36,6 +39,7 @@ function Initialize_room(){
 	InitializeAllSections();
 	//create the level
 	GenerateLevel();
+	if(!instance_exists(Obj_battery)||!instance_exists(Obj_end_level)) room_restart();
 	//clean up dat memory (de-initialize sections)
 	ds_list_destroy(sectionLeftBottomRight);
 	ds_list_destroy(sectionLeftRight);

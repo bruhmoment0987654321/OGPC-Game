@@ -59,6 +59,20 @@ function CreateSectionFromString(_x,_y,_sectionString){
 						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_battery1x1);
 						make_battery = false;
+						battery_x = _currentXsection;
+						battery_y = _currentYsection;
+					}
+				break;
+				case "X":
+					if !In_between(_currentXsection,battery_x-1,battery_x+1)
+					&& !In_between(_currentXsection,battery_x-1,battery_x+1)
+					&& sections[_currentXsection][_currentYsection] != 0 
+					&& spawn_end == true {
+						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
+						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_end_level1x1);
+						spawn_end = false;
+						spawn_end_x = _currentXsection;
+						spawn_end_y =  _currentYsection;
 					}
 				break;
 			}

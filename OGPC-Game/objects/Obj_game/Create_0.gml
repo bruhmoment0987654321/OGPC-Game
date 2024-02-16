@@ -21,13 +21,16 @@ global.console = 192; // ~ key
 global.money = 0;
 //bomb variables
 global.bomb_amount = 0;
-global.bomb_max = 10;
+global.bomb_max = 10; //the limit of bombs you can have
+global.max_bombs = false; //the check if the the bombs are at their limit to not get anymore
 //shield
 global.shield = 0;
 global.shield_max = 100;
+global.max_shield = false;//the check if the the shield is at their limit to not get anymore
 //health
 global.max_hp = 100;
 global.hp = global.max_hp;
+global.max_health = true;//the check if the the health is at it's limit to not get anymore
 //gun held
 current_weapon = noone;
 //main objective

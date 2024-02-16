@@ -1,0 +1,1 @@
+instance_create_layer(x,y,"Other",Obj_end_level);
