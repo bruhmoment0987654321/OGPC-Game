@@ -7,6 +7,7 @@ with(Obj_gun_par){
 				speed = Obj_gun_par.spd;
 				direction = Obj_gun_par.dir;
 				image_xscale = max(1,speed/sprite_width);
+				audio_play_sound(Snd_Lasergunshoot,5,false)
 			}
 			Screenshake(2,10);
 			curve_pos = 0;

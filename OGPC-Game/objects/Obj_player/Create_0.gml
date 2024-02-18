@@ -49,3 +49,6 @@ enum FOOTSTEPS{
 	}
 Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5)
 prev_step_sound = noone
+played_step_sound = false
+step_sound_timer_max = 21
+step_sound_timer = step_sound_timer_max
