@@ -1,7 +1,7 @@
 ///@desc have all the blocks and stuff for the room
 function Initialize_room(){
 	
-	border = 2 // the block border around the room
+	border = 1 // the block border around the room
 	
 	spawn_player = true; // spawn the player in the left-right sections
 	spawn_player_x = 0; //data on which section the player is in x-axis
