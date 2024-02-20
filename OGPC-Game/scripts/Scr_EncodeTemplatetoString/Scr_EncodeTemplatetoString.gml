@@ -25,7 +25,8 @@ function EncodeTemplateToString(){
 				case Obj_ladder: levelData += "H";
 				case Obj_spring: levelData += "T" break;
 				case Obj_battery1x1: levelData += "B"; break;
-				case Obj_end_level1x1: levelData += "X" break
+				case Obj_end_level1x1: levelData += "X" break;
+				case Obj_rand_chest: levelData += "c" break;
 			}
 		}
 	saveDir = get_save_filename("*.txt","Section_"+ room_get_name(room)+".txt");

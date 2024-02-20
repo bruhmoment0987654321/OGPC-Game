@@ -19,7 +19,10 @@
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Game_over","assets":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Shop_obj","instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"FX","instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Bullets","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Bullets","instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A57003C","properties":[],"isDnd":false,"objectId":{"name":"Obj_chest","path":"objects/Obj_chest/Obj_chest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A55F885","properties":[],"isDnd":false,"objectId":{"name":"Obj_chest","path":"objects/Obj_chest/Obj_chest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":736.0,},
+      ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Guns","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62FFF617","properties":[],"isDnd":false,"objectId":{"name":"Obj_armgun_pickup","path":"objects/Obj_armgun_pickup/Obj_armgun_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AE6CBC8","properties":[],"isDnd":false,"objectId":{"name":"Obj_cannon_pickup","path":"objects/Obj_cannon_pickup/Obj_cannon_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":640.0,},
@@ -183,6 +186,8 @@
     {"name":"inst_1A58A3E3","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_581EA679","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_2C1A5E10","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_2A57003C","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_3A55F885","path":"rooms/Rm_level1/Rm_level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

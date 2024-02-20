@@ -9,10 +9,7 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": {
-    "name": "Spr_caveman",
-    "path": "sprites/Spr_caveman/Spr_caveman.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "Obj_enemy_par",

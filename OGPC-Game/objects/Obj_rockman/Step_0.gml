@@ -28,6 +28,9 @@ switch(state){
 			sprite_index = Spr_rockman_attack;
 		}
 		
+		if(instance_exists(Obj_player)){
+			if Obj_player.x < x image_xscale = -1;
+		}
 		if(countdown <= 0){
 			with(instance_create_layer(x,y-32,"Guns",Obj_rock)){
 				image_xscale = other.image_xscale;

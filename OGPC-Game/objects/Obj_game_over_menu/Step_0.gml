@@ -18,7 +18,7 @@ if(pos < 0) pos = op_length-1;
 if(select){
 	switch(pos){
 		//start game over
-		case 0: Start_over(); room_goto(Rm_level1); break;
+		case 0: Start_over(); room_goto(Rm_prehistoric); break;
 		//back to title
 		case 1: Start_over(); room_goto(Rm_title); break;
 	}

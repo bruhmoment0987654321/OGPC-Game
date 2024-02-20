@@ -1,4 +1,4 @@
-vsp += global.grv;
+vsp += bomb_grv;
 timer--;
 if(place_meeting(x,y,Obj_enemy_par)){
 	timer = 0;	
@@ -12,7 +12,9 @@ if(abs(hsp)>0.1){
 
 if(timer <= 0){
 	instance_create_layer(x,y,"Bullets",Obj_explosion);
-	Screenshake(4,60);
+	if(!global.playercant){
+		Screenshake(4,60);
+	}
 	instance_destroy();	
 }
 //bouncing

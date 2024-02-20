@@ -34,8 +34,11 @@ if(select){
 		switch(pos){
 			//go fullscreen
 			case 0: window_set_fullscreen(!window_get_fullscreen()); break;
+			//controls
+			//make a control room
+			case 1: break;
 			//go back
-			case 1: menu_level = 0; break;
+			case 2: menu_level = 0; break;
 		}
 		
 	}

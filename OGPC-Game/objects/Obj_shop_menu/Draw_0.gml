@@ -1,5 +1,5 @@
 //putting font first
-draw_sprite(Spr_screencover,0,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]));
+draw_sprite_ext(Spr_screencover,0,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),1,1,0,image_blend,0.5);
 draw_set_font(F_Silver);
 //get width and height of menu
 var new_w = 0;

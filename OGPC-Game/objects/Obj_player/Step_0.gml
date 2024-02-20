@@ -139,11 +139,6 @@ switch(state){
 			instance_create_layer(x,y-16,"Bullets",Obj_bomb);
 			global.bomb_amount -= 1;	
 		}
-		if(open_up)&&(place_meeting(x,y,Obj_chest)){
-			with(Obj_chest){
-				open = true;	
-			}
-		}
 		#endregion
 		
 		#region collisions
