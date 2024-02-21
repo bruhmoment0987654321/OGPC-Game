@@ -17,7 +17,7 @@
   "soundFile": "Snd_Caveman_hurt.wav",
   "duration": 1.113991,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemy",
+    "path": "folders/Sounds/Enemy.yy",
   },
 }

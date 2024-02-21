@@ -6,3 +6,6 @@ repeat(image_number){
 	i++;
 }
 
+if global.show_hitboxes {
+	draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c_yellow,c_yellow,c_yellow,c_yellow,true);
+}

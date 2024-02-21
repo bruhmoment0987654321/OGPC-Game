@@ -7,7 +7,7 @@
     "path": "sprites/Spr_time_machine1x1/Spr_time_machine1x1.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

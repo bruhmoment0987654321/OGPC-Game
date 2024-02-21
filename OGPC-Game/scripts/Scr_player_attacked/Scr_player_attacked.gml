@@ -5,7 +5,7 @@ function Player_attacked(_damage,_knockback){
 		if(!dont_die){
 			if(!invincible){
 				if(global.shield > 0) global.shield -= round(_damage);	else global.hp -= round(_damage);
-				state = "normal";
+				if state != "ladder" {state = "normal"}
 				invincible = true;
 				Screenshake(5,15);
 				Gummy(0.9,1.3);

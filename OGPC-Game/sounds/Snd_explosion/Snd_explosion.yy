@@ -17,7 +17,7 @@
   "soundFile": "Snd_explosion.mp3",
   "duration": 1.973696,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "items",
+    "path": "folders/Sounds/items.yy",
   },
 }

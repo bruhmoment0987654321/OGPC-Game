@@ -47,8 +47,6 @@ yscale = 1;
 enum FOOTSTEPS{
 	STEP1=Snd_Footstep1,STEP2=Snd_Footstep2,STEP3=Snd_Footstep3,STEP4=Snd_Footstep4,STEP5=Snd_Footstep5
 	}
-Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5)
-prev_step_sound = noone
-played_step_sound = false
-step_sound_timer_max = 21
-step_sound_timer = step_sound_timer_max
+Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5);
+step_sound_timer_max = 21;
+step_sound_timer = step_sound_timer_max;

@@ -35,7 +35,6 @@ switch(state){
 					step_sound_timer --
 					if not audio_is_playing(Step_sound){
 						audio_play_sound(Step_sound,5,false)
-						prev_step_sound = Step_sound
 					}
 					if step_sound_timer <= 0{
 						Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5)
@@ -79,8 +78,8 @@ switch(state){
 				if(place_meeting(x,y,other.id)){
 					if(other.vsp > 0){
 						image_speed = 1;
-						var jump_velocity_multiplied = 2;
-						if(other.jump_held) jump_velocity_multiplied = 5;
+						var jump_velocity_multiplied = 4;
+						if(other.jump_held) jump_velocity_multiplied = 8;
 						other.vsp -= other.jump_sp*jump_velocity_multiplied;
 						other.jumped = true;
 					}	

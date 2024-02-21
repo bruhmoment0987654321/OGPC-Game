@@ -30,6 +30,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_breakable_solid);
 				break;
+				//spawnpoint
 				case "*":
 					if(spawn_player){
 						instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
@@ -39,18 +40,22 @@ function CreateSectionFromString(_x,_y,_sectionString){
 						spawn_player_y = _currentYsection;
 					}
 				break;
+				//ladder
 				case "H":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_ladder);
 				break;
+				//random enemy
 				case "E":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Enemy",Obj_enemy_rand);
 				break;
+				//spring
 				case "T":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Walls",Obj_spring);
 				break;
+				//battery
 				case "B":
 					if !In_between(_currentXsection,spawn_player_x-1,spawn_player_x+1)
 					&& !In_between(_currentYsection,spawn_player_y+1,spawn_player_y-1)
@@ -65,6 +70,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 						battery_y = _currentYsection;
 					}
 				break;
+				//exit
 				case "X":
 					if !In_between(_currentXsection,battery_x-1,battery_x+1)
 					&& !In_between(_currentYsection,battery_x-1,battery_x+1)
@@ -79,6 +85,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 						spawn_end_y =  _currentYsection;
 					}
 				break;
+				//50/50 chance for chest
 				case "c":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize*border,
 						(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize*border, "Other",Obj_rand_chest);

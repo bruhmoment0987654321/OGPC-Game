@@ -17,7 +17,7 @@
   "soundFile": "Snd_Bug_squish.wav",
   "duration": 0.348005,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Enemy",
+    "path": "folders/Sounds/Enemy.yy",
   },
 }

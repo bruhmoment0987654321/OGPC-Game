@@ -7,7 +7,7 @@
     "path": "sprites/Spr_battery1x1/Spr_battery1x1.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

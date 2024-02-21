@@ -33,7 +33,7 @@ function Initialize_room(){
 	CreateMainPath();
 	
 	for(var _y = 0; _y < ySections; _y++){
-		show_debug_message(string(sections[0][_y]) + string(sections[1][_y])+ string(sections[2][_y])+string(sections[3][_y]));
+		show_debug_message(string(sections[0][_y]) + string(sections[1][_y])+ string(sections[2][_y])+string(sections[3][_y])+string(sections[4][_y]));
 	}
 	//initialize sections 
 	InitializeAllSections();

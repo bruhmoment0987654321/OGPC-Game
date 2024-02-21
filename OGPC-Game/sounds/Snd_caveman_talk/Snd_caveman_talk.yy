@@ -17,7 +17,7 @@
   "soundFile": "Snd_caveman_talk.wav",
   "duration": 0.370998,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "speech",
+    "path": "folders/Sounds/speech.yy",
   },
 }

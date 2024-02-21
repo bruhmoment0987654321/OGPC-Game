@@ -17,7 +17,7 @@
   "soundFile": "Snd_Lasergunshoot.wav",
   "duration": 0.261927,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sounds/Player.yy",
+    "name": "gun",
+    "path": "folders/Sounds/Player/gun.yy",
   },
 }

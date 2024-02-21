@@ -1,9 +1,9 @@
-camera_set_view_size(view_camera[0],CamWidth,CamHeight);
 cam = view_camera[0];
+camera_set_view_size(view_camera[0],CamWidth,CamHeight);
 follow = Obj_player;
 camera_offset_x = 0;
-camera_offset_y = -room_height/11;
-cam_spd = 15; // 1 is the maximum and the fastest. the higher the n-number, the longer it takes for the camera to reach the object
+camera_offset_y = -25;
+cam_spd = 7; // 1 is the maximum and the fastest. the higher the n-number, the longer it takes for the camera to reach the object
 view_w_half = camera_get_view_width(cam)/2;
 view_h_half = camera_get_view_height(cam)/2;
 xTo = xstart;
