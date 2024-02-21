@@ -80,7 +80,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Proce-Gene blocks",
+    "path": "folders/Sprites/Proce-Gene blocks.yy",
   },
 }
