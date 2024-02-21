@@ -36,6 +36,8 @@ current_weapon = noone;
 //main objective
 global.battery_amount = 0;
 global.holding_battery = false;
+global.round_difficulty_increase = 5;
+global.round_counter = 1;
 //debug stuff
 global.show_hitboxes = false;
 global.show_invis = false;

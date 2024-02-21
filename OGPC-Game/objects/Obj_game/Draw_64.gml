@@ -1,7 +1,7 @@
 draw_set_font(F_Silver);
 draw_set_color(c_red);
 if global.hp > 0 && instance_exists(Obj_player) {
-	if room != Rm_title {
+	if room != Rm_title && room != Rm_ctrl_rm {
 		draw_text_transformed(50,50,"Health: "+ string(global.hp),scale,scale,0);
 		if global.bomb_amount > 0 {
 			draw_set_color(#EED202);

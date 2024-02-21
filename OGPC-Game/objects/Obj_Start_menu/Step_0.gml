@@ -35,8 +35,7 @@ if(select){
 			//go fullscreen
 			case 0: window_set_fullscreen(!window_get_fullscreen()); break;
 			//controls
-			//make a control room
-			case 1: break;
+			case 1: room_goto(Rm_ctrl_rm); break;
 			//go back
 			case 2: menu_level = 0; break;
 		}

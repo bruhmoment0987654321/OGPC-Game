@@ -78,7 +78,7 @@ switch(state){
 				if(place_meeting(x,y,other.id)){
 					if(other.vsp > 0){
 						image_speed = 1;
-						var jump_velocity_multiplied = 4;
+						var jump_velocity_multiplied = 3;
 						if(other.jump_held) jump_velocity_multiplied = 8;
 						other.vsp -= other.jump_sp*jump_velocity_multiplied;
 						other.jumped = true;

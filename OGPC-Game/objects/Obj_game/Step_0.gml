@@ -3,6 +3,10 @@ if instance_exists(Obj_player) {
 		current_weapon = Obj_player.which_weapon;	
 	}
 }
+if global.battery_amount == global.round_difficulty_increase {
+	global.round_counter += 1;
+	global.battery_amount = 0;	
+}
 if global.bomb_amount < global.bomb_max {
 	global.max_bombs = false;
 }
