@@ -298,6 +298,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Melee","folderPath":"folders/Objects/Player/weapons/Melee.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Solids","folderPath":"folders/Objects/Solids.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":10,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Levels","folderPath":"folders/Rooms/Main Levels.yy","order":9,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pre-made Rooms","folderPath":"folders/Rooms/Pre-made Rooms.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"section templates","folderPath":"folders/Rooms/section templates.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"left-bottom-right","folderPath":"folders/Rooms/section templates/left-bottom-right.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"left-right","folderPath":"folders/Rooms/section templates/left-right.yy","order":0,},
@@ -349,8 +351,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ui","folderPath":"folders/Sprites/ui.yy","order":18,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Levels","folderPath":"folders/Rooms/Main Levels.yy","order":9,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pre-made Rooms","folderPath":"folders/Rooms/Pre-made Rooms.yy","order":10,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
