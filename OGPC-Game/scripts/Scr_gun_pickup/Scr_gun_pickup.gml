@@ -10,7 +10,7 @@ function Gun_pickup(_pickup,_gun){
 		}else{
 		
 		}
-		
+		Obj_player.which_weapon_pickup = _pickup;
 		Obj_player.which_weapon = _gun;
 		instance_create_layer(x,y-13,"Guns",_gun);
 	}

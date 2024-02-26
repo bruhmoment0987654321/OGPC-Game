@@ -1,7 +1,8 @@
 draw_set_font(F_Silver);
 draw_set_color(c_red);
+draw_set_halign(fa_left);
 if global.hp > 0 && instance_exists(Obj_player) {
-	if room != Rm_title && room != Rm_ctrl_rm {
+	if room != Rm_title {
 		draw_text_transformed(50,50,"Health: "+ string(global.hp),scale,scale,0);
 		if global.bomb_amount > 0 {
 			draw_set_color(#EED202);
@@ -15,6 +16,9 @@ if global.hp > 0 && instance_exists(Obj_player) {
 			draw_set_color(#01A368);
 			draw_text_transformed(50,90,"Money: "+ string(global.money),scale,scale,0);	
 		}
+		if global.holding_battery {
+			draw_sprite(Spr_battery_icon,0,50,130);	
+		}
 	}
 	
 }
@@ -25,8 +29,4 @@ if global.show_timer {
 if global.show_fps {
 	draw_set_color(c_green);
 	draw_text(500,50,"FPS: " + string(fps));	
-}
-
-if global.holding_battery {
-	draw_sprite(Spr_battery_icon,0,50,130);	
 }

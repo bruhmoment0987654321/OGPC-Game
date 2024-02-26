@@ -484,7 +484,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Pre-made Rooms",
+    "path": "folders/Rooms/Pre-made Rooms.yy",
   },
 }

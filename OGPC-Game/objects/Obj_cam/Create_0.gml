@@ -1,4 +1,6 @@
 cam = view_camera[0];
+global.CamX = camera_get_view_x(cam);
+global.CamY = camera_get_view_y(cam);
 camera_set_view_size(view_camera[0],CamWidth,CamHeight);
 follow = Obj_player;
 camera_offset_x = 0;

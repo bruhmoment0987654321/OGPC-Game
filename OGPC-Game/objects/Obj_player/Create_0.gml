@@ -1,3 +1,11 @@
+enum FOOTSTEPS {
+	STEP1 = Snd_Footstep1,
+	STEP2 = Snd_Footstep2,
+	STEP3 = Snd_Footstep3,
+	STEP4 = Snd_Footstep4,
+	STEP5 = Snd_Footstep5,
+}
+
 //gravity variables
 global.grv = 0.3;
 fall_muliplied = 1.1;
@@ -24,19 +32,10 @@ on_ground = false;
 invincible = false;
 dont_die = false; //for cheat
 death_timer = 100;
-//gun varibles
-which_weapon = noone; 
-if(Obj_game.current_weapon == noone){
-	which_weapon = Obj_arm_gun;
-	instance_create_layer(x,y-13,"Guns",which_weapon);
-}else{
-	which_weapon = Obj_game.current_weapon;	
-	instance_create_layer(x,y-13,"Guns",which_weapon);
-}
 //state variable
 state = "normal";
 //ladder variable
-laddersp = 5;
+laddersp = 3;
 on_ladder = false;
 inst = noone;
 //sound variables
@@ -44,9 +43,20 @@ sound = false;
 //animation variables
 xscale = 1;
 yscale = 1;
-enum FOOTSTEPS{
-	STEP1=Snd_Footstep1,STEP2=Snd_Footstep2,STEP3=Snd_Footstep3,STEP4=Snd_Footstep4,STEP5=Snd_Footstep5
-	}
-Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5);
+//sound variables
+Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,
+FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5);
 step_sound_timer_max = 21;
 step_sound_timer = step_sound_timer_max;
+//gun varibles
+which_weapon = noone;
+which_weapon_pickup = Obj_armgun_pickup;
+if(Obj_game.current_weapon == noone){
+	which_weapon = Obj_arm_gun;
+	which_weapon_pickup = Obj_armgun_pickup;
+	instance_create_layer(x,y-13,"Guns",which_weapon);
+}else{
+	which_weapon = Obj_game.current_weapon;	
+	which_weapon_pickup = Obj_game.current_pickup;
+	instance_create_layer(x,y-13,"Guns",which_weapon);
+}

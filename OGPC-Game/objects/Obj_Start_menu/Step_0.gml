@@ -18,11 +18,15 @@ if(pos < 0) pos = op_length-1;
 if(select){
 	var sml = menu_level;
 	switch(menu_level){
-		//main shop menu
+		//main menu
 		case 0:
 			switch(pos){
 				//start game
-				case 0: room_goto_next();  break;
+				case 0: 
+				if(global.first_time_playing){
+					room_goto(Rm_ctrl_rm);
+				}else room_goto_next();
+				break;
 				//pick options
 				case 1:  menu_level = 1 break;
 				//get out of the game
@@ -35,7 +39,10 @@ if(select){
 			//go fullscreen
 			case 0: window_set_fullscreen(!window_get_fullscreen()); break;
 			//controls
-			case 1: room_goto(Rm_ctrl_rm); break;
+			case 1:
+			global.first_time_playing = false;
+				room_goto(Rm_ctrl_rm);
+			break;
 			//go back
 			case 2: menu_level = 0; break;
 		}
