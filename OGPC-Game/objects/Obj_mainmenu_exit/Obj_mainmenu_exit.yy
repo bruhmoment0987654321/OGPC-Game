@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_health",
-  "spriteId": {
-    "name": "Spr_health",
-    "path": "sprites/Spr_health/Spr_health.yy",
-  },
+  "name": "Obj_mainmenu_exit",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Obj_item_par",
-    "path": "objects/Obj_item_par/Obj_item_par.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }
