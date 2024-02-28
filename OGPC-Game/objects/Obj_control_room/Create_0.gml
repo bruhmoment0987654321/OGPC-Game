@@ -12,3 +12,10 @@ fifth_area_start = 1997;
 fifth_area_end = 2092;
 sixth_area_start = 2270;
 sixth_area_end = 2385;
+seventh_area_start = 2379;
+seventh_area_end = room_width;
+
+//making the menu when the player is playing for the first time
+if global.first_time_playing {
+	instance_create_layer(x,y,"FX",Obj_tutorial_menu)
+}

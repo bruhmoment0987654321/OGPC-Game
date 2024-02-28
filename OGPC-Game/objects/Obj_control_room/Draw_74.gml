@@ -1,5 +1,6 @@
 draw_set_color(c_red);
 draw_set_halign(fa_left);
+
 draw_text_transformed(380,15,"Press Esc to get outta here!",scale,scale,0);
 Tutorial_area_text(first_area_start,first_area_end,,,"Press Space to Jump.");
 
@@ -17,5 +18,8 @@ Tutorial_area_text(fifth_area_start,fifth_area_end,,,
 
 Tutorial_area_text(sixth_area_start,sixth_area_end,,,
 "You can also use springs to jump around!\nJust hold Space to jump around!");
+
+Tutorial_area_text(seventh_area_start,seventh_area_end,,240,
+"Just press W to go through the door.\nGoing through that door goes to the game.\nSee ya soon!");
 
 

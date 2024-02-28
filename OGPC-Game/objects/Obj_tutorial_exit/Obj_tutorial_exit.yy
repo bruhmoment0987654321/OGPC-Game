@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_mainmenu_exit",
-  "spriteId": null,
+  "name": "Obj_tutorial_exit",
+  "spriteId": {
+    "name": "Spr_exit",
+    "path": "sprites/Spr_exit/Spr_exit.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,11 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Essencials",
+    "path": "folders/Objects/Essencials.yy",
   },
 }

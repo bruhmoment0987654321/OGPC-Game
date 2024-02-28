@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_menu_par",
+    "path": "objects/Obj_menu_par/Obj_menu_par.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -32,7 +35,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu ui",
-    "path": "folders/Objects/Essencials/menu ui.yy",
+    "name": "selection menu",
+    "path": "folders/Objects/Essencials/menu ui/selection menu.yy",
   },
 }

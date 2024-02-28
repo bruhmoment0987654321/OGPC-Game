@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_shop_textbox",
+  "name": "Obj_textbox",
   "spriteId": {
     "name": "Spr_menubox",
     "path": "sprites/Spr_menubox/Spr_menubox.yy",
@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Shop",
-    "path": "folders/Objects/Essencials/Shop.yy",
+    "name": "menu ui",
+    "path": "folders/Objects/Essencials/menu ui.yy",
   },
 }

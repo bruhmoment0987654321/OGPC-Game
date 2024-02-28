@@ -1,4 +1,6 @@
 depth = -9999;
+
+destroyed = false;
 //textbox size variables
 width = 576;
 height = 160;

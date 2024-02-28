@@ -1,18 +1,4 @@
-up = keyboard_check_pressed(global.scroll_up);
-down = keyboard_check_pressed(global.scroll_down);
-select = keyboard_check_pressed(global.select);
-var s = id;
-if(global.cantpress)||(global.cantpress_commands){
-	up = 0;
-	down = 0;
-	select = 0;
-}
-//store number of options into current menu
-op_length = array_length(options[menu_level]);
-//moving though menu
-pos += down-up;
-if(pos >= op_length) pos = 0;
-if(pos < 0) pos = op_length-1;
+event_inherited();
 
 #region selecting options
 if(select){
@@ -38,7 +24,7 @@ if(select){
 				//buy first option
 				case 0:
 					if(global.money < 15){
-						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(s.poor_text_id);
 						}
 					}else{
@@ -46,7 +32,7 @@ if(select){
 							global.money -= 15;
 							global.hp += 10;
 						}else{
-							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(s.toomuch_text_id);
 							}		
 						}
@@ -55,7 +41,7 @@ if(select){
 				//buy second option
 				case 1: 
 					if(global.money < 5){
-						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(s.poor_text_id);
 						}
 					}else{
@@ -63,7 +49,7 @@ if(select){
 							global.money -= 5;
 							global.bomb_amount += 1;
 						}else{
-							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(s.toomuch_text_id);
 							}
 						}
@@ -72,7 +58,7 @@ if(select){
 				//buy third option
 				case 2: 
 					if(global.money < 10){
-						with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(s.poor_text_id);
 						}
 					}else{
@@ -80,7 +66,7 @@ if(select){
 							global.money -= 10;
 							global.shield += 20;
 						}else{
-							with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(s.toomuch_text_id);
 							}	
 						}
@@ -95,19 +81,19 @@ if(select){
 			switch(pos){
 				//shopkeeper talks about first thing 
 				case 0:
-				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+				with(instance_create_depth(x,y,-999,Obj_textbox)){
 					GameText(s.text_id)
 				}
 				break;
 				//shopkeeper talks 2nd thing
 				case 1: 
-				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+				with(instance_create_depth(x,y,-999,Obj_textbox)){
 					GameText(s.text2_id);
 				}
 				break;
 				//shopkeeper talks about 3rd thing 
 				case 2: 
-				with(instance_create_depth(x,y,-999,Obj_shop_textbox)){
+				with(instance_create_depth(x,y,-999,Obj_textbox)){
 					GameText(s.text3_id);
 				}
 				break;

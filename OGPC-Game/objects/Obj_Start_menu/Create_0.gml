@@ -1,13 +1,5 @@
-width = 128;
-height = 128;
-scale = 2;
-alpha = 1;
-op_border = 16;
-op_space = 32;
-
-
-pos = 0;
-
+event_inherited();
+x_offset = width/2;
 #region text for the menu
 //main menu
 options[0][0] = "Start";
@@ -18,7 +10,4 @@ options[1][0] = "Fullscreen";
 options[1][1] = "Tutorial";
 options[1][2] = "Back";
 #endregion
-
-op_length = 0;
-menu_level = 0;
 

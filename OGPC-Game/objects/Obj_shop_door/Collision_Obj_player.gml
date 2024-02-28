@@ -1,5 +1,4 @@
 if(up)&&(!pressed){
-		global.playercant = true;
 		pressed = true;
 		if(!instance_exists(Obj_shop_menu)){
 			with(instance_create_layer(x,y,"FX",Obj_shop_menu)){

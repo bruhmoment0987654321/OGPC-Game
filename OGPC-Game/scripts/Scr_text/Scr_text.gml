@@ -23,7 +23,8 @@ function Set_defaults_for_text(){
 	}
 	snd[page_number] = Snd_caveman_talk;
 }
-//text vfx
+
+//-----------------------------------------text vfx----------------------------//
 
 //text color
 ///@param 1st_char
