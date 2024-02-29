@@ -22,6 +22,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Guns","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_879FAF6","properties":[],"isDnd":false,"objectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13EEF504","properties":[],"isDnd":false,"objectId":{"name":"Obj_ninja","path":"objects/Obj_ninja/Obj_ninja.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":288.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Items","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64178A4C","properties":[],"isDnd":false,"objectId":{"name":"Obj_item_chest","path":"objects/Obj_item_chest/Obj_item_chest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1632.0,"y":320.0,},
@@ -104,6 +105,7 @@
     {"name":"inst_78371C1B","path":"rooms/Rm_ctrl_rm/Rm_ctrl_rm.yy",},
     {"name":"inst_2B96D58F","path":"rooms/Rm_ctrl_rm/Rm_ctrl_rm.yy",},
     {"name":"inst_879FAF6","path":"rooms/Rm_ctrl_rm/Rm_ctrl_rm.yy",},
+    {"name":"inst_13EEF504","path":"rooms/Rm_ctrl_rm/Rm_ctrl_rm.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

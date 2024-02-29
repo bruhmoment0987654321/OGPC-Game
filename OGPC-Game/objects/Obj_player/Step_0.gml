@@ -8,6 +8,7 @@ item_use = keyboard_check_pressed(global.bomb_place);
 open_up = keyboard_check_pressed(global.action);
 ladder_up = keyboard_check_pressed(global.up);
 restart = keyboard_check_pressed(ord("R"));
+dash = keyboard_check_pressed(vk_shift)
 if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	left = 0;
 	right = 0;
@@ -62,7 +63,26 @@ switch(state){
 			}
 			vsp = clamp(vsp,-max_vsp,max_vsp);
 		#endregion
-
+		#region dashing 
+			if(object_index == Obj_ninja){
+				if(dash) && can_dash{
+					coyote_timer = 0;
+					if(move != 0){
+						dashdirection = point_direction(0,0, right-left,down-up);
+					}else if(up||down){
+						dashdirection = point_direction(0,0,0,down-up);	
+					}else{
+						dashdirection = point_direction(0,0,sign(image_xscale),0);		
+					}
+					dashdistance = 82;
+					dashsp = dashdistance/dashtime;
+					dashenergy = dashdistance;
+					state = "dash";
+					can_dash = false;
+					alarm[1] = dashcooldown;
+				}	
+			}
+		#endregion
 		#region jump functions
 			if(place_meeting(x,y+1,Obj_solid)){
 				on_ground = true;
@@ -143,12 +163,28 @@ switch(state){
 		#region collisions
 			collision(true,true);
 		#endregion
-		
-		//sprite 
-		sprite_index = Spr_player;
 	break;
 	#endregion
+	case "dash":
+		//move via the dash
+		hsp = lengthdir_x(dashsp,dashdirection);
+		vsp = lengthdir_y(dashsp,dashdirection);
 	
+		//trail effect
+		with (instance_create_depth(x,y,depth+1,Obj_trail)){
+			sprite_index = other.sprite_index;
+			image_blend = c_red;
+			image_alpha = 0.9;
+		}
+		
+		collision(true,true);
+		dashenergy -= dashsp;
+		if (dashenergy <= 0){
+			vsp = 0;
+			hsp = 0;
+			state = "normal";
+		}
+	break;
 	#region ladder state
 	case "ladder":
 		#region ladder movement

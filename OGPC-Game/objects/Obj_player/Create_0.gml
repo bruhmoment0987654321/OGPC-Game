@@ -60,3 +60,7 @@ if(Obj_game.current_weapon == noone){
 	which_weapon_pickup = Obj_game.current_pickup;
 	instance_create_layer(x,y-13,"Guns",which_weapon);
 }
+dashdistance = 82; // how far the dash goes
+dashtime = 10; // the amount of time the dash is used
+dashcooldown = 5*60;
+can_dash = true;
