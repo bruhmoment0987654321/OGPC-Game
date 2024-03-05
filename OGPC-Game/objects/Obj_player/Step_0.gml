@@ -65,7 +65,7 @@ switch(state){
 		#endregion
 		#region dashing 
 			if(object_index == Obj_ninja){
-				if(dash) && can_dash{
+				if(dash) && can_dash {
 					coyote_timer = 0;
 					if(move != 0){
 						dashdirection = point_direction(0,0, right-left,down-up);
@@ -89,9 +89,7 @@ switch(state){
 			}else{
 				on_ground = false;
 				if(vsp < 0){
-					Gummy(0.8,1.2);
-				}else{
-					Gummy(1.25,0.9);	
+					Gummy(1.25,0.9);
 				}
 			}
 			with(Obj_spring){
@@ -102,6 +100,7 @@ switch(state){
 						if(other.jump_held) jump_velocity_multiplied = 8;
 						other.vsp -= other.jump_sp*jump_velocity_multiplied;
 						other.jumped = true;
+						Gummy(0.8,1.2);
 					}	
 				}	
 			}
@@ -113,6 +112,7 @@ switch(state){
 					coyote_timer--;
 					if(!jumped){
 						if(jump){
+							Gummy(0.8,1.2);
 							vsp -= jump_sp;	
 							jumped = true;
 						}
@@ -125,6 +125,7 @@ switch(state){
 			}
 	
 			if(jump){
+				Gummy(0.8,1.2);
 				buffer_timer = buffer_time_amount;	
 			}
 	
@@ -159,7 +160,7 @@ switch(state){
 			global.bomb_amount -= 1;	
 		}
 		#endregion
-		
+			sprite_index = Spr_player;
 		#region collisions
 			collision(true,true);
 		#endregion
