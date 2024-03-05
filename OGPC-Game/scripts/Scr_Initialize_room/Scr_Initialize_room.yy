@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "level generation",
-    "path": "folders/Scripts/essencial/level generation.yy",
+    "path": "folders/Scripts/essential/level generation.yy",
   },
 }

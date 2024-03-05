@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "turn rooms into strings",
-    "path": "folders/Scripts/essencial/level generation/turn rooms into strings.yy",
+    "path": "folders/Scripts/essential/level generation/turn rooms into strings.yy",
   },
 }
