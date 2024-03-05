@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "other",
-    "path": "folders/Scripts/essencial/other.yy",
+    "path": "folders/Scripts/essential/other.yy",
   },
 }
