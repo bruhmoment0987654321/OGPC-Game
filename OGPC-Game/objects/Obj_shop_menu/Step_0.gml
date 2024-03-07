@@ -25,7 +25,7 @@ if(select){
 				case 0:
 					if(global.money < 15){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
-							GameText(s.poor_text_id);
+							GameText(other.s.poor_text_id);
 						}
 					}else{
 						if(global.hp <= global.max_hp){
@@ -33,7 +33,7 @@ if(select){
 							global.hp += 10;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
-								GameText(s.toomuch_text_id);
+								GameText(other.s.toomuch_text_id);
 							}		
 						}
 					}
@@ -42,7 +42,7 @@ if(select){
 				case 1: 
 					if(global.money < 5){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
-							GameText(s.poor_text_id);
+							GameText(other.s.poor_text_id);
 						}
 					}else{
 						if(global.bomb_amount <= global.bomb_max){
@@ -50,7 +50,7 @@ if(select){
 							global.bomb_amount += 1;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
-								GameText(s.toomuch_text_id);
+								GameText(other.s.toomuch_text_id);
 							}
 						}
 					}
@@ -59,7 +59,7 @@ if(select){
 				case 2: 
 					if(global.money < 10){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
-							GameText(s.poor_text_id);
+							GameText(other.s.poor_text_id);
 						}
 					}else{
 						if(global.shield <= global.shield_max){
@@ -67,7 +67,7 @@ if(select){
 							global.shield += 20;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
-								GameText(s.toomuch_text_id);
+								GameText(other.s.toomuch_text_id);
 							}	
 						}
 					}
@@ -82,19 +82,19 @@ if(select){
 				//shopkeeper talks about first thing 
 				case 0:
 				with(instance_create_depth(x,y,-999,Obj_textbox)){
-					GameText(s.text_id)
+					GameText(other.s.text_id)
 				}
 				break;
 				//shopkeeper talks 2nd thing
 				case 1: 
 				with(instance_create_depth(x,y,-999,Obj_textbox)){
-					GameText(s.text2_id);
+					GameText(other.s.text2_id);
 				}
 				break;
 				//shopkeeper talks about 3rd thing 
 				case 2: 
 				with(instance_create_depth(x,y,-999,Obj_textbox)){
-					GameText(s.text3_id);
+					GameText(other.s.text3_id);
 				}
 				break;
 				//go back to the main shop menu

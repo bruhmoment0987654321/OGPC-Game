@@ -63,9 +63,9 @@ switch(state){
 			}
 			vsp = clamp(vsp,-max_vsp,max_vsp);
 		#endregion
-		#region dashing 
+		#region entering dash
 			if(object_index == Obj_ninja){
-				if(dash) && can_dash {
+				if(dash) && (dash_timer == dashcooldown) {
 					coyote_timer = 0;
 					if(move != 0){
 						dashdirection = point_direction(0,0, right-left,down-up);
@@ -74,12 +74,12 @@ switch(state){
 					}else{
 						dashdirection = point_direction(0,0,sign(image_xscale),0);		
 					}
+					dash_timer = 0;
 					dashdistance = 82;
 					dashsp = dashdistance/dashtime;
 					dashenergy = dashdistance;
 					state = "dash";
-					can_dash = false;
-					alarm[1] = dashcooldown;
+					dash_timer++;
 				}	
 			}
 		#endregion
@@ -166,6 +166,7 @@ switch(state){
 		#endregion
 	break;
 	#endregion
+	#region dashing
 	case "dash":
 		//move via the dash
 		hsp = lengthdir_x(dashsp,dashdirection);
@@ -186,6 +187,7 @@ switch(state){
 			state = "normal";
 		}
 	break;
+	#endregion
 	#region ladder state
 	case "ladder":
 		#region ladder movement
@@ -208,8 +210,8 @@ switch(state){
 		if(!place_meeting(x,y,Obj_ladder)){
 			state = "normal";	
 		}
-	
-		#region collisions 
+		sprite_index = 
+		#region collisions
 		collision(true,true);
 		#endregion
 	break;

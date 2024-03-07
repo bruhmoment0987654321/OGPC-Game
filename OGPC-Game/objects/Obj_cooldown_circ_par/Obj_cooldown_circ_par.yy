@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_menu_par",
-  "spriteId": {
-    "name": "Spr_menubox",
-    "path": "sprites/Spr_menubox/Spr_menubox.yy",
-  },
+  "name": "Obj_cooldown_circ_par",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -26,14 +23,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "selection menus",
-    "path": "folders/Objects/Essencials/menu ui/selection menus.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }
