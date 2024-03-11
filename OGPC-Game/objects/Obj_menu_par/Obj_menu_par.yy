@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "selection menu",
-    "path": "folders/Objects/Essencials/menu ui/selection menu.yy",
+    "name": "selection menus",
+    "path": "folders/Objects/Essencials/menu ui/selection menus.yy",
   },
 }
