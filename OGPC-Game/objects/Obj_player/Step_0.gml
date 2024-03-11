@@ -210,7 +210,7 @@ switch(state){
 		if(!place_meeting(x,y,Obj_ladder)){
 			state = "normal";	
 		}
-		sprite_index = 
+		sprite_index = Spr_player;
 		#region collisions
 		collision(true,true);
 		#endregion

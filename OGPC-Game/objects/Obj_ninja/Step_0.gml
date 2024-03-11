@@ -5,4 +5,5 @@ switch(state){
 	break;
 	case "pinned": sprite_index = Spr_ninja_pinned; break;
 	case "dash": sprite_index = Spr_ninja_player; break;
+	case "ladder": sprite_index = Spr_ninja_player; break;
 }
