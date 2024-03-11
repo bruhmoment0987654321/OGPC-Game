@@ -1,4 +1,5 @@
 scale = 1.5;
+scale_for_outside = 2.0; //the size of the text used for the static text in the world
 //area that the player reaches. it checks the players x position
 first_area_start = 703;
 first_area_end = 912;

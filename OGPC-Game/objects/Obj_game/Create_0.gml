@@ -50,6 +50,8 @@ global.show_fps = false;
 global.cantpress = false;
 global.cantpress_commands = false;
 global.playercant = false;
+//show GUI 
+global.show_GUI = false;
 scale = 2;
 
 window_set_caption("Project: Time?");

@@ -23,3 +23,8 @@ global.CamX = x-view_w_half;
 global.CamY = y-view_h_half;
 camera_set_view_pos(cam,global.CamX,global.CamY);
 camera_set_view_angle(cam,image_angle);
+#region background 
+	var _layer = layer_get_id("Background")
+	layer_x(_layer,global.CamX*0.65);
+	layer_y(_layer,global.CamY*0.65);
+#endregion
