@@ -1,7 +1,7 @@
 draw_set_color(c_red);
 draw_set_halign(fa_left);
 
-draw_text_transformed(380,15,"Press Esc to get outta here!",scale,scale,0);
+if(global.show_GUI) draw_text_transformed(380,15,"Press Esc to get outta here!",scale,scale,0);
 Tutorial_area_text(first_area_start,first_area_end,,,"Press Space to Jump.");
 
 Tutorial_area_text(second_area_start,second_area_end,,240,

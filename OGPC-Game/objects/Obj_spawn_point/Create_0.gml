@@ -1,3 +1,4 @@
+global.show_GUI = true;
 player_x = x+16;
 player_y = y+32;
 instance_create_layer(player_x,player_y,"Player",Obj_player);	
