@@ -1,7 +1,8 @@
 if instance_exists(Obj_player) {
 	if(Obj_player.which_weapon != noone){
-		current_weapon = Obj_player.which_weapon;	
+		current_weapon = Obj_player.which_weapon;
 	}
+	
 	if(Obj_player.which_weapon_pickup != noone){
 		current_pickup = Obj_player.which_weapon_pickup;	
 	}

@@ -6,4 +6,7 @@ function Start_over(){
 	global.bomb_amount = 0;
 	global.shield = 0;
 	global.money = 0;
+	global.take_the_weapon = true;
+	Obj_game.current_pickup = noone;
+	Obj_game.current_weapon = noone;
 }

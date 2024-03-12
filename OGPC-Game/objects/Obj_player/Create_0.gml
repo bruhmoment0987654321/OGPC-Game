@@ -50,10 +50,10 @@ step_sound_timer_max = 21;
 step_sound_timer = step_sound_timer_max;
 //gun varibles
 which_weapon = noone;
-which_weapon_pickup = Obj_armgun_pickup;
-if(Obj_game.current_weapon == noone){
-	which_weapon = Obj_arm_gun;
-	which_weapon_pickup = Obj_armgun_pickup;
+which_weapon_pickup = pickup_type;
+if Obj_game.current_weapon == noone {
+	which_weapon = weapon_type;
+	which_weapon_pickup = pickup_type;
 	instance_create_layer(x,y-13,"Guns",which_weapon);
 }else{
 	which_weapon = Obj_game.current_weapon;	

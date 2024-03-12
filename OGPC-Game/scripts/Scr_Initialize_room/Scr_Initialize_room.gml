@@ -22,8 +22,8 @@ function Initialize_room(){
 	
 	shop_count = 0; //have a max shop number so they won't spawn over and over again
 	
-	room_width = (xSections*sectionWidth) + (Gridsize*border); //size of room, width edition
-	room_height = (ySections*sectionHeight) + (Gridsize*border); //size of room, height edition
+	room_width = (xSections*sectionWidth) + (Gridsize*border*2); //size of room, width edition
+	room_height = (ySections*sectionHeight) + (Gridsize*border*2); //size of room, height edition
 	
 	for(var _y = 0; _y < ySections; _y++)
 		for(var _x = 0; _x < xSections; _x++)
