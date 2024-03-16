@@ -33,9 +33,13 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"pickup_type","path":"objects/Obj_player/Obj_player.yy",},"objectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"value":"Obj_shuriken_pickup",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"weapon_type","path":"objects/Obj_player/Obj_player.yy",},"objectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"value":"Obj_shuriken",},
+  ],
   "parent": {
     "name": "Player",
     "path": "folders/Objects/Player.yy",

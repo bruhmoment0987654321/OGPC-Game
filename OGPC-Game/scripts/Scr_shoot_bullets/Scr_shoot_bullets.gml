@@ -1,6 +1,5 @@
 with(Obj_gun_par){
 	
-	
 	switch(object_index){
 		case Obj_arm_gun:
 			with(instance_create_layer(x,y,"Bullets",Obj_bullet)){
@@ -39,6 +38,16 @@ with(Obj_gun_par){
 		
 		case Obj_three_gun:
 			alarm[0] = burst_delay;	
+		break;
+		case Obj_shuriken:
+			with(instance_create_layer(x-(2*image_xscale),y,"Bullets",Obj_shuriken_bullet)){
+				speed = Obj_gun_par.spd;
+				direction = Obj_gun_par.dir;
+				image_xscale = max(1,speed/sprite_width);
+			}
+			Screenshake(2,5);
+			curve_pos = 0;
+			curve_spd = 0.05;
 		break;
 	}
 }

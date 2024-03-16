@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_gun_fx",
-  "spriteId": {
-    "name": "Spr_gundust",
-    "path": "sprites/Spr_gundust/Spr_gundust.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

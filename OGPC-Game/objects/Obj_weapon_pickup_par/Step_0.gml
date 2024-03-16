@@ -7,6 +7,7 @@ if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50) && (interact){
 	Gun_pickup(Obj_bonkstick_pickup,Obj_bonkstick);
 	Gun_pickup(Obj_threegun_pickup,Obj_three_gun);
 	Gun_pickup(Obj_grenade_pickup,Obj_grenade_launcher);
+	Gun_pickup(Obj_shuriken_pickup,Obj_shuriken);
 	
 	//some guns give you extra stuff when you pick it up
 	switch(object_index){

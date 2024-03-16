@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_threegun_pickup",
+  "name": "Obj_shuriken_pickup",
   "spriteId": {
-    "name": "Spr_three_gun_pickup",
-    "path": "sprites/Spr_three_gun_pickup/Spr_three_gun_pickup.yy",
+    "name": "Spr_shuriken",
+    "path": "sprites/Spr_shuriken/Spr_shuriken.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,7 +27,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

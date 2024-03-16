@@ -18,6 +18,7 @@ if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	item_use = 0;
 	open_up = 0;
 	restart = 0;
+	dash = 0;
 }
 if(restart){
 	game_restart();
@@ -65,7 +66,7 @@ switch(state){
 		#endregion
 		#region entering dash
 			if(object_index == Obj_ninja){
-				if(dash) && (dash_timer == dashcooldown) {
+				if(dash) && (dash_timer == dashcooldown){
 					coyote_timer = 0;
 					if(move != 0){
 						dashdirection = point_direction(0,0, right-left,down-up);
@@ -79,7 +80,6 @@ switch(state){
 					dashsp = dashdistance/dashtime;
 					dashenergy = dashdistance;
 					state = "dash";
-					dash_timer++;
 				}	
 			}
 		#endregion
@@ -257,8 +257,7 @@ switch(state){
 		case "pinned":
 			hsp = 0;
 			if(vsp > 0){
-					fall_sp = fall_muliplied;
-					
+				fall_sp = fall_muliplied;
 			}
 			vsp += global.grv*fall_sp;
 			vsp = clamp(vsp,-max_vsp,max_vsp);
@@ -268,6 +267,12 @@ switch(state){
 		break;
 	#endregion
 }
+#region timers for the abilities
+	if(dash_timer < dashcooldown){
+		dash_timer++;
+	}
+#endregion
+
 
 #region animations
 	//gummmy animation

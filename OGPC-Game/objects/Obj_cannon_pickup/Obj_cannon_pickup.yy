@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Guns",
-    "path": "folders/Objects/Player/weapons/Guns.yy",
+    "name": "Pickups",
+    "path": "folders/Objects/Player/weapons/Guns/Pickups.yy",
   },
 }

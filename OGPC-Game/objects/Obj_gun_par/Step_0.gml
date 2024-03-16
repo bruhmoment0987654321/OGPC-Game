@@ -3,6 +3,9 @@ right = keyboard_check(global.shoot_right);
 up = keyboard_check(global.shoot_up);
 down = keyboard_check(global.shoot_down);
 var any = left||right||up||down;
+if global.cantpress || global.cantpress_commands || global.playercant {
+	any = 0;	
+}
 
 delay_timer--;
 
@@ -18,21 +21,19 @@ if instance_exists(Obj_cam) && !global.playercant {
 }
 direction = (round(dir/45)*45);
 #endregion
-if global.cantpress || global.cantpress_commands || global.playercant {
-	any = 0;	
-}
+
 if any && delay_timer<=0 {
 	burst_dir = direction;
 	Scr_shoot_bullets();
 	delay_timer = delay;
 }
 #region animation curve for gun recoil
-switch object_index {
-	case Obj_arm_gun: curve_type = A_armgun; break;
-	case Obj_cannon: curve_type = A_cannon; break;
-	case Obj_three_gun: curve_type = A_threegun break;
-	case Obj_grenade_launcher: curve_type = A_grenade; break;
-}
+Gun_anicurves(Obj_arm_gun, A_armgun);
+Gun_anicurves(Obj_cannon, A_cannon);	
+Gun_anicurves(Obj_three_gun, A_threegun);
+Gun_anicurves(Obj_grenade_launcher, A_grenade);
+Gun_anicurves(Obj_shuriken, A_shuriken);
+
 curve_pos += curve_spd;
 
 var curveStruct = animcurve_get(curve_type);
@@ -53,6 +54,7 @@ if(curve_pos >= 1){
 	curve_type = noone;
 }
 #endregion
+#region angles for the gun
 if(instance_exists(Obj_player)){
 
 	if(Obj_player.image_xscale > 0){
@@ -81,4 +83,4 @@ if(instance_exists(Obj_player)){
 		
 	}
 }
-
+#endregion
