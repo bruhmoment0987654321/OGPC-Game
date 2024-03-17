@@ -6,10 +6,10 @@ function GenerateLevel(){
 		instance_create_layer(_x, -Gridsize, "Walls",Obj_solid);	
 		
 		//bottom border
-		instance_create_layer(_x,room_height+Gridsize*2,"Walls",Obj_solid);
+		instance_create_layer(_x,room_height-Gridsize*2,"Walls",Obj_solid);
 		instance_create_layer(_x,room_height-Gridsize,"Walls",Obj_solid);
 	}
-	for(var _y = Gridsize; _y < room_height;_y+= Gridsize){
+	for(var _y = Gridsize; _y < room_height-Gridsize;_y+= Gridsize){
 		//left
 		instance_create_layer(0, _y, "Walls",Obj_solid);	
 		instance_create_layer(-Gridsize, _y, "Walls",Obj_solid);	

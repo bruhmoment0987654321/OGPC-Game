@@ -15,7 +15,7 @@ shake_length = 0;
 shake_magnitude = 0;
 shake_angle = 0;
 shake_remain = 0;
-buff = 32;
+buff = 0;
 
 aim_x = 0;
 aim_y = 0;

@@ -13,19 +13,10 @@ repeat(3){
 }
 
 with(instance_create_layer(x,y,"FX",Obj_gun_fx)){
-	fric = 0;
 	image_speed = 0;
 	sprite_index = Spr_shuriken;
-}
-//create debris
-repeat(irandom_range(2,4)){
-	with(instance_create_layer(x,y,"FX",Obj_gun_fx)){
-		sprite_index = Spr_sam_debris;
-		image_index = irandom_range(0,image_number-1);
-		fric = 0.9;
-		grv = 0.9;
-		image_speed = 0;
-		debris = true;
-		motion_add(other.image_angle+random_range(-40,40),random_range(-1,-3));
-	}
+	fric = 0.9;
+	grv = 0.9;
+	debris = true;
+	motion_add(other.image_angle+random_range(-20,20),random_range(-5,-8));
 }
