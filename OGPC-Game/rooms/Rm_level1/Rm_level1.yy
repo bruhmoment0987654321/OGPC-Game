@@ -28,6 +28,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AE6CBC8","properties":[],"isDnd":false,"objectId":{"name":"Obj_cannon_pickup","path":"objects/Obj_cannon_pickup/Obj_cannon_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2DD02532","properties":[],"isDnd":false,"objectId":{"name":"Obj_grenade_pickup","path":"objects/Obj_grenade_pickup/Obj_grenade_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_109BFEB9","properties":[],"isDnd":false,"objectId":{"name":"Obj_threegun_pickup","path":"objects/Obj_threegun_pickup/Obj_threegun_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":640.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66C671B7","properties":[],"isDnd":false,"objectId":{"name":"Obj_shuriken_pickup","path":"objects/Obj_shuriken_pickup/Obj_shuriken_pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":576.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54C95625","properties":[],"isDnd":false,"objectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":736.0,},
@@ -188,6 +189,7 @@
     {"name":"inst_2C1A5E10","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_2A57003C","path":"rooms/Rm_level1/Rm_level1.yy",},
     {"name":"inst_3A55F885","path":"rooms/Rm_level1/Rm_level1.yy",},
+    {"name":"inst_66C671B7","path":"rooms/Rm_level1/Rm_level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

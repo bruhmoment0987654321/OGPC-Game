@@ -15,7 +15,7 @@ function GenerateLevel(){
 		instance_create_layer(-Gridsize, _y, "Walls",Obj_solid);	
 		
 		//right
-		instance_create_layer(room_width+Gridsize*2,_y,"Walls",Obj_solid);
+		instance_create_layer(room_width-Gridsize*2,_y,"Walls",Obj_solid);
 		instance_create_layer(room_width-Gridsize,_y,"Walls",Obj_solid);
 	}
 	

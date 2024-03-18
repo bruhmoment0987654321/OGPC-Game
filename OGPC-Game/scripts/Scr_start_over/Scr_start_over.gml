@@ -3,7 +3,7 @@
 function Start_over(){
 	global.playercant = false;
 	global.hp = 100;
-	global.bomb_amount = 0;
+	global.bomb_amount = 1;
 	global.shield = 0;
 	global.money = 0;
 	global.take_the_weapon = true;

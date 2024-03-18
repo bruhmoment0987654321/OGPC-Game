@@ -3,9 +3,9 @@ event_inherited();
 if(select){
 	switch(pos){
 		//start game over
-		case 0: Start_over(); room_goto(Rm_prehistoric); break;
+		case 0: room_goto(Rm_prehistoric); Start_over(); break;
 		//back to title
-		case 1: Start_over(); room_goto(Rm_title); break;
+		case 1: room_goto(Rm_title); Start_over(); break;
 	}
 }
 #endregion

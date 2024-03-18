@@ -27,6 +27,7 @@ if(select){
 				case 0:
 					global.playercant = false;
 					room_goto(Rm_prehistoric);
+					Start_over();
 				break;
 				//no
 				case 1: 
