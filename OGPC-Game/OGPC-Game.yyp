@@ -27,6 +27,7 @@
     {"id":{"name":"Obj_arm_gun","path":"objects/Obj_arm_gun/Obj_arm_gun.yy",},"order":1,},
     {"id":{"name":"Obj_velociraptor","path":"objects/Obj_velociraptor/Obj_velociraptor.yy",},"order":5,},
     {"id":{"name":"Spr_slider_button","path":"sprites/Spr_slider_button/Spr_slider_button.yy",},"order":2,},
+    {"id":{"name":"Obj_pause","path":"objects/Obj_pause/Obj_pause.yy",},"order":8,},
     {"id":{"name":"Obj_textbox","path":"objects/Obj_textbox/Obj_textbox.yy",},"order":5,},
     {"id":{"name":"Snd_explosion","path":"sounds/Snd_explosion/Snd_explosion.yy",},"order":0,},
     {"id":{"name":"Spr_charge_max","path":"sprites/Spr_charge_max/Spr_charge_max.yy",},"order":1,},
