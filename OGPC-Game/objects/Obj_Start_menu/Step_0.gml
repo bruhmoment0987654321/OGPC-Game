@@ -1,3 +1,5 @@
+
+
 event_inherited();
 
 #region selecting options
@@ -10,8 +12,12 @@ if(select){
 				//start game
 				case 0: 
 				if(global.first_time_playing){
+					global.playercant = false
 					room_goto(Rm_ctrl_rm);
-				}else room_goto_next();
+				}else{
+					room_goto_next();
+					global.playercant = false;
+				}
 				break;
 				//pick options
 				case 1:  menu_level = 1 break;
@@ -27,6 +33,8 @@ if(select){
 			//controls
 			case 1:
 				global.first_time_playing = false;
+				global.playercant = false;
+				global.show_GUI = true;
 				room_goto(Rm_ctrl_rm);
 			break;
 			//go back

@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;
+}
+
 if(object_index != Obj_bomb_pickup||Obj_metal_currency){
 	if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50){
 		hsp += sign(Obj_player.x-x)*spd;

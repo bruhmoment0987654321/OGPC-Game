@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 if instance_exists(follow){
 	xTo = follow.x+camera_offset_x;
 	yTo = follow.y+camera_offset_y;

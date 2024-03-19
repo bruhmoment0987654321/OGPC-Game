@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 if instance_exists(follow) {
 	//chasing the player
 	hsp += sign(follow.x-x)*spd;

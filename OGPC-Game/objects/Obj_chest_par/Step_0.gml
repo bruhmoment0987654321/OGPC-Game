@@ -1,3 +1,6 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;
+}
 open = keyboard_check_pressed(global.action);
 
 #region animation

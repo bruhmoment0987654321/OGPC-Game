@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 event_inherited();
 
 #region selecting options

@@ -1,7 +1,10 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 if(global.hp <= 0){
 	state = "norm";	
 }
-
 
 #region animations
 	//gummy

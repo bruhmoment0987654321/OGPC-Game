@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;
+}
+
 vsp += bomb_grv;
 timer--;
 if(place_meeting(x,y,Obj_enemy_par)){

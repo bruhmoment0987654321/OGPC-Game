@@ -1,3 +1,5 @@
+
+
 global.show_GUI = false;
 event_inherited();
 switch(menu_level){

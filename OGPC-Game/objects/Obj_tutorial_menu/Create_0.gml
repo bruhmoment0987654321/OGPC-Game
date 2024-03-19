@@ -1,5 +1,6 @@
 event_inherited();
 global.show_GUI = false;
+global.pauseable = false;
 #region text for the menu
 //main tutorial menu
 options[0][0] = "Yes";

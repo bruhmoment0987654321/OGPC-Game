@@ -18,6 +18,10 @@ global.select = vk_space;
 global.scroll_up = vk_up;
 global.scroll_down = vk_down;
 global.console = 192; // ~ key
+global.pause_button = vk_escape;
+
+//game state 
+global.game_state = GAME_STATE.RUNNING;
 
 //money
 global.money = 0;
@@ -52,6 +56,8 @@ global.cantpress_commands = false;
 global.playercant = false;
 //show GUI 
 global.show_GUI = false;
+//being able to pause the game at certain situations
+global.pauseable = true;
 //gun variables
 global.take_the_weapon = false;
 scale = 2;

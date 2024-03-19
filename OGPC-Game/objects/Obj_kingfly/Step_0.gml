@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 var near_flytrap = instance_nearest(x,y,Obj_flytrap);
 
 if instance_exists(near_flytrap) {

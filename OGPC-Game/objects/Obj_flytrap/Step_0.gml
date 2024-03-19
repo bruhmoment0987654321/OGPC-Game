@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
+
 switch(state){
 	case "norm":
 		var dist_to_king_fly = distance_to_object(king_fly);

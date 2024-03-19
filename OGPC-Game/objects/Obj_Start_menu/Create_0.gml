@@ -1,4 +1,5 @@
 event_inherited();
+global.pauseable = false;
 x_offset = width/2;
 #region text for the menu
 //main menu

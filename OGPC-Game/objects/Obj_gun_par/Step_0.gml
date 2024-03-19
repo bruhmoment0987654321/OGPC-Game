@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;
+}
+
 left = keyboard_check(global.shoot_left);
 right = keyboard_check(global.shoot_right);
 up = keyboard_check(global.shoot_up);

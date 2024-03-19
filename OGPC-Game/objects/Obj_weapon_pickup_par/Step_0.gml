@@ -1,3 +1,7 @@
+if global.game_state == GAME_STATE.PAUSED {
+	return;
+}
+
 interact = keyboard_check_pressed(ord("Q"));
 
 if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50) && (interact){

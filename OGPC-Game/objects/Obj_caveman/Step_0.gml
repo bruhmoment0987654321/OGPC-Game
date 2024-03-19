@@ -1,4 +1,7 @@
 event_inherited();
+if global.game_state == GAME_STATE.PAUSED {
+	return;	
+}
 switch(state){
 	case "norm":
 		if(place_meeting(x+hsp,y,Obj_solid)){

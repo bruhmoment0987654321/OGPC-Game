@@ -1,6 +1,11 @@
+
+
 next_page = keyboard_check_pressed(global.select);
 if(space_timer>0){
 	space_timer--;
+	next_page = 0;
+}
+if global.game_state == GAME_STATE.PAUSED {
 	next_page = 0;
 }
 //text box position
