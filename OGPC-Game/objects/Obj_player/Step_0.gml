@@ -12,7 +12,6 @@ jump_held = keyboard_check(global.jump);
 item_use = keyboard_check_pressed(global.bomb_place);
 open_up = keyboard_check_pressed(global.action);
 ladder_up = keyboard_check_pressed(global.up);
-restart = keyboard_check_pressed(ord("R"));
 dash = keyboard_check_pressed(vk_shift)
 if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	left = 0;
@@ -22,13 +21,8 @@ if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	jump = 0;
 	item_use = 0;
 	open_up = 0;
-	restart = 0;
 	dash = 0;
 }
-if(restart){
-	game_restart();
-}
-
 switch(state){
 	#region normal state
 	case "normal":
@@ -130,7 +124,6 @@ switch(state){
 			}
 	
 			if(jump){
-				Gummy(0.8,1.2);
 				buffer_timer = buffer_time_amount;	
 			}
 	
@@ -138,13 +131,13 @@ switch(state){
 				buffer_timer--;
 		
 				if(on_ground){
+					Gummy(0.8,1.2);
 					vsp -= jump_sp;
 					buffer_timer = 0;
 					jumped = true;
 				}
 			}
 		#endregion 
-
 		#region entering ladder
 		//ladder
 		if(place_meeting(x,y,Obj_ladder)) && (ladder_up){
@@ -158,14 +151,13 @@ switch(state){
 			state = "ladder";	
 		}
 		#endregion
-
 		#region item usage
 		if(item_use)&&(global.bomb_amount > 0){
 			instance_create_layer(x,y-16,"Bullets",Obj_bomb);
 			global.bomb_amount -= 1;	
 		}
 		#endregion
-			sprite_index = Spr_player;
+		sprite_index = Spr_player;
 		#region collisions
 			collision(true,true);
 		#endregion

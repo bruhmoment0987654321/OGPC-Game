@@ -69,7 +69,6 @@ switch(state){
 		y = Obj_player.y-16;
 		with(Obj_player){
 			state = "pinned";
-		
 		}
 		Player_attacked(damage,0);
 	break;
@@ -88,6 +87,9 @@ switch(state){
 	break
 	
 	case "dead":
+		with(Obj_player){
+			state = "normal";
+		}
 		instance_destroy();
 	break;
 }
