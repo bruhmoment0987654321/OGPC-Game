@@ -78,7 +78,7 @@ if(!setup){
 //typing the text
 if(text_pause_timer <= 0){
 	if(draw_char < text_length[page]){
-		draw_char += text_spd;
+		if global.game_state != GAME_STATE.PAUSED draw_char += text_spd;
 		draw_char = clamp(draw_char,0,text_length[page]);
 		var check_char = string_char_at(text[page],draw_char);
 		if(check_char == ".")||(check_char == "?")||(check_char == ","){

@@ -14,7 +14,5 @@ function Spawn_off_camera(_obj){
 	_x = rand_x;
 	_y = rand_y;
 	
-	
-	
 	instance_create_layer(_x,_y,"Enemy",_obj);
 }

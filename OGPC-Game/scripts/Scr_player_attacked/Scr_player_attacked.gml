@@ -9,7 +9,7 @@ function Player_attacked(_damage,_knockback){
 				invincible = true;
 				Screenshake(5,15);
 				Gummy(0.9,1.3);
-				alarm[0] = 60;
+				invincible_timer = invincible_timer_amount;
 			}
 			hsp += _knockback;	
 		}

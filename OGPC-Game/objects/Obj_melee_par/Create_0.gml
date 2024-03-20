@@ -5,6 +5,3 @@ charge_max = 100;
 attack_multiplier = 1;
 charged = false;
 attack_type = "";
-second_hit_timer = 99999999;
-second_hit_amount = 9999999;
-second_hit = false;

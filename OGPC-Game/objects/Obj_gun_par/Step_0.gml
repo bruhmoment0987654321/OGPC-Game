@@ -1,4 +1,5 @@
 if global.game_state == GAME_STATE.PAUSED {
+	image_speed = 0;
 	return;
 }
 
@@ -28,9 +29,18 @@ direction = (round(dir/45)*45);
 
 if any && delay_timer<=0 {
 	burst_dir = direction;
-	Scr_shoot_bullets();
+	Shoot_Bullets();
+	show_debug_message(shoot_amount);
 	delay_timer = delay;
 }
+
+#region timer for burst weapons
+	if burst_timer > 0 && shoot_amount < shoot_amount_max {
+		burst_timer--;	
+	}else if burst_timer == 0 {
+		Burst_Bullets();
+	}
+#endregion
 #region animation curve for gun recoil
 Gun_anicurves(Obj_arm_gun, A_armgun);
 Gun_anicurves(Obj_cannon, A_cannon);	

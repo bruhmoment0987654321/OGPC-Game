@@ -17,6 +17,7 @@
     {"id":{"name":"Obj_armgun_pickup","path":"objects/Obj_armgun_pickup/Obj_armgun_pickup.yy",},"order":2,},
     {"id":{"name":"Spr_battery_icon","path":"sprites/Spr_battery_icon/Spr_battery_icon.yy",},"order":3,},
     {"id":{"name":"Attributions","path":"notes/Attributions/Attributions.yy",},"order":0,},
+    {"id":{"name":"Scr_burst_bullets","path":"scripts/Scr_burst_bullets/Scr_burst_bullets.yy",},"order":5,},
     {"id":{"name":"Spr_pixel","path":"sprites/Spr_pixel/Spr_pixel.yy",},"order":9,},
     {"id":{"name":"Spr_explosion","path":"sprites/Spr_explosion/Spr_explosion.yy",},"order":0,},
     {"id":{"name":"Obj_level_creator","path":"objects/Obj_level_creator/Obj_level_creator.yy",},"order":0,},

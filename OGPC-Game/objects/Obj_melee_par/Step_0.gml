@@ -1,4 +1,5 @@
 if global.game_state == GAME_STATE.PAUSED {
+	image_speed = 0;
 	return;
 }
 

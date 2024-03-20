@@ -14,6 +14,7 @@ if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50) && (interact){
 	Gun_pickup(Obj_shuriken_pickup,Obj_shuriken);
 	instance_destroy();
 }
+
 vsp += 0.1;
 #region collisions
 	collision(true,true);

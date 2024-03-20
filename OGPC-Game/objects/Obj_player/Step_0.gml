@@ -1,4 +1,5 @@
 if global.game_state == GAME_STATE.PAUSED {
+	image_speed = 0;
 	return;
 }
 
@@ -274,6 +275,11 @@ switch(state){
 #region timers for the abilities
 	if(dash_timer < dashcooldown){
 		dash_timer++;
+	}
+	invincible_timer--;
+	if invincible_timer < 0 && invincible == true {
+		invincible = false;
+		invincible_timer = invincible_timer_amount;	
 	}
 #endregion
 

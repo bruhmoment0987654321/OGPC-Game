@@ -29,6 +29,8 @@ coyote_time_amount = 7;
 jumped = true;
 on_ground = false;
 //health variables
+invincible_timer_amount = 60;
+invincible_timer = 0;
 invincible = false;
 dont_die = false; //for cheat
 death_timer = 100;
@@ -65,4 +67,3 @@ dashdistance = 82; // how far the dash goes
 dashtime = 10; // the amount of time the dash is used
 dashcooldown = 5*60; 
 dash_timer = dashcooldown;
-can_dash = true;//if you can even dash

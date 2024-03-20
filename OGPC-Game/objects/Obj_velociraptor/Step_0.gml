@@ -1,5 +1,8 @@
 if global.game_state == GAME_STATE.PAUSED {
+	image_speed = 0;
 	return;	
+}else if global.game_state == GAME_STATE.RUNNING {
+	image_speed = 1;	
 }
 
 switch(state){

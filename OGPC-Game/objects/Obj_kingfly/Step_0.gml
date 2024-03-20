@@ -1,6 +1,7 @@
 if global.game_state == GAME_STATE.PAUSED {
+	image_speed = 0;
 	return;	
-}
+}else if global.game_state == GAME_STATE.RUNNING image_speed = 1;
 
 var near_flytrap = instance_nearest(x,y,Obj_flytrap);
 

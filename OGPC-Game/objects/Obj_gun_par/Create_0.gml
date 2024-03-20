@@ -1,7 +1,8 @@
 delay_timer = 0;
 dir = 0;
 burst_dir = 0;
-shoot_amount = shoot_amount_max;
+shoot_amount = 0;
+burst_timer = -1;
 
 _x = x;
 _img_angle = image_angle;

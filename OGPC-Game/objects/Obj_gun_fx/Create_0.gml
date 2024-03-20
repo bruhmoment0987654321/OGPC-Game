@@ -5,4 +5,3 @@ decrease = 0.2;
 image_angle = random(360);
 debris = false;
 timer = 240;
-alarm[0] = timer;
