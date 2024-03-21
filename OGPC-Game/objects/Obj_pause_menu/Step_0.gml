@@ -20,18 +20,39 @@ if(select){
 	switch(menu_level){
 		//main pause menu
 		case 0:
-			switch(pos){		
-				case 0: break;
-
-				case 1: break;
-				
+			switch(pos){
+				//continue
+				case 0:
+					instance_destroy();
+					global.game_state = GAME_STATE.RUNNING;
+				break;
+				//options
+				case 1: menu_level = 1; break;
+				//back to title
+				case 2: 
+					room_goto(Rm_title);
+					global.game_state = GAME_STATE.RUNNING;
+					Start_over();
+				break;
+				//Exit game
+				case 3: game_end(); break;
 			}
 		break;
-
+		//options sub menu
+		case 1:
+			switch(pos){
+				//fullscreen
+				case 0: window_set_fullscreen(!window_get_fullscreen()); break;
+				//settings
+				case 1: break;
+				//back to main menu
+				case 2: menu_level = 0; break;
+			}
+		break;
+	}
 	//setting position back to the top
 	if(sml != menu_level) pos = 0;
 	//store number of options again
 	op_length = array_length(options[menu_level]);
-	}
 }
 #endregion

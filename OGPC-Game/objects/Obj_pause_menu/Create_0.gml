@@ -1,6 +1,7 @@
 // Inherit the parent event
 event_inherited();
-
+x_offset = -70;
+y_offset = 40;
 //main pause menu
 options[0][0] = "Continue";
 options[0][1] = "Options";

@@ -1,5 +1,5 @@
 var interval = 12;
-if((alarm[0] % interval)<= interval/2){
+if((invincible_timer % interval)<= interval/2){
 	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*xscale,image_yscale*yscale,image_angle,image_blend,image_alpha);
 }else{
 	shader_set(Sh_White);

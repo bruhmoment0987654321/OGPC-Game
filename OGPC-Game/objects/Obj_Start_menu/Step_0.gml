@@ -1,7 +1,4 @@
-
-
 event_inherited();
-
 #region selecting options
 if(select){
 	var sml = menu_level;
@@ -27,19 +24,20 @@ if(select){
 		break;
 		
 		case 1:
-		switch(pos){
-			//go fullscreen
-			case 0: window_set_fullscreen(!window_get_fullscreen()); break;
-			//controls
-			case 1:
-				global.first_time_playing = false;
-				global.playercant = false;
-				global.show_GUI = true;
-				room_goto(Rm_ctrl_rm);
-			break;
-			//go back
-			case 2: menu_level = 0; break;
-		}
+			switch(pos){
+				//go fullscreen
+				case 0: window_set_fullscreen(!window_get_fullscreen()); break;
+				//tutorial
+				case 1:
+					global.first_time_playing = false;
+					global.playercant = false;
+					global.show_GUI = true;
+					room_goto(Rm_ctrl_rm);
+				break;
+				//go back
+				case 2: menu_level = 0; break;
+			}
+		break;
 		
 	}
 	//setting position back to the top
