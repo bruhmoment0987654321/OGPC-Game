@@ -9,10 +9,9 @@ if(select){
 				//start game
 				case 0: 
 				if(global.first_time_playing){
-					global.playercant = false
-					room_goto(Rm_ctrl_rm);
+					Transition_Start(Rm_ctrl_rm,Sq_spike_out,Sq_spike_in);
 				}else{
-					room_goto_next();
+					Transition_Start(Rm_prehistoric,Sq_spike_out,Sq_spike_in);
 					global.playercant = false;
 				}
 				break;
@@ -32,7 +31,7 @@ if(select){
 					global.first_time_playing = false;
 					global.playercant = false;
 					global.show_GUI = true;
-					room_goto(Rm_ctrl_rm);
+					Transition_Start(Rm_ctrl_rm,Sq_spike_out,Sq_spike_in);
 				break;
 				//go back
 				case 2: menu_level = 0; break;

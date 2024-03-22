@@ -1,4 +1,5 @@
 // Inherit the parent event
+global.first_time_playing = false;
 event_inherited();
 x_offset = -70;
 y_offset = 40;

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_tutorial_area_text",
+  "name": "Scr_transitions",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

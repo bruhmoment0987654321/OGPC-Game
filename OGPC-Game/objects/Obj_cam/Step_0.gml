@@ -23,10 +23,19 @@ y += random_range(-shake_remain,shake_remain);
 image_angle += random_range(-shake_angle,shake_angle);
 shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
 shake_angle = max(0,shake_angle-((1/shake_length)*shake_magnitude));
+
+//updating position of camera
 global.CamX = x-view_w_half;
 global.CamY = y-view_h_half;
 camera_set_view_pos(cam,global.CamX,global.CamY);
 camera_set_view_angle(cam,image_angle);
+
+#region transition
+	if (layer_sequence_exists("transition",global.sequenceLayer)){
+		layer_sequence_x(global.sequenceLayer,global.CamX);
+		layer_sequence_y(global.sequenceLayer,global.CamY);
+	}
+#endregion
 #region background 
 	var _layer = layer_get_id("Background")
 	layer_x(_layer,global.CamX*0.65);
