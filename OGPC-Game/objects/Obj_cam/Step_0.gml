@@ -18,11 +18,13 @@ x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff);
 
 //screen shake
-x += random_range(-shake_remain,shake_remain);
-y += random_range(-shake_remain,shake_remain);
-image_angle += random_range(-shake_angle,shake_angle);
-shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
-shake_angle = max(0,shake_angle-((1/shake_length)*shake_magnitude));
+if !global.midTransition {
+	x += random_range(-shake_remain,shake_remain);
+	y += random_range(-shake_remain,shake_remain);
+	image_angle += random_range(-shake_angle,shake_angle);
+	shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
+	shake_angle = max(0,shake_angle-((1/shake_length)*shake_magnitude));
+}
 
 //updating position of camera
 global.CamX = x-view_w_half;

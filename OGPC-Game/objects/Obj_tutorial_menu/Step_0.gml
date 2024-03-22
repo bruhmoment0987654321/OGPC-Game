@@ -26,7 +26,7 @@ if(select){
 				//yes
 				case 0:
 					global.playercant = false;
-					room_goto(Rm_prehistoric);
+					Transition_Start(Rm_prehistoric,Sq_spike_out,Sq_spike_in);
 					Start_over();
 				break;
 				//no
