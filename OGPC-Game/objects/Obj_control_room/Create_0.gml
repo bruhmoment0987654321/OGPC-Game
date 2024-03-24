@@ -1,4 +1,5 @@
 global.pauseable = false;
+global.bomb_amount = 10;
 scale = 1.5;
 scale_for_outside = 2.0; //the size of the text used for the static text in the world
 //area that the player reaches. it checks the players x position
@@ -19,5 +20,5 @@ seventh_area_end = room_width;
 
 //making the menu when the player is playing for the first time
 if global.first_time_playing {
-	instance_create_layer(x,y,"FX",Obj_tutorial_menu)
+	instance_create_layer(x,y,"Shop_obj",Obj_tutorial_menu)
 }

@@ -30,7 +30,6 @@ direction = (round(dir/45)*45);
 if any && delay_timer<=0 {
 	burst_dir = direction;
 	Shoot_Bullets();
-	show_debug_message(shoot_amount);
 	delay_timer = delay;
 }
 

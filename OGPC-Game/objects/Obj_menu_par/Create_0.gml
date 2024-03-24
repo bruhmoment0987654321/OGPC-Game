@@ -1,4 +1,3 @@
-global.playercant = true;
 //menu size
 width = 128;
 height = 168;

@@ -39,7 +39,6 @@ function Shoot_Bullets(){
 			case Obj_three_gun:
 				burst_timer = burst_delay;
 				shoot_amount = 0;
-				show_debug_message("Shot")
 			break;
 			case Obj_shuriken:
 				with(instance_create_layer(x-(2*image_xscale),y,"Bullets",Obj_shuriken_bullet)){

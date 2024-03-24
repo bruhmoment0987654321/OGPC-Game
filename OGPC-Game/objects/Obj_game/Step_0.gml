@@ -7,6 +7,11 @@ if instance_exists(Obj_player) {
 		current_pickup = Obj_player.which_weapon_pickup;	
 	}
 }
+
+if global.midTransition {
+	global.playercant = true;	
+}
+
 if global.battery_amount == global.round_difficulty_increase {
 	global.round_counter += 1;
 	global.battery_amount = 0;	

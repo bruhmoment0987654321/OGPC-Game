@@ -13,3 +13,5 @@ options[0][3] = "Quit Game :["
 options[1][0] = "Fullscreen";
 options[1][1] = "Settings";
 options[1][2] = "Back";
+
+getting_out = false;

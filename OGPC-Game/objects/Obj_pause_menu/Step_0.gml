@@ -29,10 +29,10 @@ if(select){
 				//options
 				case 1: menu_level = 1; break;
 				//back to title
-				case 2: 
-					room_goto(Rm_title);
-					global.game_state = GAME_STATE.RUNNING;
+				case 2:
+					Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
 					Start_over();
+					getting_out = true;
 				break;
 				//Exit game
 				case 3: game_end(); break;

@@ -1,8 +1,7 @@
-global.show_GUI = false;
 event_inherited();
 switch(menu_level){
 	case 0: question = "Do you want to play the tutorial?"; break;
-	case 1: question = "Are you sure (;_;)?"; break;
+	case 1: question = "Are you sure?"; break;
 }
 #region selecting options
 if(select){

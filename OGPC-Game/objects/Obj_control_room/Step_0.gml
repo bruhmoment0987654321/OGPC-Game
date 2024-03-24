@@ -1,6 +1,5 @@
 exit_room = keyboard_check_pressed(vk_escape);
 if exit_room {
-	Start_over();
-	room_goto(Rm_title);
+	Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
 	global.first_time_playing = false;
 }

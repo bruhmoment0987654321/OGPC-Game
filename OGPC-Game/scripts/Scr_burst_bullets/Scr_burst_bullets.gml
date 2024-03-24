@@ -13,7 +13,6 @@ function Burst_Bullets(){
 				curve_spd = 0.05;
 				shoot_amount++;
 				burst_timer = burst_delay;	
-				show_debug_message("BAANG!" + string(shoot_amount));
 			}
 		break;
 	}

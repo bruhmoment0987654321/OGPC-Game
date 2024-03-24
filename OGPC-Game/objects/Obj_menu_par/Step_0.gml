@@ -2,6 +2,7 @@ up = keyboard_check_pressed(global.scroll_up);
 down = keyboard_check_pressed(global.scroll_down);
 select = keyboard_check_pressed(global.select);
 s = id; //attaching the variables to specific menus
+global.playercant = true;
 if(global.cantpress)||(global.cantpress_commands){
 	up = 0;
 	down = 0;

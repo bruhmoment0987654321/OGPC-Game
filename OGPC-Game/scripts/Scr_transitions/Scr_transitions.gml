@@ -3,8 +3,13 @@ global.roomTarget = -1;
 global.sequenceLayer = -1;
 
 function Transition_Place(_type){
+	if instance_exists(Obj_cam) {
 	var _cam_x = camera_get_view_x(view_camera[0]);
 	var _cam_y = camera_get_view_y(view_camera[0]);
+	}else{
+		var _cam_x = 0;
+		var _cam_y = 0;
+	}
 	
 	if layer_exists("transition") layer_destroy("transition");
 	var _lay = layer_create(-9999999999999,"transition");
@@ -25,10 +30,11 @@ function Transition_Start(_roomTarget,_typeOut,_typeIn){
 	}else return false
 }
 function Transition_Change_Room(){
-	room_goto(global.roomTarget);	
+	room_goto(global.roomTarget);
 }
 
 function Transition_Finished(){
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
+	global.playercant = false;
 }
