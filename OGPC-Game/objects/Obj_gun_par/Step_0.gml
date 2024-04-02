@@ -8,8 +8,8 @@ right = keyboard_check(global.shoot_right);
 up = keyboard_check(global.shoot_up);
 down = keyboard_check(global.shoot_down);
 var any = left||right||up||down;
-if global.cantpress || global.cantpress_commands || global.playercant {
-	any = 0;	
+if global.cantpress || global.cantpress_commands || global.playercant || instance_exists(Obj_tutorial_menu){
+	any = 0;
 }
 
 delay_timer--;

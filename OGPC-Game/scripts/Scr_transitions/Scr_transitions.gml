@@ -18,6 +18,7 @@ function Transition_Place(_type){
 
 function Transition_Start(_roomTarget,_typeOut,_typeIn){
 	if !global.midTransition {
+		global.show_GUI = false;
 		global.midTransition = true;
 		global.roomTarget = _roomTarget;
 		
