@@ -8,8 +8,10 @@ function CreateSectionFromString(_x,_y,_sectionString){
 			switch(string_char_at(_currentStringData,c+1)){
 				case 0: break; //place nothing
 				case 1: //place block
-					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize,
-					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Walls",Obj_solid);
+					var inst_x = (_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize
+					var inst_y = (_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize
+					instance_create_layer(inst_x,inst_y, "Walls",Obj_solid);
+					
 				break;
 				case 2: //place sand
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize,
