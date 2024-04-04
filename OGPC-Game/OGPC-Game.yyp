@@ -139,6 +139,7 @@
     {"id":{"name":"Obj_chest_par","path":"objects/Obj_chest_par/Obj_chest_par.yy",},"order":1,},
     {"id":{"name":"Sq_game_over_screen","path":"sequences/Sq_game_over_screen/Sq_game_over_screen.yy",},"order":1,},
     {"id":{"name":"Rm_level2","path":"rooms/Rm_level2/Rm_level2.yy",},"order":1,},
+    {"id":{"name":"painters","path":"sprites/painters/painters.yy",},"order":15,},
     {"id":{"name":"Obj_shop_menu","path":"objects/Obj_shop_menu/Obj_shop_menu.yy",},"order":5,},
     {"id":{"name":"ENUMS","path":"scripts/ENUMS/ENUMS.yy",},"order":4,},
     {"id":{"name":"Obj_spawn_point","path":"objects/Obj_spawn_point/Obj_spawn_point.yy",},"order":1,},

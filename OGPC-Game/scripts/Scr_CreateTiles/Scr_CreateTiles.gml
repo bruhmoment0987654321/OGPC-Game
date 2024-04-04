@@ -4,7 +4,7 @@ function CreateTiles(_x,_y,_sectionString,tileset_type){
 	var _currentYsection = _y;
 	var _currentStringData = _sectionString;
 	grass_tile_values = ds_map_create();
-	Add_Autotile_Values(grass_tile_values,"Grass");
+	Add_Autotile_Values(grass_tile_values,"grass");
 	for(var c = 0; c < string_length(_currentStringData);c++){
 			switch(string_char_at(_currentStringData,c+1)){
 				case 1:
