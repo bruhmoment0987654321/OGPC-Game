@@ -25,7 +25,6 @@ function GenerateLevel(){
 		for (_x = 0; _x < xSections; _x++){
 			sectionStringData = LoadRandomSection(_x,_y,sections[_x][_y]);	
 			CreateSectionFromString(_x,_y,sectionStringData);
-			//CreateTiles(_x,_y,sectionStringData,TileSet1);
 		}
 	}
 }

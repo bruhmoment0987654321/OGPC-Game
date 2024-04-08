@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_CreateTiles",
+  "name": "Scr_AutoTiling",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
