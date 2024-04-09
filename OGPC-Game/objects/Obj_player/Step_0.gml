@@ -26,8 +26,8 @@ if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 switch(state){
 	#region normal state
 	case "normal":
+		max_vsp = max_vsp_normal;
 		#region movement functions
-			
 			var move = right-left;
 			var decrease_sp = 1;
 			if place_meeting(x,y,Obj_kingfly) decrease_sp = decrease_amount;
@@ -57,7 +57,6 @@ switch(state){
 			if(!on_ladder){
 				if(vsp > 0){
 					fall_sp = fall_muliplied;
-					
 				}
 				vsp += global.grv*fall_sp;
 			}
@@ -190,8 +189,9 @@ switch(state){
 		#region ladder movement
 		x = inst.x+16
 		on_ground = false;
-		
+		max_vsp = max_vsp_ladder;
 		var move1 = down-up;
+		
 		if(move1!=0){
 			vsp += move1*laddersp;
 			vsp = clamp(vsp,-(max_vsp*0.75),(max_vsp*0.75));

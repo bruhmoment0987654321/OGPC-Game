@@ -1,14 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function AutoTiling(tile_map){
-	/*
-    Returns the tile index after checking all 8 positions around the tile.
-	Includes corners.
-*/
-
-var index,north_tile,south_tile,west_tile,east_tile,north_east_tile,north_west_tile,south_east_tile,south_west_tile,tile_size,tile_map;
-
-tile_size = sprite_width;
+function AutoTiling(){
+var index,north_tile,south_tile,west_tile,east_tile,north_east_tile,north_west_tile,south_east_tile,south_west_tile;
 
 size = Gridsize;
 

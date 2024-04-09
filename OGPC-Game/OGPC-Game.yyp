@@ -16,6 +16,7 @@
     {"id":{"name":"tele","path":"scripts/tele/tele.yy",},"order":4,},
     {"id":{"name":"Obj_armgun_pickup","path":"objects/Obj_armgun_pickup/Obj_armgun_pickup.yy",},"order":2,},
     {"id":{"name":"Obj_pause_menu","path":"objects/Obj_pause_menu/Obj_pause_menu.yy",},"order":4,},
+    {"id":{"name":"Scr_Add_Autotile_Values","path":"scripts/Scr_Add_Autotile_Values/Scr_Add_Autotile_Values.yy",},"order":20,},
     {"id":{"name":"Spr_battery_icon","path":"sprites/Spr_battery_icon/Spr_battery_icon.yy",},"order":3,},
     {"id":{"name":"Attributions","path":"notes/Attributions/Attributions.yy",},"order":0,},
     {"id":{"name":"Scr_burst_bullets","path":"scripts/Scr_burst_bullets/Scr_burst_bullets.yy",},"order":5,},

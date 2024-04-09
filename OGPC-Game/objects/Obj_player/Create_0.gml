@@ -14,7 +14,8 @@ fall_sp = 1;
 hsp = 0;
 vsp = 0;
 max_hsp = 3.7;
-max_vsp = 8;
+max_vsp_normal = 8;
+max_vsp = max_vsp_normal;
 walk_sp = 0.7;
 decrease_amount = 0.1;
 normal_friction = 0.15;
@@ -37,8 +38,9 @@ death_timer = 100;
 //state variable
 state = "normal";
 //ladder variable
-laddersp = 3;
+laddersp = 0.5;
 on_ladder = false;
+max_vsp_ladder = 5;
 inst = noone;
 //sound variables
 sound = false;
