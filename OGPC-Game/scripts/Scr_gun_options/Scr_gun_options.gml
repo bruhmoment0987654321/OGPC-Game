@@ -6,6 +6,7 @@ function Gun_options(_excluded_weapon = noone){
 	ds_list_add(_gun_options,Obj_threegun_pickup);
 	ds_list_add(_gun_options,Obj_grenade_pickup);
 	ds_list_add(_gun_options,Obj_shuriken_pickup);
+	ds_list_add(_gun_options,Obj_guitargun_pickup);
 	
 	//exclude the object provided in the function
 	if _excluded_weapon != noone {

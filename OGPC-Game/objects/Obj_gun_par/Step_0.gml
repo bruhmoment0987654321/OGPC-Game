@@ -28,9 +28,17 @@ direction = (round(dir/45)*45);
 #endregion
 
 if any && delay_timer<=0 {
-	burst_dir = direction;
-	Shoot_Bullets();
-	delay_timer = delay;
+	if !one_shot{
+		burst_dir = direction;
+		Shoot_Bullets();
+		delay_timer = delay;
+	}else{
+		if !instance_exists(Obj_bullet_par){
+			burst_dir = direction;
+			Shoot_Bullets();
+			delay_timer = delay;
+		}
+	}
 }
 
 #region timer for burst weapons
@@ -46,6 +54,10 @@ Gun_anicurves(Obj_cannon, A_cannon);
 Gun_anicurves(Obj_three_gun, A_threegun);
 Gun_anicurves(Obj_grenade_launcher, A_grenade);
 Gun_anicurves(Obj_shuriken, A_shuriken);
+Gun_anicurves(Obj_guitar_gun,A_guitar);
+
+//special things with different curves
+
 
 curve_pos += curve_spd;
 

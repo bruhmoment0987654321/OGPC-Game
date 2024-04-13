@@ -9,8 +9,6 @@ function Shoot_Bullets(){
 					audio_play_sound(Snd_Lasergunshoot,5,false)
 				}
 				Screenshake(2,10);
-				curve_pos = 0;
-				curve_spd = 0.05;
 			break;
 		
 			case Obj_cannon:
@@ -20,8 +18,6 @@ function Shoot_Bullets(){
 					image_xscale = max(1,speed/sprite_width);
 				}
 				Screenshake(4,12);
-				curve_pos = 0;
-				curve_spd = 0.05;
 			break;
 		
 			case Obj_grenade_launcher:
@@ -32,8 +28,6 @@ function Shoot_Bullets(){
 					sprite_index = Spr_bomb_shoot;
 				}
 				Screenshake(2,15);
-				curve_pos = 0;
-				curve_spd = 0.05;
 			break;
 		
 			case Obj_three_gun:
@@ -47,9 +41,17 @@ function Shoot_Bullets(){
 					image_xscale = max(1,speed/sprite_width);
 				}
 				Screenshake(2,5);
-				curve_pos = 0;
-				curve_spd = 0.05;
+			break;
+			case Obj_guitar_gun:
+				with(instance_create_layer(x-(2*image_xscale),y,"Bullets",Obj_shockwave_bullet)){
+					speed = Obj_gun_par.spd;
+					direction = Obj_gun_par.dir;
+					image_xscale = max(1,speed/sprite_width);
+				}
+				Screenshake(3,20);
 			break;
 		}
+		curve_pos = 0;
+		curve_spd = 0.05;
 	}
 }

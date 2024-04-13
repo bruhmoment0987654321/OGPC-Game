@@ -1,3 +1,10 @@
+//checking if you are holding a weapon during gameplay
+fullscreen_button = keyboard_check_pressed(vk_f11);
+
+if fullscreen_button {
+	window_set_fullscreen(!window_get_fullscreen());	
+}
+
 if instance_exists(Obj_player) {
 	if(Obj_player.which_weapon != noone){
 		current_weapon = Obj_player.which_weapon;
@@ -12,10 +19,13 @@ if global.midTransition {
 	global.playercant = true;	
 }
 
+//increaing difficulty in levels
 if global.battery_amount == global.round_difficulty_increase {
 	global.round_counter += 1;
 	global.battery_amount = 0;	
 }
+
+//max resources in gameplay
 if global.bomb_amount < global.bomb_max {
 	global.max_bombs = false;
 }
@@ -25,6 +35,8 @@ if global.shield < global.shield_max {
 if global.hp < global.max_hp {
 	global.max_health = false;	
 }
+
+//only for premade levels, could remove soon
 if room == Rm_level1 {
 	if !instance_exists(Obj_enemy_par) {
 		level_completed = true;

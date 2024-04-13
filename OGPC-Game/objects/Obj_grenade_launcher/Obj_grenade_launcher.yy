@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"5",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"delay","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"objectId":{"name":"Obj_gun_par","path":"objects/Obj_gun_par/Obj_gun_par.yy",},"value":"60",},
   ],
   "parent": {
     "name": "Guns",
