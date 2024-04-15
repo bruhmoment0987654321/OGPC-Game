@@ -11,10 +11,11 @@ jumped = false;
 //attack variables
 activation = true;
 attack_radius = 30
-hit_radius = 10;
-attack_distance = 8;
-tween_speed = 0.3;
-Damage = 20;
+attack_circ_y_offset = 32;
+hit_radius = 20;
+hit_circ_x_offset = 15;
+hit_circ_y_offset = 16;
+Damage = 30;
 //buff variables
 buff_amount = 1.3;
 buff_radius = 100;

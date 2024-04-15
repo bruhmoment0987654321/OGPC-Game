@@ -2,6 +2,8 @@ if global.game_state == GAME_STATE.PAUSED {
 	image_speed = 0;
 	return;
 }
+CheckAnimation();	
+if (!active) exit;
 
 left = keyboard_check(global.left);
 right = keyboard_check(global.right);
@@ -12,7 +14,7 @@ jump_held = keyboard_check(global.jump);
 item_use = keyboard_check_pressed(global.bomb_place);
 open_up = keyboard_check_pressed(global.action);
 ladder_up = keyboard_check_pressed(global.up);
-dash = keyboard_check_pressed(vk_shift)
+dash = keyboard_check_pressed(vk_shift);
 if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	left = 0;
 	right = 0;
@@ -98,12 +100,17 @@ switch(state){
 						if(other.jump_held) jump_velocity_multiplied = 8;
 						other.vsp -= other.jump_sp*jump_velocity_multiplied;
 						other.jumped = true;
+						if !audio_is_playing(Snd_spring){
+							var pitch_rand = random_range(0.9,1.1);
+							audio_play_sound(Snd_spring,5,false);
+							audio_sound_pitch(Snd_spring,pitch_rand);
+						}
 						Gummy(0.8,1.2);
 					}	
 				}	
 			}
 		
-			if place_meeting(x,y +1, Obj_ice) friction_ = ice_friction else friction_ = normal_friction;
+			if place_meeting(x,y+1, Obj_ice) friction_ = ice_friction else friction_ = normal_friction;
 		
 			if(!on_ground){
 				if(coyote_timer > 0){
@@ -269,7 +276,7 @@ switch(state){
 		dash_timer++;
 	}
 	invincible_timer--;
-	if invincible_timer < 0 && invincible == true {
+	if invincible_timer < 0 && invincible{
 		invincible = false;
 		invincible_timer = invincible_timer_amount;	
 	}

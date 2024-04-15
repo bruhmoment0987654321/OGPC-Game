@@ -28,10 +28,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"weapon_knockback","path":"objects/Obj_melee_par/Obj_melee_par.yy",},"objectId":{"name":"Obj_melee_par","path":"objects/Obj_melee_par/Obj_melee_par.yy",},"value":"5",},
+  ],
   "parent": {
     "name": "Melee",
     "path": "folders/Objects/Player/weapons/Melee.yy",

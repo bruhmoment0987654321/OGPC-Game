@@ -6,6 +6,14 @@ if(global.hp <= 0){
 	state = "norm";	
 }
 
+#region invincibility
+	i_frame_time--;
+	if i_frame_time < 0 && invincible{
+		invincible = false;
+		i_frame_time = i_frame_timer_max;
+	}
+#endregion
+
 #region animations
 	//gummy
 	xscale = Approach(xscale,1,0.05);

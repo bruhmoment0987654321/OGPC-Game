@@ -114,7 +114,7 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "game over",
+    "path": "folders/Sequences/game over.yy",
   },
 }

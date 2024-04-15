@@ -742,7 +742,7 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "transitions",
+    "path": "folders/Sequences/transitions.yy",
   },
 }

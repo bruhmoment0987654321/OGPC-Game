@@ -26,7 +26,6 @@ function Enemy_damaged(_insta_kill,_damage_amount,_knockback,_attacker,_stunned)
 				if(variable_instance_exists(self,"hsp")){
 					hsp += _knockback;
 				}
-				//no instance destroy because the hitbox already destroys itself
 			break;
 			case "Explosion":
 				if !invincible{
@@ -40,7 +39,7 @@ function Enemy_damaged(_insta_kill,_damage_amount,_knockback,_attacker,_stunned)
 						hsp += _knockback;	
 					}
 					invincible = true;
-					alarm[0] = i_frame_timer_max;
+					i_frame_time = i_frame_timer_max;
 				}
 				
 			break;

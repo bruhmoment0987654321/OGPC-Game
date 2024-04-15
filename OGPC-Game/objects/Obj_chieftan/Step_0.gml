@@ -36,30 +36,29 @@ switch(state){
 			
 			}
 		}
-		if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
+		if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-attack_circ_y_offset,attack_radius)){
 			activation = true;
 			state = "attack";
 		}
-		sprite_index = Spr_caveman_angry;
+		sprite_index = Spr_chieftan_chase;
 	break
 	
 	case "attack":
-		sprite_index = Spr_caveman_attack;
+		sprite_index = Spr_chieftan_attack;
 		hsp = 0;	
 		if(activation){
 			image_index = 0;
 			activation = false;
 		}
-		if(image_index >= 3){
-			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
-			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
+		if image_index >= 4 {
+			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+hit_circ_x_offset*image_xscale,y-hit_circ_y_offset,hit_radius)){
 				Player_attacked(Damage,Obj_chieftan.knockb*Obj_chieftan.image_xscale);
 			}
 		}
-		if(image_index >= 4) && (point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
+		if(image_index >= 4) && (point_in_circle(Obj_player.x,Obj_player.y-16,x,y-attack_circ_y_offset,attack_radius)){
 			image_index = 0;	
 		}
-		if(image_index >= image_number-1){
+		if(image_index > image_number-1){
 			state = "chase";	
 		}
 		

@@ -20,7 +20,6 @@ stun_amount = 3;
 stun_timer = stun_amount;
 grounded = false;
 //shoot variables
-countdown_rate = 40;
-countdown = countdown_rate;
-spd = 11;
-dist = 250;
+throw_one = false;
+spd = 7;
+dist = 200;

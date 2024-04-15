@@ -21,6 +21,7 @@ switch(state){
 			&&(abs(Obj_player.x-x) <= dist)
 			&&(collision_line(x,y-16,Obj_player.x,Obj_player.y-16,Obj_solid,false,false) == noone) state = "chase";
 		}
+		sprite_index = Spr_velociraptor;
 	break;
 	
 	case "chase":
@@ -50,6 +51,7 @@ switch(state){
 				state = "entrap"	
 			}
 		}
+		sprite_index = Spr_velociraptor;
 	break;
 	
 	case "entrap":
@@ -60,6 +62,7 @@ switch(state){
 		}
 		if place_meeting(x,y,Obj_player) state = "attack";
 		else state = "chase";
+		sprite_index = Spr_velociraptor;
 	break;
 	
 	case "attack":
@@ -71,6 +74,7 @@ switch(state){
 			state = "pinned";
 		}
 		Player_attacked(damage,0);
+		sprite_index = Spr_velociraptor;
 	break;
 	
 	case "stunned":
@@ -84,6 +88,7 @@ switch(state){
 		with(Obj_player){
 			state = "normal";
 		}
+		sprite_index = Spr_velociraptor_stun;
 	break
 	
 	case "dead":

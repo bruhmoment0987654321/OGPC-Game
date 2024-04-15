@@ -32,7 +32,7 @@ if(select){
 							GameText(other.s.poor_text_id);
 						}
 					}else{
-						if(global.hp <= global.max_hp){
+						if(global.hp < global.max_hp){
 							global.money -= 15;
 							global.hp += 10;
 						}else{
@@ -49,7 +49,7 @@ if(select){
 							GameText(other.s.poor_text_id);
 						}
 					}else{
-						if(global.bomb_amount <= global.bomb_max){
+						if(global.bomb_amount < global.bomb_max){
 							global.money -= 5;
 							global.bomb_amount += 1;
 						}else{
@@ -66,7 +66,7 @@ if(select){
 							GameText(other.s.poor_text_id);
 						}
 					}else{
-						if(global.shield <= global.shield_max){
+						if(global.shield < global.shield_max){
 							global.money -= 10;
 							global.shield += 20;
 						}else{
