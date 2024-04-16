@@ -82,6 +82,7 @@ function Disable(){
 	hsp = 0;
 	vsp = 0;
 }
+
 //------------used for attacks----------//
 	//sequences section
 activeAnimation = -1;

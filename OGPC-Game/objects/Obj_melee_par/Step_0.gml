@@ -1,4 +1,5 @@
 if (!Obj_player.active) exit;
+
 if global.game_state == GAME_STATE.PAUSED {
 	return;
 }
