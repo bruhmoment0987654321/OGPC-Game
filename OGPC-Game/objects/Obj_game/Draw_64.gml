@@ -41,7 +41,8 @@ if global.hp > 0 && instance_exists(Obj_player) {
 if room == Rm_title {
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
-	draw_text_transformed((room_width/2),320,"Hi-score:"+string(highscore),scale,scale,0);	
+	draw_text_transformed(500,50,"Hi-Score",scale,scale,0);
+	draw_highscore(440,100,560,300);	
 	draw_set_halign(fa_left);
 }
 

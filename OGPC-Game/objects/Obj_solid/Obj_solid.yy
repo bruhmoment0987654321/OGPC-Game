@@ -9,7 +9,10 @@
   "solid": true,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "Spr_wall",
+    "path": "sprites/Spr_wall/Spr_wall.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
