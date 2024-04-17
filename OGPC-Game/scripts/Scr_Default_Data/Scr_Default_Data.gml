@@ -3,5 +3,8 @@
 function Default_Data(){
 	global.first_time_playing = true;
 	Obj_game.highscore = 10000;
+	if file_exists("save_data.txt"){
+		file_delete("save_data.txt")	
+	}
 	Transition_Start(room,Sq_spike_out,Sq_spike_in);
 }
