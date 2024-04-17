@@ -5,7 +5,7 @@ if global.game_state == GAME_STATE.PAUSED {
 	return;
 }
 event_inherited();
-if right {
+if left||right {
 	with Obj_player StartAnimation(other.attack_num_one);
 }
 

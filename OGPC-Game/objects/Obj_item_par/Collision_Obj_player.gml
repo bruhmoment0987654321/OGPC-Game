@@ -19,16 +19,6 @@ if(object_index == Obj_bomb_pickup){
 			instance_destroy();
 		}
 	}
-	if(image_index = 1){
-		if((global.bomb_amount+added_bomb2) <= global.bomb_max){
-			global.bomb_amount += added_bomb2;
-			instance_destroy();
-		}else{
-			global.bomb_amount = global.bomb_max;
-			global.max_bombs = true;
-			instance_destroy();
-		}
-	}
 }
 if(object_index == Obj_shield){
 	if((global.shield+added_shield) <= global.shield_max){
@@ -42,13 +32,18 @@ if(object_index == Obj_shield){
 }
 if(object_index == Obj_metal_currency){
 	if(image_index = 0){
-		global.money += 5;	
+		global.money += 1;
+		score += 100;
 	}
+	
 	if(image_index = 1){
-		global.money += 10;
+		global.money += 5;
+		score += 200;
 	}
+	
 	if(image_index = 2){
-		global.money += 25;
+		global.money += 10;
+		score += 500;
 	}
 	instance_destroy();
 }

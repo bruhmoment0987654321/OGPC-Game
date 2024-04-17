@@ -9,6 +9,7 @@ options[0][2] = "Exit";
 //option menu
 options[1][0] = "Fullscreen";
 options[1][1] = "Tutorial";
-options[1][2] = "Back";
+options[1][2] = "Erase Save Data";
+options[1][3] = "Back";
 #endregion
 

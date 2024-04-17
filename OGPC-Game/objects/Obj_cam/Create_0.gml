@@ -19,4 +19,4 @@ buff = 0;
 
 aim_x = 0;
 aim_y = 0;
-aim_amount = 2;
+aim_amount = 3;

@@ -30,11 +30,15 @@ if(select){
 				case 1:
 					global.first_time_playing = false;
 					global.playercant = false;
-					global.show_GUI = true;
 					Transition_Start(Rm_ctrl_rm,Sq_spike_out,Sq_spike_in);
 				break;
+				case 2:
+					 if show_question("Do you want to erase all save data? It won't come back."){
+						if show_question("Are you sure? ;_;") Default_Data();	 
+					 }
+				break;
 				//go back
-				case 2: menu_level = 0; break;
+				case 3: menu_level = 0; break;
 			}
 		break;
 		

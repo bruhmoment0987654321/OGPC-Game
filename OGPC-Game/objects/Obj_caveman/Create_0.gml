@@ -14,7 +14,7 @@ attack_radius = 30
 hit_radius = 10;
 attack_distance = 8;
 tween_speed = 0.3;
-Damage = 20;
+Damage = 30;
 //buff
 buff = false;
 buff_create = true;

@@ -15,12 +15,12 @@ attack_circ_y_offset = 32;
 hit_radius = 20;
 hit_circ_x_offset = 15;
 hit_circ_y_offset = 16;
-Damage = 30;
+Damage = 40;
 //buff variables
 buff_amount = 1.3;
 buff_radius = 100;
 //other variables
-hp = 200;
+hp = 210;
 state = "norm";
 stun_timer = 9;
 stun_amount = 9;

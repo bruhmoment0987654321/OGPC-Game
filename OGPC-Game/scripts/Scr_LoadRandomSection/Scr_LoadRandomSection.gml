@@ -5,7 +5,7 @@ function LoadRandomSection(_x,_y,_section){
 		case 0:
 			var _return_string = ds_list_find_value(sectionZero,irandom(ds_list_size(sectionZero)-1));
 			//this is for the shop that appears in the right
-			if(_y < 3)&&(sections[clamp(_x-1,0,sectionTilesX)][_y] != 0)&&(shop_count < 1)&&(Chance(0.3)){
+			if(_y < 3)&&(sections[clamp(_x-1,0,sectionTilesX)][_y] != 0)&&(shop_count < 1)&&(Chance(0.35)){
 				var _return_string = ds_list_find_value(sectionShopRight,irandom(ds_list_size(sectionShopRight)-1));
 				shop_count++;
 			}

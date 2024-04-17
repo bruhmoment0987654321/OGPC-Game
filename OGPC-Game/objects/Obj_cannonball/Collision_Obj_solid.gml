@@ -24,7 +24,7 @@ repeat(3){
 //create debris
 repeat(irandom_range(6,9)){ //nice
 	with(instance_create_layer(x,y,"FX",Obj_gun_fx)){
-		sprite_index = Spr_sam_debris;
+		sprite_index = Spr_grass_debris;
 		image_index = irandom_range(0,image_number-1);
 		fric = 0.9;
 		grv = 0.9;

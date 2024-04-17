@@ -1,5 +1,10 @@
 level_completed = false;
 create_end_level = true;
+//score variables
+highscore = 100;
+prev_score = 0;
+score_scale = 1;
+score = 0;
 //when opening the game for the first time
 global.first_time_playing = true;
 //controls
@@ -25,6 +30,9 @@ global.game_state = GAME_STATE.RUNNING;
 
 //money
 global.money = 0;
+global.first_item_added_cost = 0;
+global.second_item_added_cost = 0;
+global.third_item_added_cost = 0;
 //bomb variables
 global.bomb_amount = 1;
 global.bomb_max = 10; //the limit of bombs you can have
@@ -61,6 +69,6 @@ global.pauseable = true;
 //gun variables
 global.take_the_weapon = false;
 scale = 2;
-
+Load_Game();
 window_set_caption("Project: Time?");
 randomize();

@@ -7,3 +7,5 @@ with(king_fly){
 		fly_count_max = other.fly_count_max;
 	}
 }
+
+score += 100;

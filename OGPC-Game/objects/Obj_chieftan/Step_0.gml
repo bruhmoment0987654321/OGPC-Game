@@ -85,6 +85,7 @@ if collision_circle(x,y-16,buff_radius,Obj_caveman,false,true) != noone {
 			instance_create_depth(x,y-(sprite_height+10),depth-1,Obj_buff_FX);	
 			buff_create = false;
 		}
+		image_blend = #ffabb2;
 	}
 }
 if collision_circle(x,y-16,buff_radius,Obj_rockman,false,true) != noone {
@@ -97,6 +98,7 @@ if collision_circle(x,y-16,buff_radius,Obj_rockman,false,true) != noone {
 			instance_create_depth(x,y-(sprite_height+10),depth-1,Obj_buff_FX);	
 			buff_create = false;
 		}
+		image_blend = #ffabb2;
 	}	
 }
 #endregion 

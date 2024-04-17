@@ -64,11 +64,11 @@ which_weapon_pickup = pickup_type;
 if Obj_game.current_weapon == noone {
 	which_weapon = weapon_type;
 	which_weapon_pickup = pickup_type;
-	instance_create_layer(x,y-13,"Guns",which_weapon);
+	instance_create_depth(x,y-13,depth-1,which_weapon);
 }else{
 	which_weapon = Obj_game.current_weapon;	
 	which_weapon_pickup = Obj_game.current_pickup;
-	instance_create_layer(x,y-13,"Guns",which_weapon);
+	instance_create_depth(x,y-13,depth-1,which_weapon);
 }
 //melee variables
 	//player control section

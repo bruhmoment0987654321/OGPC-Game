@@ -4,7 +4,7 @@ fullscreen_button = keyboard_check_pressed(vk_f11);
 if fullscreen_button {
 	window_set_fullscreen(!window_get_fullscreen());	
 }
-
+//checking weapon in multiple rooms
 if instance_exists(Obj_player) {
 	if(Obj_player.which_weapon != noone){
 		current_weapon = Obj_player.which_weapon;
@@ -18,6 +18,8 @@ if instance_exists(Obj_player) {
 if global.midTransition {
 	global.playercant = true;	
 }
+
+//score
 
 //increaing difficulty in levels
 if global.battery_amount == global.round_difficulty_increase {

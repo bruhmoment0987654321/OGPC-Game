@@ -3,6 +3,11 @@ if global.game_state == GAME_STATE.PAUSED {
 }
 
 event_inherited();
+#region have options change during runtime
+options[1][0] = "Health : $"+ string(first_item_cost+global.first_item_added_cost);
+options[1][1] = "Bombs : $"+ string(second_item_cost+global.second_item_added_cost);
+options[1][2] = "Shield : $"+string(third_item_cost+global.third_item_added_cost);
+#endregion
 
 #region selecting options
 if(select){
@@ -27,14 +32,15 @@ if(select){
 			switch(pos){
 				//buy first option
 				case 0:
-					if(global.money < 15){
+					if(global.money < first_item_cost+global.first_item_added_cost){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(other.s.poor_text_id);
 						}
 					}else{
 						if(global.hp < global.max_hp){
-							global.money -= 15;
+							global.money -= first_item_cost+global.first_item_added_cost;
 							global.hp += 10;
+							global.first_item_added_cost++;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -44,7 +50,7 @@ if(select){
 				break;
 				//buy second option
 				case 1: 
-					if(global.money < 5){
+					if(global.money < second_item_cost+global.second_item_added_cost){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(other.s.poor_text_id);
 						}
@@ -52,6 +58,7 @@ if(select){
 						if(global.bomb_amount < global.bomb_max){
 							global.money -= 5;
 							global.bomb_amount += 1;
+							global.second_item_added_cost++;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -61,7 +68,7 @@ if(select){
 				break;
 				//buy third option
 				case 2: 
-					if(global.money < 10){
+					if(global.money < third_item_cost+global.third_item_added_cost){
 						with(instance_create_depth(x,y,-999,Obj_textbox)){
 							GameText(other.s.poor_text_id);
 						}
@@ -69,6 +76,7 @@ if(select){
 						if(global.shield < global.shield_max){
 							global.money -= 10;
 							global.shield += 20;
+							global.third_item_added_cost++;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
