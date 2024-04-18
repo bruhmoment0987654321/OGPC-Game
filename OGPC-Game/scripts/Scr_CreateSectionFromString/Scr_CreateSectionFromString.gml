@@ -28,7 +28,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Other",Obj_shop_sign);
 				break;
 				//breakable block
-				case "3":
+				case 3:
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize,
 					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Walls",Obj_breakable_solid);
 				break;
