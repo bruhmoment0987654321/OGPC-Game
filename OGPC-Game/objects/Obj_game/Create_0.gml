@@ -1,5 +1,6 @@
 level_completed = false;
 create_end_level = true;
+name = "";
 //score variables
 prev_score = 0;
 score_scale = 1;

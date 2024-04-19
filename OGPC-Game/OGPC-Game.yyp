@@ -204,7 +204,6 @@
     {"id":{"name":"kill_all","path":"scripts/kill_all/kill_all.yy",},"order":5,},
     {"id":{"name":"Scr_reverse_string","path":"scripts/Scr_reverse_string/Scr_reverse_string.yy",},"order":2,},
     {"id":{"name":"Obj_shop_sign","path":"objects/Obj_shop_sign/Obj_shop_sign.yy",},"order":3,},
-    {"id":{"name":"Obj_tutorial_menu","path":"objects/Obj_tutorial_menu/Obj_tutorial_menu.yy",},"order":3,},
     {"id":{"name":"F_Silver","path":"fonts/F_Silver/F_Silver.yy",},"order":0,},
     {"id":{"name":"Obj_item_par","path":"objects/Obj_item_par/Obj_item_par.yy",},"order":0,},
     {"id":{"name":"show_num","path":"scripts/show_num/show_num.yy",},"order":7,},

@@ -1,7 +1,7 @@
 event_inherited();
 global.pauseable = false;
 x_offset = 5;
-y_offset = 50;
+y_offset = 65;
 height = 128;
 
 active = false;

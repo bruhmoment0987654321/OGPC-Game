@@ -26,16 +26,20 @@ if(select){
 					instance_destroy();
 					global.game_state = GAME_STATE.RUNNING;
 				break;
+				case 1:
+					Transition_Start(room, Sq_spike_out,Sq_spike_in);
+					Start_over();
+				break;
 				//options
-				case 1: menu_level = 1; break;
+				case 2: menu_level = 1; break;
 				//back to title
-				case 2:
+				case 3:
 					Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
 					Start_over();
 					getting_out = true;
 				break;
 				//Exit game
-				case 3: game_end(); break;
+				case 4: game_end(); break;
 			}
 		break;
 		//options sub menu

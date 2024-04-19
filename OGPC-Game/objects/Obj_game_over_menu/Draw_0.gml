@@ -9,6 +9,6 @@ draw_set_halign(fa_left);
 
 for(var i = 0; i < op_length; i++){
 	var color = c_white;
-	if(pos == i) color = c_blue;
+	if(pos == i) color = c_yellow;
 	draw_text_transformed_color(x+op_border,y+op_border+op_space*i,options[menu_level][i],scale,scale,0,color,color,color,color,1);	
 }
