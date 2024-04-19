@@ -1,7 +1,6 @@
 level_completed = false;
 create_end_level = true;
 //score variables
-highscore = 10000;
 prev_score = 0;
 score_scale = 1;
 score = 0;
@@ -70,5 +69,8 @@ global.pauseable = true;
 global.take_the_weapon = false;
 scale = 2;
 Load_Game();
+if global.first_time_playing {
+	Load_Default_Scores();	
+}
 window_set_caption("Project: Time?");
 randomize();

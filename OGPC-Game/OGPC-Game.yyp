@@ -57,6 +57,7 @@
     {"id":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},"order":0,},
     {"id":{"name":"Sh_red","path":"shaders/Sh_red/Sh_red.yy",},"order":1,},
     {"id":{"name":"Scr_save_and_load","path":"scripts/Scr_save_and_load/Scr_save_and_load.yy",},"order":7,},
+    {"id":{"name":"Obj_highscore_board","path":"objects/Obj_highscore_board/Obj_highscore_board.yy",},"order":9,},
     {"id":{"name":"Spr_shuriken","path":"sprites/Spr_shuriken/Spr_shuriken.yy",},"order":9,},
     {"id":{"name":"money_up","path":"scripts/money_up/money_up.yy",},"order":2,},
     {"id":{"name":"Spr_cannon","path":"sprites/Spr_cannon/Spr_cannon.yy",},"order":1,},
