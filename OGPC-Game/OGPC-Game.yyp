@@ -220,6 +220,7 @@
     {"id":{"name":"Spr_bonk_attack_behind_charge","path":"sprites/Spr_bonk_attack_behind_charge/Spr_bonk_attack_behind_charge.yy",},"order":2,},
     {"id":{"name":"Obj_trail","path":"objects/Obj_trail/Obj_trail.yy",},"order":3,},
     {"id":{"name":"Sq_spike_out","path":"sequences/Sq_spike_out/Sq_spike_out.yy",},"order":3,},
+    {"id":{"name":"Spr_caveman_attack2","path":"sprites/Spr_caveman_attack2/Spr_caveman_attack2.yy",},"order":15,},
     {"id":{"name":"Spr_player_pinned","path":"sprites/Spr_player_pinned/Spr_player_pinned.yy",},"order":3,},
     {"id":{"name":"Obj_hitbox","path":"objects/Obj_hitbox/Obj_hitbox.yy",},"order":0,},
     {"id":{"name":"Snd_Lasergunshoot","path":"sounds/Snd_Lasergunshoot/Snd_Lasergunshoot.yy",},"order":0,},
