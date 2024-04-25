@@ -45,7 +45,15 @@ if(!debris){
 }
 
 if hooked_on {
-	
+	if instance_exists(target){
+		var offset_x,offset_y;
+		
+		offset_x = x - target.x;
+		offset_y = y - target.y;
+		
+		x = offset_x;
+		y = offset_y;
+	}
 }
 
 timer--;

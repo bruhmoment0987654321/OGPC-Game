@@ -4,5 +4,6 @@ with(instance_create_layer(x,y,"FX",Obj_gun_fx)){
 	fric = 0;
 	grv = 0;
 	debris = true;
-	motion_add(other.image_angle+random_range(-20,20),random_range(-5,-8));
+	target = other.id;
+	hooked_on = true;
 }
