@@ -1,1 +1,1 @@
-Player_attacked(50,0,);
+if image_index > 2 && image_index < 11  Player_attacked(50,0);

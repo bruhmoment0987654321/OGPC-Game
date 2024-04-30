@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_sand",
+  "name": "Obj_semi_solid",
   "spriteId": {
-    "name": "Spr_sand_block",
-    "path": "sprites/Spr_sand_block/Spr_sand_block.yy",
+    "name": "Spr_semi_solid",
+    "path": "sprites/Spr_semi_solid/Spr_semi_solid.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -29,11 +29,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"semi","path":"objects/Obj_solid/Obj_solid.yy",},"objectId":{"name":"Obj_solid","path":"objects/Obj_solid/Obj_solid.yy",},"value":"True",},
+  ],
   "parent": {
     "name": "Solids",
     "path": "folders/Objects/Solids.yy",

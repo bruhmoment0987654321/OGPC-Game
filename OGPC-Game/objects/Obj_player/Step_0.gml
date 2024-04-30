@@ -165,7 +165,7 @@ switch(state){
 		#endregion
 		sprite_index = Spr_player;
 		#region collisions
-			collision(true,true);
+			player_collision();
 		#endregion
 	break;
 	#endregion
@@ -182,7 +182,7 @@ switch(state){
 			image_alpha = 0.9;
 		}
 		
-		collision(true,true);
+		player_collision();
 		dashenergy -= dashsp;
 		if (dashenergy <= 0){
 			vsp = 0;
@@ -216,7 +216,7 @@ switch(state){
 		}
 		sprite_index = Spr_player;
 		#region collisions
-		collision(true,true);
+		player_collision();
 		#endregion
 	break;
 	#endregion
@@ -265,8 +265,8 @@ switch(state){
 			}
 			vsp += global.grv*fall_sp;
 			vsp = clamp(vsp,-max_vsp,max_vsp);
-			//collision
-			collision(true,true);
+			//collisions
+			player_collision();
 			sprite_index = Spr_player_pinned;
 		break;
 	#endregion
