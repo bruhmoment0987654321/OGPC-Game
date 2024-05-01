@@ -86,7 +86,7 @@ switch(state){
 		#region jump functions
 			if(place_meeting(x,y+1,Obj_solid)){
 				on_ground = true;
-			}else{
+			}else if !place_meeting(x,y+1,Obj_semi_solid){
 				on_ground = false;
 				if(vsp < 0){
 					Gummy(1.25,0.9);

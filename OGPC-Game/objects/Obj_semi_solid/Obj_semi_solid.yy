@@ -9,7 +9,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "Spr_semi_solid",
+    "path": "sprites/Spr_semi_solid/Spr_semi_solid.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "Obj_solid",

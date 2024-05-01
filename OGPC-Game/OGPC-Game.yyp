@@ -143,6 +143,7 @@
     {"id":{"name":"Obj_cam","path":"objects/Obj_cam/Obj_cam.yy",},"order":0,},
     {"id":{"name":"Scr_approach","path":"scripts/Scr_approach/Scr_approach.yy",},"order":3,},
     {"id":{"name":"Spr_cannon_gundust","path":"sprites/Spr_cannon_gundust/Spr_cannon_gundust.yy",},"order":1,},
+    {"id":{"name":"Spr_trex","path":"sprites/Spr_trex/Spr_trex.yy",},"order":6,},
     {"id":{"name":"Obj_bonkstick","path":"objects/Obj_bonkstick/Obj_bonkstick.yy",},"order":2,},
     {"id":{"name":"Scr_InitializeSections","path":"scripts/Scr_InitializeSections/Scr_InitializeSections.yy",},"order":0,},
     {"id":{"name":"fullscreen","path":"scripts/fullscreen/fullscreen.yy",},"order":1,},
