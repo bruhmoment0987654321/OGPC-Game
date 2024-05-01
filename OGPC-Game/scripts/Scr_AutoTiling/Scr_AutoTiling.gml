@@ -20,6 +20,5 @@ function AutoTiling(){
 
 	// take the previously calculated value and find the relevant value in the data structure to remove redundancies
 	index = ds_map_find_value(map,string(index));
-
 	return index;
 }

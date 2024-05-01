@@ -1,5 +1,3 @@
-///@param horizontal
-///@param vertical
 function player_collision(){
 	var hcollide;
 	hcollide = instance_place(x+hsp,y,Obj_solid);

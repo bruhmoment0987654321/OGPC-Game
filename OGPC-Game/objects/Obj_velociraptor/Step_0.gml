@@ -57,11 +57,17 @@ switch(state){
 	case "entrap":
 		if !jumped {
 			hsp += jumpdist*image_xscale;
-			vsp -= attack_jump;
+			vsp -= jumpheight;
 			jumped = true;
 		}
 		if place_meeting(x,y,Obj_player) state = "attack";
-		else state = "chase";
+		else if jumped{
+			jump_timer--;
+			if jump_timer <= 0 {
+				state = "chase";
+				jump_timer = jump_timer_max;
+			}
+		}
 		sprite_index = Spr_velociraptor;
 	break;
 	
@@ -84,11 +90,12 @@ switch(state){
 			knockout_timer = knockout_timer_max; 
 			stun_timer = stun_amount;
 			state = "chase";
+		}else{
+			sprite_index = Spr_velociraptor_stun;	
 		}
 		with(Obj_player){
 			state = "normal";
 		}
-		sprite_index = Spr_velociraptor_stun;
 	break
 	
 	case "dead":

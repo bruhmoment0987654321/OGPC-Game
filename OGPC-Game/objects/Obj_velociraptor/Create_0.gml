@@ -11,11 +11,15 @@ friction_ = 0.1;
 grounded = false;
 vsp = 0;
 dist = 250;
+//attacking
 attack_dist = 50;
-jumpdist = attack_dist/4;
-attack_jump = 2;
+jumpdist = 1;
+jumpheight = 2;
 damage = 10;
 first_time = true;
+jump_timer_max = 40;
+jump_timer = jump_timer_max;
+
 knockout_timer_max = 60*2;
 knockout_timer = knockout_timer_max;
 stun_timer = 9;

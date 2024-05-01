@@ -37,11 +37,24 @@ function Initialize_room(){
 	InitializeAllSections();
 	//create the level
 	GenerateLevel();
-	if(!instance_exists(Obj_battery)||!instance_exists(Obj_end_level)) room_restart();
+	if(!instance_exists(Obj_battery)||!instance_exists(Obj_end_level)){
+		ds_list_clear(sectionLeftBottomRight);
+		ds_list_clear(sectionLeftRight);
+		ds_list_clear(sectionLeftTopRight);
+		ds_list_clear(sectionShopRight);
+		ds_list_clear(sectionZero);
+		
+		ds_list_destroy(sectionLeftBottomRight);
+		ds_list_destroy(sectionLeftRight);
+		ds_list_destroy(sectionLeftTopRight);
+		ds_list_destroy(sectionZero);
+		ds_list_destroy(sectionShopRight);
+		room_restart();
+	}
 	//clean up dat memory (de-initialize sections)
 	ds_list_destroy(sectionLeftBottomRight);
 	ds_list_destroy(sectionLeftRight);
 	ds_list_destroy(sectionLeftTopRight);
 	ds_list_destroy(sectionZero);
-	ds_list_destroy(sectionShopRight)
+	ds_list_destroy(sectionShopRight);
 }

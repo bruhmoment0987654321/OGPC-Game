@@ -20,9 +20,9 @@ function Gun_options(_excluded_weapon = noone){
 	//option is picked
 	var picked_option = _gun_options[| 0];
 	
-	//the script returns the option picked, which is an object...
-	return picked_option
-	
 	//always destroy the ds_list. For memory purposes.
 	ds_list_destroy(_gun_options);
+	
+	//the script returns the option picked, which is an object...
+	return picked_option
 }
