@@ -11,3 +11,6 @@ if(global.show_hitboxes){
 	draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true);	
 }
 
+if place_meeting(x,y,Obj_semi_solid){
+	show_debug_message("inside semi block")	
+}

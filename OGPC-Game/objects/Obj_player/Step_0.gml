@@ -22,6 +22,8 @@ if(global.cantpress)||(global.cantpress_commands)||(global.playercant){
 	down = 0;
 	jump = 0;
 	item_use = 0;
+	ladder_up = 0;
+	jump_held = 0;
 	open_up = 0;
 	dash = 0;
 }
@@ -86,7 +88,7 @@ switch(state){
 		#region jump functions
 			if(place_meeting(x,y+1,Obj_solid)){
 				on_ground = true;
-			}else if !place_meeting(x,y+1,Obj_semi_solid){
+			}else{
 				on_ground = false;
 				if(vsp < 0){
 					Gummy(1.25,0.9);
@@ -169,6 +171,7 @@ switch(state){
 		#endregion
 	break;
 	#endregion
+	
 	#region dashing
 	case "dash":
 		//move via the dash
@@ -191,6 +194,7 @@ switch(state){
 		}
 	break;
 	#endregion
+	
 	#region ladder state
 	case "ladder":
 		#region ladder movement
@@ -216,7 +220,7 @@ switch(state){
 		}
 		sprite_index = Spr_player;
 		#region collisions
-		player_collision();
+			player_collision();
 		#endregion
 	break;
 	#endregion

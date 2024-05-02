@@ -21,7 +21,7 @@ function player_collision(){
 	
 	//vertical collision
 	if vcollide != noone {
-		if !vcollide.semi{
+		if !vcollide.semi {
 			while(!place_meeting(x,y+sign(vsp),Obj_solid)){
 			    y += sign(vsp);
 			}
@@ -33,7 +33,7 @@ function player_collision(){
 				while(!place_meeting(x,y+sign(vsp),vcollide.id)){
 					y += sign(vsp);
 				}
-				vsp = 0;	
+				vsp = 0;
 			}
 		}
 	}
