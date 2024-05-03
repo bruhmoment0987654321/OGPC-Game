@@ -22,7 +22,7 @@ if global.hp > 0 && instance_exists(Obj_player) {
 		if global.holding_battery {
 			draw_sprite(Spr_battery_icon,0,50,130);	
 		}
-		if room != Rm_ctrl_rm {
+		if room != Rm_ctrl_rm && room != Rm_shop_prehis {
 			draw_set_color(c_white);
 			draw_set_halign(fa_center);
 			draw_text_transformed((camera_get_view_width(view_camera[0])/2),330,score_string,scale*score_scale,scale*score_scale,0);

@@ -56,6 +56,7 @@ function GameText(text_id){
 		break;
 		
 		//you meet the shopkeeper before the boss starts
+		//------------------------------------boss 1-------------------------------------//
 		case "beforeboss1 - 1":
 			Text("Hey. What is the up?");
 		break;
@@ -63,8 +64,8 @@ function GameText(text_id){
 		case "beforeboss1 - 2":
 			Text("Well. me want the mon mon. So me be here so men can give money to me.");
 			Text("Men fight, they say \"RAHHARAHRAH!\", and come back. Money always come to me.");
-			Text_Shake(21,33);
-			Text_Color(21,33,c_red,c_red,c_red,c_red);
+			Text_Shake(21,32);
+			Text_Color(21,32,c_red,c_red,c_red,c_red);
 		break;
 		//what is out there?
 		case "beforeboss1 - 3":
@@ -83,6 +84,9 @@ function GameText(text_id){
 			Text_Shake(0,22);
 			Text("NOW LEAVE AND GO! FIGHT TO SAVE AND GET SHINY!!");
 			Text_Shake(0,47)
+		break;
+		case "beforeboss1 - 5":
+			Text("Ok. Good bye friend. Hope you make it not dead!");
 		break;
 	}
 }

@@ -109,7 +109,6 @@ if(next_page){
 			draw_char = 0;
 			
 		}else{
-			destroyed = true;
 			instance_destroy();	
 		}
 	//if not?
@@ -122,8 +121,6 @@ if(next_page){
 
 //draw the text box
 draw_sprite_ext(sprite_index,image_index,x,y,width/sprite_width,height/sprite_height,0,c_white,1);
-
-draw_sprite(Spr_text_click,0,sprite_width-50,sprite_height-50);
 //draw text
 for(var t = 0; t < draw_char; t++){
 	//cool effects

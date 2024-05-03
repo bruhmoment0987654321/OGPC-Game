@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_boss_shop",
+  "name": "Obj_boss_shopkeeper",
   "spriteId": {
     "name": "Spr_Shopkeep_befboss",
     "path": "sprites/Spr_Shopkeep_befboss/Spr_Shopkeep_befboss.yy",

@@ -1,5 +1,4 @@
 depth = -9999;
-destroyed = false;
 //textbox size variables
 width = 576;
 height = 160;
@@ -18,6 +17,11 @@ global.cantpress = true;
 with(Obj_shop_menu){
 	alpha = 0;	
 }
+
+with(Obj_boss1_shop_menu){
+	alpha = 0;	
+}
+menu_exited = false;
 
 space_timer = 3;
 //text variables

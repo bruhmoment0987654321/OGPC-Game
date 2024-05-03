@@ -18,7 +18,7 @@ delay_timer--;
 var hor_shot = right-left;
 var ver_shot = down-up;
 dir = point_direction(0,0,hor_shot,ver_shot);
-if instance_exists(Obj_cam) && !global.playercant {
+if instance_exists(Obj_cam) && !global.playercant && !instance_exists(Obj_textbox){
 	with(Obj_cam){
 		aim_x = hor_shot;	
 		aim_y = ver_shot;
