@@ -1,5 +1,4 @@
 depth = -9999;
-
 destroyed = false;
 //textbox size variables
 width = 576;
@@ -7,6 +6,9 @@ height = 160;
 
 Border = 22;
 space = 14;
+
+x_offset = 32;
+y_offset = 150;
 
 scale = 2;
 
@@ -28,6 +30,7 @@ char_x[0][0] = 0;
 char_y[0][0] = 0;
 draw_char = 0;
 text_spd = 0.3;
+textbox_amount = 0;
 setup = false;
 
 //sound

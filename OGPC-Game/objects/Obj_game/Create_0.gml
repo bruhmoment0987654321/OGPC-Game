@@ -73,5 +73,5 @@ Load_Game();
 if global.first_time_playing {
 	Load_Default_Scores();	
 }
-window_set_caption("Project: Time?");
+window_set_caption("Time & Time Again...");
 randomize();

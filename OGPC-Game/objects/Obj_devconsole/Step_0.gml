@@ -89,8 +89,16 @@ if(keyboard_lastkey != -1){
 		case vk_shift:
 		case vk_lshift:
 		case vk_rshift:
+		case vk_tab:
+		case vk_end:
+		case vk_home:
+		case vk_insert:
+		case vk_pagedown:
+		case vk_pageup:
+		case vk_pause:
 		case vk_lalt:
 		case vk_alt:
+		case vk_ralt:
 		case vk_control:
 		case vk_lcontrol:
 		case vk_rcontrol:

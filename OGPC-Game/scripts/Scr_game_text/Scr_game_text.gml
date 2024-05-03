@@ -54,5 +54,35 @@ function GameText(text_id){
 			Text("HARHA, HARHAR!");
 			Text_Float(0,14,-6,10);
 		break;
+		
+		//you meet the shopkeeper before the boss starts
+		case "beforeboss1 - 1":
+			Text("Hey. What is the up?");
+		break;
+		//Why are you here?
+		case "beforeboss1 - 2":
+			Text("Well. me want the mon mon. So me be here so men can give money to me.");
+			Text("Men fight, they say \"RAHHARAHRAH!\", and come back. Money always come to me.");
+			Text_Shake(21,33);
+			Text_Color(21,33,c_red,c_red,c_red,c_red);
+		break;
+		//what is out there?
+		case "beforeboss1 - 3":
+			Text("Few things me must say. Me like you and me do not want you to die.");
+			Text("Do not stand still. The beast can smell scared bunny from long away. So he can smell you too");
+			Text("Next, you can not go too close. The thing can eat you for early meal.");
+			Text("Last. Kill it. Do not stop to think.");
+			Text("Now you shall go KILL THE BEAST!");
+			Text_Shake(17,32);
+		break;
+		//Do I haaaaave to fight?
+		case "beforeboss1 - 4":
+			Text("YOU SAID YOU WANT SHINY!");
+			Text_Shake(0,24);
+			Text("YOU GET IT FROM BEAST!");
+			Text_Shake(0,22);
+			Text("NOW LEAVE AND GO! FIGHT TO SAVE AND GET SHINY!!");
+			Text_Shake(0,47)
+		break;
 	}
 }

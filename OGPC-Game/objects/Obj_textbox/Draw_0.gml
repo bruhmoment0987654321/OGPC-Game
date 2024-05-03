@@ -9,8 +9,8 @@ if global.game_state == GAME_STATE.PAUSED {
 	next_page = 0;
 }
 //text box position
-x = camera_get_view_x(view_camera[0])+32;
-y = camera_get_view_y(view_camera[0])+150;
+x = camera_get_view_x(view_camera[0])+x_offset;
+y = camera_get_view_y(view_camera[0])+y_offset;
 #region setup before the text is drawn
 if(!setup){
 	setup = true;
@@ -19,6 +19,7 @@ if(!setup){
 	draw_set_halign(fa_left);
 	//go through pages
 	page_number = array_length(text);
+	textbox_amount = page_number;
 	for(var i = 0; i < page_number; i++){
 		//finding out how many character the object needs to store for each page
 		text_length[i] = string_length(text[i]);
@@ -108,6 +109,7 @@ if(next_page){
 			draw_char = 0;
 			
 		}else{
+			destroyed = true;
 			instance_destroy();	
 		}
 	//if not?
