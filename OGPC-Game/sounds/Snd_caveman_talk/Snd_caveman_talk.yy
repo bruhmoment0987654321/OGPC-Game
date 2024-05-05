@@ -18,6 +18,6 @@
   "duration": 0.370998,
   "parent": {
     "name": "speech",
-    "path": "folders/Sounds/speech.yy",
+    "path": "folders/Sounds/Sound Effects/speech.yy",
   },
 }

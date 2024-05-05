@@ -18,6 +18,6 @@
   "duration": 0.440998,
   "parent": {
     "name": "Enemy",
-    "path": "folders/Sounds/Enemy.yy",
+    "path": "folders/Sounds/Sound Effects/Enemy.yy",
   },
 }

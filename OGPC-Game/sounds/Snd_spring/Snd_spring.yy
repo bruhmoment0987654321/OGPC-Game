@@ -17,7 +17,7 @@
   "soundFile": "Snd_spring.wav",
   "duration": 0.860385,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Sound Effects",
+    "path": "folders/Sounds/Sound Effects.yy",
   },
 }

@@ -1,8 +1,9 @@
 //randomization for items
-
-item = Obj_game.shield_item.object;
-sprite = Obj_game.shield_item.sprite;
-price = Obj_game.shield_item.price;
+picked_item = ChooseAnItem();
+item = picked_item.object;
+item_name = picked_item.name;
+sprite = picked_item.sprite;
+price = picked_item.price;
 //checking if things are bought
 bought = false;
 //placement and other vars 

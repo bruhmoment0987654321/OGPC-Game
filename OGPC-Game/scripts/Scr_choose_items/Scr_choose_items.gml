@@ -27,18 +27,19 @@ function Gun_options(_excluded_weapon = noone){
 	return picked_option;
 }
 
-function ChooseAnItem(_excluded_item = noone){
+///@desc picks a random item from the item constructors. use numbers to pick which item to remove
+function ChooseAnItem(_excluded_item = -1){
 	var _map = ds_map_create();
 	//add vars to ds_map
-	ds_map_add(_map,"Shield",Obj_game.shield_item);
-	ds_map_add(_map,"Health",Obj_game.health_item);
-	ds_map_add(_map,"Bomb",Obj_game.bomb_item);
-	ds_map_add(_map,"Arm Gun",Obj_game.arm_gun_item);
-	ds_map_add(_map,"Cannon",Obj_game.cannon_item);
-	ds_map_add(_map,"Guitar Gun",Obj_game.guitar_gun_item);
-	ds_map_add(_map,"Three Gun", Obj_game.three_gun_item);
-	ds_map_add(_map,"Shuriken",Obj_game.shuriken_item);
-	ds_map_add(_map,"Grenade Launcher", Obj_game.grenade_launcher_item);
+	ds_map_add(_map,0,Obj_game.shield_item);
+	ds_map_add(_map,1,Obj_game.health_item);
+	ds_map_add(_map,2,Obj_game.bomb_item);
+	ds_map_add(_map,3,Obj_game.arm_gun_item);
+	ds_map_add(_map,4,Obj_game.cannon_item);
+	ds_map_add(_map,5,Obj_game.guitar_gun_item);
+	ds_map_add(_map,6, Obj_game.three_gun_item);
+	ds_map_add(_map,7,Obj_game.shuriken_item);
+	ds_map_add(_map,8, Obj_game.grenade_launcher_item);
 	
 	//exclude one thing from the item map
 	if _excluded_item != noone {

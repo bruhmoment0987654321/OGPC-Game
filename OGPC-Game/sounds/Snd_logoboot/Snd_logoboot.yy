@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Snd_Caveman_hurt",
+  "name": "Snd_logoboot",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Snd_Caveman_hurt.wav",
-  "duration": 1.113991,
+  "soundFile": "Snd_logoboot.ogg",
+  "duration": 9.124989,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sounds/Sound Effects/Enemy.yy",
+    "name": "Songs",
+    "path": "folders/Sounds/Songs.yy",
   },
 }

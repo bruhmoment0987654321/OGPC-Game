@@ -18,6 +18,6 @@
   "duration": 0.261927,
   "parent": {
     "name": "gun",
-    "path": "folders/Sounds/Player/gun.yy",
+    "path": "folders/Sounds/Sound Effects/Player/gun.yy",
   },
 }
