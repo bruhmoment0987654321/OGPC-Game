@@ -29,7 +29,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"price","path":"objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",},"objectId":{"name":"Obj_weapon_pickup_par","path":"objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",},"value":"20",},
+  ],
   "parent": {
     "name": "Pickups",
     "path": "folders/Objects/Player/weapons/Guns/Pickups.yy",

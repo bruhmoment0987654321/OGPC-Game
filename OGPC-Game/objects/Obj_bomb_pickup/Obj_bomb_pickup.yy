@@ -31,7 +31,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"price","path":"objects/Obj_item_par/Obj_item_par.yy",},"objectId":{"name":"Obj_item_par","path":"objects/Obj_item_par/Obj_item_par.yy",},"value":"5",},
+  ],
   "parent": {
     "name": "Items",
     "path": "folders/Objects/Items.yy",

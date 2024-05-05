@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_shuriken_pickup",
+  "name": "Obj_item_podium",
   "spriteId": {
-    "name": "Spr_shuriken",
-    "path": "sprites/Spr_shuriken/Spr_shuriken.yy",
+    "name": "Spr_podium",
+    "path": "sprites/Spr_podium/Spr_podium.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Obj_weapon_pickup_par",
-    "path": "objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -29,13 +26,13 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"price","path":"objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",},"objectId":{"name":"Obj_weapon_pickup_par","path":"objects/Obj_weapon_pickup_par/Obj_weapon_pickup_par.yy",},"value":"6",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Player/weapons/Guns/Pickups.yy",
+    "name": "Shop",
+    "path": "folders/Objects/Essencials/Shop.yy",
   },
 }

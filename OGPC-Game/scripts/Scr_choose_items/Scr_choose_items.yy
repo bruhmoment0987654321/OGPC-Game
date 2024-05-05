@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Scr_gun_options",
+  "name": "Scr_choose_items",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

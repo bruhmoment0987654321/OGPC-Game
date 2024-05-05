@@ -75,3 +75,4 @@ if global.first_time_playing {
 }
 window_set_caption("Time & Time Again...");
 randomize();
+Items();
