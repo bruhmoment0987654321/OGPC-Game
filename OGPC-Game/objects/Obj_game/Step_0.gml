@@ -19,8 +19,6 @@ if global.midTransition {
 	global.playercant = true;	
 }
 
-//score
-
 //increaing difficulty in levels
 if global.battery_amount == global.round_difficulty_increase {
 	global.round_counter += 1;
