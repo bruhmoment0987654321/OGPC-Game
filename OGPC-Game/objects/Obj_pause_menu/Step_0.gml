@@ -26,9 +26,10 @@ if(select){
 					instance_destroy();
 					global.game_state = GAME_STATE.RUNNING;
 				break;
+				//restart
 				case 1:
 					Transition_Start(room, Sq_spike_out,Sq_spike_in);
-					Start_over();
+					restart = true;
 				break;
 				//options
 				case 2: menu_level = 1; break;

@@ -73,6 +73,13 @@ Load_Game();
 if global.first_time_playing {
 	Load_Default_Scores();	
 }
+//boot screen
+logoAnimation = Sq_logo_boot;
+activeSequence = layer_sequence_create(layer, x, y, logoAnimation);
+inst_seq = layer_sequence_get_instance(activeSequence);
+
+logo_music = audio_play_sound(Snd_logoboot,8,false);
+
 window_set_caption("Time & Time Again...");
 randomize();
 Items();

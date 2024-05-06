@@ -16,3 +16,4 @@ options[1][1] = "Settings";
 options[1][2] = "Back";
 
 getting_out = false;
+restart = false;

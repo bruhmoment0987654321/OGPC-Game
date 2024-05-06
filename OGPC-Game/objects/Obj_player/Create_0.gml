@@ -91,7 +91,7 @@ seq_inst = -1;
 
 function StartAnimation(_sequence){
 	activeAnimation = _sequence;
-	activeSequence = layer_sequence_create(layer, x, y, _sequence);
+	activeSequence = layer_sequence_create(layer, x, y, activeAnimation);
 	seq_inst = layer_sequence_get_instance(activeSequence);
 
 	layer_sequence_xscale(activeSequence, image_xscale);

@@ -4,6 +4,12 @@ draw_set_halign(fa_left);
 
 var score_string = "Score:"+ string_repeat("0", 5-string_length(string(score))) + string(score);
 
+if room == Rm_title {
+	draw_set_halign(fa_center);
+	draw_set_color(#00FFFF);
+	draw_text_transformed(320,50,"Time And Time Again",4,4,0)	
+}
+
 if global.hp > 0 && instance_exists(Obj_player) {
 	if room != Rm_title && global.show_GUI {
 		draw_text_transformed(50,50,"Health: "+ string(global.hp),scale,scale,0);

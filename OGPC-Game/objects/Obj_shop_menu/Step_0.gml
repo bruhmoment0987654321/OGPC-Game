@@ -38,9 +38,9 @@ if(select){
 						}
 					}else{
 						if(global.hp < global.max_hp){
-							global.money -= first_item_cost+global.first_item_added_cost;
-							global.hp += 10;
+							global.money -= (first_item_cost+global.first_item_added_cost);
 							global.first_item_added_cost++;
+							global.hp += 10;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -56,9 +56,9 @@ if(select){
 						}
 					}else{
 						if(global.bomb_amount < global.bomb_max){
-							global.money -= 5;
+							global.money -= (second_item_cost+global.second_item_added_cost);
+							global.first_item_added_cost++;
 							global.bomb_amount += 1;
-							global.second_item_added_cost++;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -74,9 +74,9 @@ if(select){
 						}
 					}else{
 						if(global.shield < global.shield_max){
-							global.money -= 10;
-							global.shield += 20;
+							global.money -= (third_item_cost+global.third_item_added_cost);
 							global.third_item_added_cost++;
+							global.shield += 10;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);

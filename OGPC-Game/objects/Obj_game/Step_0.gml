@@ -36,7 +36,7 @@ if global.hp < global.max_hp {
 	global.max_health = false;	
 }
 
-//only for premade levels, could remove soon
+//room specific functions
 if room == Rm_level1 {
 	if !instance_exists(Obj_enemy_par) {
 		level_completed = true;
@@ -56,6 +56,7 @@ if room == Rm_level2 {
 		}
 	}
 }	
+
 
 #region health and bombs
 if instance_exists(Obj_player) {

@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "OGPC-Game",
-    "path": "OGPC-Game.yyp",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }
