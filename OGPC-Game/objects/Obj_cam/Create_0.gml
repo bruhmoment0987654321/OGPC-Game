@@ -20,3 +20,5 @@ buff = 0;
 aim_x = 0;
 aim_y = 0;
 aim_amount = 3;
+
+cloud_move_x = 0;

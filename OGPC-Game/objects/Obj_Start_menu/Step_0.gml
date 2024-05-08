@@ -8,12 +8,7 @@ if(select){
 			switch(pos){
 				//start game
 				case 0: 
-				if(global.first_time_playing){
-					Transition_Start(Rm_ctrl_rm,Sq_spike_out,Sq_spike_in);
-				}else{
-					Transition_Start(Rm_prehistoric,Sq_spike_out,Sq_spike_in);
-					global.playercant = false;
-				}
+				start_game();
 				break;
 				//pick options
 				case 1:  menu_level = 1 break;

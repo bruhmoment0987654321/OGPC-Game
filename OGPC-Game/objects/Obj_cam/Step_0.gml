@@ -38,8 +38,21 @@ camera_set_view_angle(cam,image_angle);
 		layer_sequence_y(global.sequenceLayer,global.CamY);
 	}
 #endregion
-#region background 
-	var _layer = layer_get_id("Background")
-	layer_x(_layer,global.CamX*0.65);
-	layer_y(_layer,global.CamY*0.65);
+#region background
+	var _layer1 = layer_get_id("Background");
+	layer_x(_layer1,(global.CamX*0.1)+cloud_move_x);
+	layer_y(_layer1,global.CamY*0.1);
+	cloud_move_x += 0.1;
+	
+	var _layer2 = layer_get_id("Background2");
+	layer_x(_layer2,global.CamX*0.15);
+	layer_y(_layer2,global.CamY*0.15);
+	
+	var _layer3 = layer_get_id("Background3");
+	layer_x(_layer3,global.CamX*0.2);
+	layer_y(_layer3,global.CamY*0.2);
+	
+	var _layer4 = layer_get_id("Background4")
+	layer_x(_layer4,global.CamX*0.25);
+	layer_y(_layer4,global.CamY*0.25);
 #endregion

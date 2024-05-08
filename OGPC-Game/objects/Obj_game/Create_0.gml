@@ -1,6 +1,11 @@
+mx = mouse_x;
+my = mouse_y;
+mouse_timer = 60*3;
+
+alarm[1] = mouse_timer;
+
 level_completed = false;
 create_end_level = true;
-name = "";
 //score variables
 prev_score = 0;
 score_scale = 1;
@@ -27,6 +32,9 @@ global.pause_button = vk_escape;
 
 //game state 
 global.game_state = GAME_STATE.RUNNING;
+
+//only used to present the game
+global.presentation_mode = false;
 
 //money
 global.money = 0;

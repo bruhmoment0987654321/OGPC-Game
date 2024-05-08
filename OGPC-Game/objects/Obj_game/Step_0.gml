@@ -1,3 +1,5 @@
+
+
 //checking if you are holding a weapon during gameplay
 fullscreen_button = keyboard_check_pressed(vk_f11);
 
@@ -14,6 +16,12 @@ if instance_exists(Obj_player) {
 		current_pickup = Obj_player.which_weapon_pickup;	
 	}
 }
+
+if mx != mouse_x && my != mouse_y {
+	
+	global.mouse_move = true;
+}
+
 
 if global.midTransition {
 	global.playercant = true;	
@@ -57,7 +65,13 @@ if room == Rm_level2 {
 	}
 }	
 
-
+if room == Rm_logoboot {
+	if sequence_exists(Sq_logo_boot){
+		if keyboard_check_pressed(global.select){
+			Sq_logo_boot_Moment();	
+		}
+	}
+}
 #region health and bombs
 if instance_exists(Obj_player) {
 	if(global.hp <= 0){
@@ -65,3 +79,6 @@ if instance_exists(Obj_player) {
 	}
 }
 #endregion
+
+mx = mouse_x;
+my = mouse_y;

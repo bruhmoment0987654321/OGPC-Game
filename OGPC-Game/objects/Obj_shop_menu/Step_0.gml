@@ -57,7 +57,7 @@ if(select){
 					}else{
 						if(global.bomb_amount < global.bomb_max){
 							global.money -= (second_item_cost+global.second_item_added_cost);
-							global.first_item_added_cost++;
+							global.second_item_added_cost++;
 							global.bomb_amount += 1;
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
