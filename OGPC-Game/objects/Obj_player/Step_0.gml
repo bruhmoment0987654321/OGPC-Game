@@ -65,6 +65,14 @@ switch(state){
 				vsp += global.grv*fall_sp;
 			}
 			vsp = clamp(vsp,-max_vsp,max_vsp);
+			
+			//camera function
+				if down && on_ground {
+					with(Obj_cam){
+						aim_y = other.aim_amount;	
+					}
+				}
+			
 		#endregion
 		#region entering dash
 			if(object_index == Obj_ninja){
@@ -95,8 +103,8 @@ switch(state){
 				}
 			}
 			with(Obj_spring){
-				if(place_meeting(x,y,other.id)){
-					if(other.vsp > 0){
+				if(place_meeting(x,y,other)){
+					if other.vsp > 0 {
 						image_speed = 1;
 						var jump_velocity_multiplied = 3;
 						if(other.jump_held) jump_velocity_multiplied = 8;
@@ -165,10 +173,8 @@ switch(state){
 			global.bomb_amount -= 1;	
 		}
 		#endregion
+		player_collision();
 		sprite_index = Spr_player;
-		#region collisions
-			player_collision();
-		#endregion
 	break;
 	#endregion
 	
@@ -214,7 +220,16 @@ switch(state){
 			jumped = true;
 			state = "normal";	
 		}
+		
+		#region item usage
+		if(item_use)&&(global.bomb_amount > 0){
+			instance_create_layer(x,y-16,"Bullets",Obj_bomb);
+			global.bomb_amount -= 1;	
+		}
 		#endregion
+		
+		#endregion
+		
 		if(!place_meeting(x,y,Obj_ladder)){
 			state = "normal";	
 		}
@@ -285,7 +300,6 @@ switch(state){
 		invincible_timer = invincible_timer_amount;	
 	}
 #endregion
-
 
 #region animations
 	//gummmy animation

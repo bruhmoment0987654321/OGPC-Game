@@ -42,7 +42,7 @@ switch(state){
 			state = "attack";
 		}
 		sprite_index = Spr_caveman_angry;
-	break
+	break;
 	
 	case "attack":
 		sprite_index = Spr_caveman_attack;

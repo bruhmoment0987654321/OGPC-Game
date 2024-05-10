@@ -6,8 +6,7 @@ vsp = 0;
 run_sp = 1.5;
 friction_ = 0.15;
 //jump variables
-jump_sp = 6;
-jumped = false;
+jump_spring_sp = 4
 //buff
 buff = false;
 buff_create = true;

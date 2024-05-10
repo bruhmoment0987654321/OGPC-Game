@@ -29,18 +29,25 @@ switch(state){
 		}else{
 			jumped = true;	
 		}
-		if(!jumped){
-			if(place_meeting(x+hsp,y,Obj_solid)){
-				vsp -= jump_sp;
-				jumped = true;
-			
-			}
-		}
 		if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-attack_circ_y_offset,attack_radius)){
 			activation = true;
 			state = "attack";
 		}
-		sprite_index = Spr_chieftan_chase;
+		if !place_meeting(x,y-1,Obj_solid) && !jumped {
+			sprite_index = Spr_chieftan_chase;
+		}
+		if(!jumped){
+			if(place_meeting(x+hsp,y,Obj_solid)){
+				hsp = 0;
+				jump_timer--;
+				sprite_index = Spr_chieftan_jump;
+			}
+			if jump_timer <= 0 {
+				vsp -= jump_sp;
+				jumped = true;
+				jump_timer = jump_timer_max;
+			}
+		}
 	break
 	
 	case "attack":

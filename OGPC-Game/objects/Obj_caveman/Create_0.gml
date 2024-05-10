@@ -7,6 +7,7 @@ run_sp = 1.5;
 friction_ = 0.15;
 //jump variables
 jump_sp = 6;
+jump_spring_sp = 10;
 jumped = false;
 //attack variables
 activation = true;

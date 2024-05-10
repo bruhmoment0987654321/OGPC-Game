@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "start_game",
+  "name": "Scr_map_value",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "commands",
-    "path": "folders/Scripts/essential/menu/commands.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

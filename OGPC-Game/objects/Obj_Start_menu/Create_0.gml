@@ -14,3 +14,5 @@ options[1][2] = "Erase Save Data";
 options[1][3] = "Back";
 #endregion
 
+menu_type = 0;
+

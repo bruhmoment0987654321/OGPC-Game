@@ -1,8 +1,5 @@
 mx = mouse_x;
 my = mouse_y;
-mouse_timer = 60*3;
-
-alarm[1] = mouse_timer;
 
 level_completed = false;
 create_end_level = true;
@@ -91,3 +88,4 @@ logo_music = audio_play_sound(Snd_logoboot,8,false);
 window_set_caption("Time & Time Again...");
 randomize();
 Items();
+window_set_fullscreen(true);

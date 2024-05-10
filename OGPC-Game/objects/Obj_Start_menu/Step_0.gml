@@ -11,7 +11,7 @@ if(select){
 				start_game();
 				break;
 				//pick options
-				case 1:  menu_level = 1 break;
+				case 1:  menu_level = 1; break;
 				//get out of the game
 				case 2: game_end();  break;
 			}

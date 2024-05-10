@@ -29,6 +29,7 @@ if !global.midTransition {
 //updating position of camera
 global.CamX = x-view_w_half;
 global.CamY = y-view_h_half;
+
 camera_set_view_pos(cam,global.CamX,global.CamY);
 camera_set_view_angle(cam,image_angle);
 

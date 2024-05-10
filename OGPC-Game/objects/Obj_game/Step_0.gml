@@ -17,11 +17,16 @@ if instance_exists(Obj_player) {
 	}
 }
 
-if mx != mouse_x && my != mouse_y {
-	
-	global.mouse_move = true;
-}
+var _x = window_get_x(), _y = window_get_y();
+var _w = window_get_x() + window_get_width(), _h = _y + room_height * window_get_height();
 
+if !In_between(display_mouse_get_x(),_x,_w) || !In_between(display_mouse_get_y(),_y,_h){
+  
+	window_set_cursor(cr_default);
+} else {
+	 window_set_cursor(cr_none);
+	
+}
 
 if global.midTransition {
 	global.playercant = true;	

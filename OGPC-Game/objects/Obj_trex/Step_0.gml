@@ -4,7 +4,32 @@ if global.game_state == GAME_STATE.PAUSED {
 
 switch state {
 	case "norm":
-	
+		break_time--;
+		if break_time <= 0{
+			if pre_state == "" {
+				state = choose("charge","roar","tailwhip","bite");	
+				pre_state = state;
+			}else{
+				switch(pre_state){
+				
+					case "charge":
+						state = choose("roar","tailwhip","bite");
+					break;
+				
+					case "roar":
+						state = choose("charge","tailwhip","bite");	
+					break;
+				
+					case "tailwhip":
+						state = choose("charge","roar","bite");	
+					break;
+				
+					case "bite":
+						state = choose("charge","roar","tailwhip");	
+					break;
+				}
+			}
+		}
 	break;
 	
 	case "charge":
@@ -24,7 +49,7 @@ switch state {
 	break;
 	
 	case "dead":
-	
+		instance_destroy();
 	break;
 }
 

@@ -6,8 +6,11 @@ vsp = 0;
 run_sp = walk_sp;
 friction_ = 0.15;
 //jump variables
-jump_sp = 6;
+jump_sp = 7;
+jump_spring_sp = 12;
 jumped = false;
+jump_timer_max = 15;
+jump_timer = jump_timer_max;
 //attack variables
 activation = true;
 attack_radius = 30

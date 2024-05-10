@@ -47,6 +47,8 @@ sound = false;
 //animation variables
 xscale = 1;
 yscale = 1;
+//camera variables
+aim_amount = 5;
 //sound variables
 Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,
 FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5);
