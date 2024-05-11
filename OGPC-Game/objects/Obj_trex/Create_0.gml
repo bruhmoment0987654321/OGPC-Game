@@ -3,7 +3,7 @@ pre_state = "";
 hp_max = 1000;
 hp = hp_max;
 
-//movement
+//movement vars
 hsp = 0;
 vsp = 0;
 
@@ -11,6 +11,13 @@ vsp = 0;
 break_time_max = 3*60;
 break_time = break_time_max;
 
+//charge vars
+charge_timer_max = 60*3;
+charge_timer = charge_timer_max;
+charge_sp = 0.1;
+
+charging_timer_max = 3*60;
+charging_timer = charging_timer_max;
 //invincibility frames
 flash = 0;
 xscale = 1;

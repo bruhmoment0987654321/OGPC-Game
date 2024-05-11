@@ -17,7 +17,7 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"44e9f875-be24-4966-b5d5-0b78c3a8e36f","Key":30.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"2f5dfb5c-a7d6-4f56-96cb-2d4fea3cfa54","Key":27.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "Transition_Finished",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -268,7 +268,7 @@
   ],
   "visibleRange": {
     "x": 0.0,
-    "y": 33.0,
+    "y": 27.0,
   },
   "lockOrigin": false,
   "showBackdrop": true,
