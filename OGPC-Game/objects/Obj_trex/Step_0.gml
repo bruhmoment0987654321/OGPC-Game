@@ -60,6 +60,7 @@ switch state {
 				}else{
 					charge_timer = charge_timer_max;	
 					charging_timer = charging_timer_max;
+					break_time = break_time_max;
 					state = "wait";
 				}
 				charging_timer--;
@@ -67,10 +68,18 @@ switch state {
 		}else{
 			sprite_index = Spr_trex_charge;	
 		}
+		
 	break;
 	
 	case "roar":
-	
+		roar_timer--;
+		if roar_timer <= 0 {
+			image_speed = 1;
+			sprite_index = Spr_trex_roar;
+			
+		}else{
+			image_speed = 0;	
+		}
 	break;
 	
 	case "tailwhip":

@@ -153,6 +153,7 @@
     {"id":{"name":"start_game","path":"scripts/start_game/start_game.yy",},"order":0,},
     {"id":{"name":"Scr_choose_items","path":"scripts/Scr_choose_items/Scr_choose_items.yy",},"order":1,},
     {"id":{"name":"Scr_AutoTiling","path":"scripts/Scr_AutoTiling/Scr_AutoTiling.yy",},"order":3,},
+    {"id":{"name":"Spr_trex_roar","path":"sprites/Spr_trex_roar/Spr_trex_roar.yy",},"order":3,},
     {"id":{"name":"Obj_cam","path":"objects/Obj_cam/Obj_cam.yy",},"order":0,},
     {"id":{"name":"Scr_approach","path":"scripts/Scr_approach/Scr_approach.yy",},"order":3,},
     {"id":{"name":"Spr_cannon_gundust","path":"sprites/Spr_cannon_gundust/Spr_cannon_gundust.yy",},"order":1,},

@@ -18,6 +18,11 @@ charge_sp = 0.1;
 
 charging_timer_max = 3*60;
 charging_timer = charging_timer_max;
+
+//roar vars
+roar_timer_max = 60;
+roar_timer = roar_timer_max;
+
 //invincibility frames
 flash = 0;
 xscale = 1;
