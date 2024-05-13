@@ -21,6 +21,7 @@ function Transition_Start(_roomTarget,_typeOut,_typeIn){
 		global.show_GUI = false;
 		global.midTransition = true;
 		global.roomTarget = _roomTarget;
+		global.game_state = GAME_STATE.PAUSED;
 		
 		Transition_Place(_typeOut);
 		layer_set_target_room(_roomTarget);
@@ -32,6 +33,7 @@ function Transition_Start(_roomTarget,_typeOut,_typeIn){
 }
 function Transition_Change_Room(){
 	room_goto(global.roomTarget);
+	global.game_state = GAME_STATE.RUNNING;
 }
 
 function Transition_Finished(){
