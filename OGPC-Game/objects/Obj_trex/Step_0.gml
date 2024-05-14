@@ -14,9 +14,8 @@ switch state {
 		#region changing state
 			if break_time <= 0{
 				if pre_state == "" {
-					state = choose("charge");	
+					state = choose("roar");	
 					pre_state = state;
-					break_time = break_time_max;
 				}else{
 					switch(pre_state){
 						case "charge":
@@ -35,7 +34,6 @@ switch state {
 							state = choose("charge","roar","tailwhip");	
 						break;
 					}
-					break_time = break_time_max;
 				}
 			}
 		#endregion
@@ -61,7 +59,7 @@ switch state {
 					charge_timer = charge_timer_max;	
 					charging_timer = charging_timer_max;
 					break_time = break_time_max;
-					state = "wait";
+					state = "norm";
 				}
 				charging_timer--;
 			#endregion
@@ -72,11 +70,19 @@ switch state {
 	break;
 	
 	case "roar":
-		roar_timer--;
-		if roar_timer <= 0 {
+		erupt_timer--;
+		if erupt_timer <= 0 {
+			scream_timer--;
 			image_speed = 1;
 			sprite_index = Spr_trex_roar;
 			
+			 Screenshake(random_range(3,5),30);
+			 
+			 if scream_timer <= 0 {
+				erupt_timer = erupt_timer_max;
+				break_time = break_time_max/2	 
+				state = "norm";
+			 }
 		}else{
 			image_speed = 0;	
 		}
