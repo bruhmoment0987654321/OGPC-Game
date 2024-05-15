@@ -1,0 +1,1 @@
+Player_attacked(other.damage,0)

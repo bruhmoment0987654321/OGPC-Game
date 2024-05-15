@@ -75,14 +75,19 @@ switch state {
 			scream_timer--;
 			image_speed = 1;
 			sprite_index = Spr_trex_roar;
+			if create_shock {
+				instance_create_depth(x,y,"Other",Obj_trex_shockwave);
+				create_shock = false;
+			}
 			
-			 Screenshake(random_range(3,5),30);
-			 
-			 if scream_timer <= 0 {
+			if scream_timer <= 0 {
+				create_shock = true;
 				erupt_timer = erupt_timer_max;
-				break_time = break_time_max/2	 
+				break_time = break_time_max
 				state = "norm";
-			 }
+			}
+			 
+			Screenshake(random_range(3,4),30);
 		}else{
 			image_speed = 0;	
 		}
