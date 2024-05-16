@@ -1,5 +1,5 @@
-
 alpha -= alpha_amount;
+
 scale += scale_amount;
 
 if image_alpha <= 0 {

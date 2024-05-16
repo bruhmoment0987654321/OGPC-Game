@@ -39,7 +39,7 @@ switch(state){
 		}
 		if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
 			activation = true;
-			state = "attack";
+			state = "attack";+
 		}
 		sprite_index = Spr_caveman_angry;
 	break;

@@ -28,6 +28,8 @@ scream_timer = scream_timer_max;
 
 create_shock = true;
 
+//bite vars
+
 //invincibility frames
 flash = 0;
 

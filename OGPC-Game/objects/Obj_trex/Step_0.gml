@@ -5,7 +5,7 @@ if global.game_state == GAME_STATE.PAUSED {
 switch state {
 	case "norm":
 		break_time--;
-		
+		sprite_index = Spr_trex;
 		if(point_direction(x,y,Obj_player.x,Obj_player.y-4) <= 90){
 				dir = 1;
 			}else{
@@ -76,7 +76,7 @@ switch state {
 			image_speed = 1;
 			sprite_index = Spr_trex_roar;
 			if create_shock {
-				instance_create_depth(x,y,"Other",Obj_trex_shockwave);
+				instance_create_layer(x,y,"Other",Obj_trex_shockwave);
 				create_shock = false;
 			}
 			
@@ -98,7 +98,37 @@ switch state {
 	break;
 	
 	case "bite":
-	
+		if(instance_exists(Obj_player)){
+			if(x<Obj_player.x-10){
+				hsp = run_sp;	
+			}else if (x>Obj_player.x+10){
+				hsp = -run_sp;
+			}else{
+				hsp = lerp(hsp,0,friction_);	
+			}
+		}
+		
+		if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
+			sprite_index = Spr_caveman_attack;
+			hsp = 0;	
+			if(activation){
+				image_index = 0;
+				activation = false;
+			}
+			if(image_index >= 3){
+				hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
+				if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
+					Player_attacked(Damage,Obj_caveman.knockb*Obj_caveman.image_xscale);
+				}
+			}
+			if(image_index >= 4) && (point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
+				image_index = 0;	
+			}
+			if(image_index >= image_number-1){
+					
+			}
+		}
+		sprite_index = Spr_caveman_angry;
 	break;
 	
 	case "dead":

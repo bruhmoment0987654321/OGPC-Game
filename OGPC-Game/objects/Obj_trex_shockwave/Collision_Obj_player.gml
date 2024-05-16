@@ -1,1 +1,1 @@
-Player_attacked(other.damage,0)
+Player_attacked(damage,0);
