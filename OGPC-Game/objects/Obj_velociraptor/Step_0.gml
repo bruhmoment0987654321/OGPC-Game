@@ -25,12 +25,14 @@ switch(state){
 	break;
 	
 	case "chase":
+		sprite_index = Spr_velociraptor;
 		if(first_time){
 			knockout_timer = 0;	
 		}
 		knockout_timer--;
 		if(knockout_timer > 0){
 			hsp = 0;
+			sprite_index = Spr_velociraptor_stun;	
 		}else{
 			image_speed = 1.3;
 			if x<Obj_player.x-10 {
@@ -51,7 +53,6 @@ switch(state){
 				state = "entrap"	
 			}
 		}
-		sprite_index = Spr_velociraptor;
 	break;
 	
 	case "entrap":

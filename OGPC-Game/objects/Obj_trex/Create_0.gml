@@ -29,7 +29,16 @@ scream_timer = scream_timer_max;
 create_shock = true;
 
 //bite vars
+chase_timer_max = 6*60;
+chase_timer = chase_timer_max;
+run_sp = 4;
 
+	//attacking vars
+activation = true;
+attack_distance = 10;
+tween_speed = 0.2;
+
+hit_radius = 
 //invincibility frames
 flash = 0;
 
