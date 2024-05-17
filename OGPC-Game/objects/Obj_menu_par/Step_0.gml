@@ -9,6 +9,8 @@ if(global.cantpress)||(global.cantpress_commands){
 	select = 0;
 }
 
+
+
 //store number of options into current menu
 op_length = array_length(options[menu_level]);
 //moving though menu

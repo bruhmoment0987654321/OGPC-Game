@@ -25,19 +25,27 @@ if(select){
 				case 0:
 					instance_destroy();
 					global.game_state = GAME_STATE.RUNNING;
+					audio_play_sound(Snd_menu_select,6,false);
 				break;
 				//restart
 				case 1:
 					Transition_Start(room, Sq_spike_out,Sq_spike_in);
 					restart = true;
+					audio_play_sound(Snd_level_transition,7,false);
+					global.starting_over = true;
 				break;
 				//options
-				case 2: menu_level = 1; break;
+				case 2:
+					menu_level = 1;
+					audio_play_sound(Snd_menu_select,6,false);
+				break;
 				//back to title
 				case 3:
 					Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
 					Start_over();
 					getting_out = true;
+					audio_play_sound(Snd_level_transition,7,false);
+					global.starting_over = true;
 				break;
 				//Exit game
 				case 4: game_end(); break;
@@ -47,11 +55,17 @@ if(select){
 		case 1:
 			switch(pos){
 				//fullscreen
-				case 0: window_set_fullscreen(!window_get_fullscreen()); break;
+				case 0:
+					window_set_fullscreen(!window_get_fullscreen());
+					audio_play_sound(Snd_menu_select,6,false);
+				break;
 				//settings
 				case 1: break;
 				//back to main menu
-				case 2: menu_level = 0; break;
+				case 2: 
+					menu_level = 0; 
+					audio_play_sound(Snd_menu_exit,6,false);
+				break;
 			}
 		break;
 	}

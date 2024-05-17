@@ -15,7 +15,6 @@ function EncodeTemplateToString(){
 				case noone: levelData += "0"; break;
 				//these don't work?//
 				case Obj_shop_door1x1: levelData += "D" break;
-				case Obj_shop_sign: levelData += "=" break;
 				case Obj_enemy_rand: levelData += "E" break;
 				//--------//
 				case Obj_spawn_point: levelData += "*" break;

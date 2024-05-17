@@ -1,4 +1,4 @@
-if keyboard_check_pressed(global.pause_button) && global.pauseable && global.midTransition{
+if keyboard_check_pressed(global.pause_button) && global.pauseable && !global.midTransition {
 	if global.game_state == GAME_STATE.RUNNING {
 		global.game_state = GAME_STATE.PAUSED;
 		if layer_exists("Shop_obj"){

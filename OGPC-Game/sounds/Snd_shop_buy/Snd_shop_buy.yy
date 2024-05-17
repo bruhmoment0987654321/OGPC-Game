@@ -4,7 +4,7 @@
   "name": "Snd_shop_buy",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.7,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -17,7 +17,7 @@
   "soundFile": "Snd_shop_buy.wav",
   "duration": 0.681633,
   "parent": {
-    "name": "Sound Effects",
-    "path": "folders/Sounds/Sound Effects.yy",
+    "name": "UI",
+    "path": "folders/Sounds/Sound Effects/UI.yy",
   },
 }

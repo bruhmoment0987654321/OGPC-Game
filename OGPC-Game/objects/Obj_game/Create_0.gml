@@ -1,14 +1,9 @@
-mx = mouse_x;
-my = mouse_y;
-
 level_completed = false;
 create_end_level = true;
 //score variables
 prev_score = 0;
 score_scale = 1;
 score = 0;
-//when opening the game for the first time
-global.first_time_playing = true;
 //controls
 global.shoot_up = vk_up;
 global.shoot_down = vk_down;
@@ -29,6 +24,10 @@ global.pause_button = vk_escape;
 
 //game state 
 global.game_state = GAME_STATE.RUNNING;
+
+global.starting_over = false;
+
+global.first_time_playing = true;
 
 //only used to present the game
 global.presentation_mode = false;

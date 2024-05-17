@@ -40,4 +40,5 @@ function Transition_Finished(){
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
 	global.playercant = false;
+	global.starting_over = false;
 }

@@ -2,7 +2,7 @@
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
   "name": "Snd_caveboss",
-  "conversionMode": 0,
+  "conversionMode": 1,
   "compression": 0,
   "volume": 1.0,
   "preload": false,

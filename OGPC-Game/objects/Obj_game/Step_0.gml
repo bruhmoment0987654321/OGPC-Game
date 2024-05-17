@@ -1,5 +1,3 @@
-
-
 //checking if you are holding a weapon during gameplay
 fullscreen_button = keyboard_check_pressed(vk_f11);
 
@@ -16,6 +14,7 @@ if instance_exists(Obj_player) {
 		current_pickup = Obj_player.which_weapon_pickup;	
 	}
 }
+
 
 var _x = window_get_x(), _y = window_get_y();
 var _w = window_get_x() + window_get_width(), _h = _y + room_height * window_get_height();
@@ -73,7 +72,8 @@ if room == Rm_level2 {
 if room == Rm_logoboot {
 	if sequence_exists(Sq_logo_boot){
 		if keyboard_check_pressed(global.select){
-			Sq_logo_boot_Moment();	
+			Sq_logo_boot_Moment();
+			audio_sound_gain(logo_music,0,10*60);
 		}
 	}
 }
@@ -84,6 +84,3 @@ if instance_exists(Obj_player) {
 	}
 }
 #endregion
-
-mx = mouse_x;
-my = mouse_y;

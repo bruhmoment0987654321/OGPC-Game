@@ -17,11 +17,18 @@ if(select){
 		case 0:
 			switch(pos){
 				//open the options to buy
-				case 0: menu_level = 1; break;
+				case 0: 
+					menu_level = 1;
+					audio_play_sound(Snd_menu_select,6,false);
+				break;
 				//talk to the shopkeeper
-				case 1: menu_level = 2; break;
+				case 1: 
+					menu_level = 2; 
+					audio_play_sound(Snd_menu_select,6,false);
+				break;
 				//go back to the level you were in
 				case 2:
+					audio_play_sound(Snd_menu_select,6,false);
 					global.playercant = false;
 					instance_deactivate_object(self);
 				break;
@@ -41,6 +48,7 @@ if(select){
 							global.money -= (first_item_cost+global.first_item_added_cost);
 							global.first_item_added_cost++;
 							global.hp += 10;
+							audio_play_sound(Snd_shop_buy,7,false);
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -59,6 +67,7 @@ if(select){
 							global.money -= (second_item_cost+global.second_item_added_cost);
 							global.second_item_added_cost++;
 							global.bomb_amount += 1;
+							audio_play_sound(Snd_shop_buy,7,false);
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -77,6 +86,7 @@ if(select){
 							global.money -= (third_item_cost+global.third_item_added_cost);
 							global.third_item_added_cost++;
 							global.shield += 10;
+							audio_play_sound(Snd_shop_buy,7,false);
 						}else{
 							with(instance_create_depth(x,y,-999,Obj_textbox)){
 								GameText(other.s.toomuch_text_id);
@@ -85,7 +95,10 @@ if(select){
 					}
 				break;
 				//go back to the main shop menu
-				case 3: menu_level = 0; break;
+				case 3: 
+					menu_level = 0; 
+					audio_play_sound(Snd_menu_exit,6,false);
+				break;
 			}
 		break;
 		//talk sub menu
@@ -110,7 +123,10 @@ if(select){
 				}
 				break;
 				//go back to the main shop menu
-				case 3: menu_level = 0;break;
+				case 3: 
+					menu_level = 0; 
+					audio_play_sound(Snd_menu_exit,6,false);
+				break;
 			}
 		break;
 	}
