@@ -1,1 +1,1 @@
-Player_attacked(damage,0);
+Player_attacked(damage,knockback);

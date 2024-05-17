@@ -28,11 +28,12 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_bullet_par","path":"objects/Obj_bullet_par/Obj_bullet_par.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "bomb",
-    "path": "folders/Objects/Items/bomb.yy",
+    "path": "folders/Objects/Hazards/bomb.yy",
   },
 }

@@ -4,7 +4,7 @@ if global.game_state == GAME_STATE.PAUSED {
 
 vsp += bomb_grv;
 timer--;
-if(place_meeting(x,y,Obj_enemy_par)){
+if place_meeting(x,y,Obj_enemy_par)|| place_meeting(x,y,Obj_bullet_par) || place_meeting(x,y,Obj_trex){
 	timer = 0;	
 }
 //friction

@@ -3,9 +3,14 @@ if global.game_state == GAME_STATE.PAUSED {
 }
 
 switch state {
+	#region norm
 	case "norm":
 		break_time--;
 		sprite_index = Spr_trex;
+		if hsp != 0 {
+			hsp = lerp(hsp,0,friction_);
+			break_time = break_time_max;
+		}
 		if(point_direction(x,y,Obj_player.x,Obj_player.y-4) <= 90){
 				dir = 1;
 			}else{
@@ -14,7 +19,7 @@ switch state {
 		#region changing state
 			if break_time <= 0{
 				if pre_state == "" {
-					state = choose("roar");	
+					state = choose("charge");	
 					pre_state = state;
 				}else{
 					switch(pre_state){
@@ -30,7 +35,7 @@ switch state {
 							state = choose("charge","roar","bite");	
 						break;
 				
-						case "bite":
+						case "bite_attack":
 							state = choose("charge","roar","tailwhip");	
 						break;
 					}
@@ -38,20 +43,22 @@ switch state {
 			}
 		#endregion
 	break;
-	
+	#endregion
+	#region charge
 	case "charge":
 		charge_timer--;
 	
 		if charge_timer <= 0 {
 			#region the chasin' part
 				sprite_index = Spr_trex_run;
-				var max_hsp = 10;
 				var dir;
 				if(point_direction(x,y,Obj_player.x,Obj_player.y-4) <= 90){
 					dir = 1;
 				}else{
 					dir = -1;
 				}
+				
+				mach_effect.attack_mode = true;
 				if(charging_timer >= 0){
 					hsp += charge_sp * dir;
 					hsp = clamp(hsp,-max_hsp,max_hsp);
@@ -59,6 +66,8 @@ switch state {
 					charge_timer = charge_timer_max;	
 					charging_timer = charging_timer_max;
 					break_time = break_time_max;
+					pre_state = state;
+					mach_effect.attack_mode = false;
 					state = "norm";
 				}
 				charging_timer--;
@@ -68,7 +77,8 @@ switch state {
 		}
 		
 	break;
-	
+	#endregion
+	#region roar
 	case "roar":
 		erupt_timer--;
 		if erupt_timer <= 0 {
@@ -77,13 +87,16 @@ switch state {
 			sprite_index = Spr_trex_roar;
 			if create_shock {
 				instance_create_layer(x,y,"Other",Obj_trex_shockwave);
+				image_index = 0;
 				create_shock = false;
 			}
 			
 			if scream_timer <= 0 {
 				create_shock = true;
 				erupt_timer = erupt_timer_max;
-				break_time = break_time_max
+				scream_timer = scream_timer_max;
+				break_time = break_time_max;
+				pre_state = state;
 				state = "norm";
 			}
 			 
@@ -92,61 +105,76 @@ switch state {
 			image_speed = 0;	
 		}
 	break;
-	
+	#endregion
+	#region tailwhip
 	case "tailwhip":
 	
 	break;
-	
+	#endregion
+	#region bite
 	case "bite":
 		chase_timer--;
 		sprite_index = Spr_trex_run;
-		if(instance_exists(Obj_player)){
-			if(x<Obj_player.x-10){
-				hsp = run_sp;	
-			}else if (x>Obj_player.x+10){
-				hsp = -run_sp;
+			var dir;
+			if(point_direction(x,y,Obj_player.x,Obj_player.y-4) <= 90){
+				dir = 1;
 			}else{
-				hsp = lerp(hsp,0,friction_);	
+				dir = -1;
 			}
-		}
+			hsp += charge_sp * dir;
+			hsp = clamp(hsp,-max_hsp,max_hsp);
 		if chase_timer > 0 {
-			if(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
-				sprite_index = Spr_trex_bite;
-				hsp = 0;	
-				if(activation){
-					image_index = 0;
-					activation = false;
-				}
-				if(image_index >= 3){
-					hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
-					if(point_in_circle(Obj_player.x,Obj_player.y-16,x+15*image_xscale,y-16,hit_radius)){
-						Player_attacked(Damage,Obj_caveman.knockb*Obj_caveman.image_xscale);
-					}
-				}
-				if(image_index >= 4) && !(point_in_circle(Obj_player.x,Obj_player.y-16,x,y-16,attack_radius)){
-					state = "norm";
-					chase_timer = chase_timer_max;
-				}
-				if(image_index >= image_number-1){
-					state = "norm";
-					chase_timer = chase_timer_max;
-				}
+			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+45,y-48,attack_radius)){
+				activation = true;
+				state = "bite_attack";
 			}
 		}else{
+			pre_state = state;
 			state = "norm";
 			chase_timer = chase_timer_max;
 		}
 		
 	break;
-	
+	case "bite_attack":
+		hsp = 0;
+		chase_timer = chase_timer_max;
+		sprite_index = Spr_trex_bite;
+		
+		if(activation){
+			image_index = 0;
+			activation = false;
+		}	
+				
+		if(image_index >= 2){
+			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
+			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+50*image_xscale,y-48,hit_radius)){
+				Player_attacked(bite_damage,0);
+			}
+		}
+		
+		if(image_index >= image_number-1){
+			pre_state = state;
+			state = "norm";
+			chase_timer = chase_timer_max;
+			activation = true;
+		}
+	break;
+	#endregion
+	#region dead
 	case "dead":
 		instance_destroy();
 	break;
+	#endregion
 }
 
 if hp <= 0 {
 	state = "dead";	
 }
+
+//mach effect hanging on to boss
+mach_effect.x = x;
+mach_effect.image_xscale = image_xscale;
+
 
 
 #region invincibility
