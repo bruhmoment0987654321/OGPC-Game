@@ -32,7 +32,7 @@ scream_timer = scream_timer_max;
 create_shock = true;
 
 //bite vars
-chase_timer_max = 6*60;
+chase_timer_max = 4*60;
 chase_timer = chase_timer_max;
 run_sp = 4;
 friction_ = 0.2;
@@ -45,6 +45,9 @@ friction_ = 0.2;
 	hit_radius = 65;
 	attack_radius = 90;
 	bite_damage = 25;
+	
+//tail vars
+tail_damage = 10;
 //invincibility frames
 flash = 0;
 

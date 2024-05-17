@@ -31,7 +31,7 @@ if(select){
 				case 1:
 					Transition_Start(room, Sq_spike_out,Sq_spike_in);
 					restart = true;
-					audio_play_sound(Snd_level_transition,7,false);
+						if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 					global.starting_over = true;
 				break;
 				//options
@@ -44,7 +44,7 @@ if(select){
 					Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
 					Start_over();
 					getting_out = true;
-					audio_play_sound(Snd_level_transition,7,false);
+						if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 					global.starting_over = true;
 				break;
 				//Exit game

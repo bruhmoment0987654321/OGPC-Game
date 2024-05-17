@@ -1,11 +1,3 @@
-enum FOOTSTEPS {
-	STEP1 = Snd_Footstep1,
-	STEP2 = Snd_Footstep2,
-	STEP3 = Snd_Footstep3,
-	STEP4 = Snd_Footstep4,
-	STEP5 = Snd_Footstep5,
-}
-
 //gravity variables
 global.grv = 0.3;
 fall_muliplied = 1.1;
@@ -49,11 +41,6 @@ xscale = 1;
 yscale = 1;
 //camera variables
 aim_amount = 5;
-//sound variables
-Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,
-FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5);
-step_sound_timer_max = 21;
-step_sound_timer = step_sound_timer_max;
 //dashing variables
 dashdistance = 82; // how far the dash goes
 dashtime = 10; // the amount of time the dash is used

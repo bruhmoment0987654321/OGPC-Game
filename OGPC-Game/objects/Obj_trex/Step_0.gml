@@ -1,5 +1,6 @@
 if global.game_state == GAME_STATE.PAUSED {
 	return;	
+	image_speed = 0;
 }
 
 switch state {
@@ -18,28 +19,24 @@ switch state {
 			}
 		#region changing state
 			if break_time <= 0{
-				if pre_state == "" {
-					state = choose("charge");	
-					pre_state = state;
-				}else{
-					switch(pre_state){
-						case "charge":
-							state = choose("roar","tailwhip","bite");
-						break;
+					if pre_state == "" {
+						state = choose("charge","roar","bite");	
+						pre_state = state;
+					}else{
+						switch(pre_state){
+							case "charge":
+								state = choose("roar","bite");
+							break;
 				
-						case "roar":
-							state = choose("charge","tailwhip","bite");	
-						break;
+							case "roar":
+								state = choose("charge","bite");	
+							break;
 				
-						case "tailwhip":
-							state = choose("charge","roar","bite");	
-						break;
-				
-						case "bite_attack":
-							state = choose("charge","roar","tailwhip");	
-						break;
+							case "bite_attack":
+								state = choose("charge","roar");	
+							break;
+						}
 					}
-				}
 			}
 		#endregion
 	break;
@@ -106,11 +103,6 @@ switch state {
 		}
 	break;
 	#endregion
-	#region tailwhip
-	case "tailwhip":
-	
-	break;
-	#endregion
 	#region bite
 	case "bite":
 		chase_timer--;
@@ -129,32 +121,30 @@ switch state {
 				state = "bite_attack";
 			}
 		}else{
-			pre_state = state;
+			pre_state = "bite_attack";
 			state = "norm";
+			break_time = break_time_max;
 			chase_timer = chase_timer_max;
 		}
-		
 	break;
 	case "bite_attack":
 		hsp = 0;
 		chase_timer = chase_timer_max;
 		sprite_index = Spr_trex_bite;
-		
 		if(activation){
 			image_index = 0;
 			activation = false;
-		}	
-				
+		}			
 		if(image_index >= 2){
 			hsp += ((attack_distance - hsp) * tween_speed) * image_xscale;
 			if(point_in_circle(Obj_player.x,Obj_player.y-16,x+50*image_xscale,y-48,hit_radius)){
 				Player_attacked(bite_damage,0);
 			}
 		}
-		
 		if(image_index >= image_number-1){
 			pre_state = state;
 			state = "norm";
+			break_time = break_time_max;
 			chase_timer = chase_timer_max;
 			activation = true;
 		}
@@ -174,8 +164,6 @@ if hp <= 0 {
 //mach effect hanging on to boss
 mach_effect.x = x;
 mach_effect.image_xscale = image_xscale;
-
-
 
 #region invincibility
 	i_frame_time--;

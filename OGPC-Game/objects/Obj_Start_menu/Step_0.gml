@@ -10,7 +10,7 @@ if(select){
 				case 0: 
 					start_game();
 					global.starting_over = true;
-					audio_play_sound(Snd_level_transition,7,false);
+					if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 				break;
 				//pick options
 				case 1:
@@ -34,7 +34,7 @@ if(select){
 					global.first_time_playing = false;
 					global.playercant = false;
 					Transition_Start(Rm_ctrl_rm,Sq_spike_out,Sq_spike_in);
-					audio_play_sound(Snd_level_transition,6,false);
+						if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 				break;
 				case 2:
 					audio_play_sound(Snd_menu_select,6,false);

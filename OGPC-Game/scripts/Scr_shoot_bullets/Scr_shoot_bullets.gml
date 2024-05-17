@@ -16,6 +16,7 @@ function Shoot_Bullets(){
 					speed = Obj_gun_par.spd;
 					direction = Obj_gun_par.dir;
 					image_xscale = max(1,speed/sprite_width);
+					audio_play_sound(Snd_cannon_shoot,6,false);
 				}
 				Screenshake(4,12);
 			break;

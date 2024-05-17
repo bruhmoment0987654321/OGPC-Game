@@ -37,15 +37,9 @@ switch(state){
 			if place_meeting(x,y,Obj_kingfly) decrease_sp = decrease_amount;
 			if(move != 0){
 				if place_meeting(x,y+1,Obj_solid){
-					step_sound_timer --
-					if not audio_is_playing(Step_sound){
-						audio_play_sound(Step_sound,5,false)
+					if not audio_is_playing(Snd_footstep){
+						audio_play_sound(Snd_footstep,5,false);
 					}
-					if step_sound_timer <= 0{
-						Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5)
-						step_sound_timer = step_sound_timer_max
-					} 
-					
 				}
 				hsp += move*walk_sp*decrease_sp;
 				hsp = clamp(hsp,-max_hsp,max_hsp);
@@ -54,9 +48,6 @@ switch(state){
 					hsp = 0;	
 				}
 				hsp = lerp(hsp,0,friction_);
-				audio_stop_sound(Step_sound)
-				Step_sound = choose(FOOTSTEPS.STEP1,FOOTSTEPS.STEP2,FOOTSTEPS.STEP3,FOOTSTEPS.STEP4,FOOTSTEPS.STEP5)
-				step_sound_timer = step_sound_timer_max
 			}
 			if(!on_ladder){
 				if(vsp > 0){
@@ -130,6 +121,7 @@ switch(state){
 							Gummy(0.8,1.2);
 							vsp -= jump_sp;	
 							jumped = true;
+							audio_play_sound(Snd_jump,5,false);
 						}
 					}
 				}
@@ -151,6 +143,7 @@ switch(state){
 					vsp -= jump_sp;
 					buffer_timer = 0;
 					jumped = true;
+					audio_play_sound(Snd_jump,5,false);
 				}
 			}
 		#endregion 
