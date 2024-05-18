@@ -17,7 +17,7 @@
   "soundFile": "Snd_time_machine_enter.wav",
   "duration": 0.96449,
   "parent": {
-    "name": "Sound Effects",
-    "path": "folders/Sounds/Sound Effects.yy",
+    "name": "Time Machine",
+    "path": "folders/Sounds/Sound Effects/Time Machine.yy",
   },
 }

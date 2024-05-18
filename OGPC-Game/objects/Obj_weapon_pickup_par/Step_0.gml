@@ -14,6 +14,7 @@ if(point_distance(x,y,Obj_player.x,Obj_player.y) <= 50) && (interact){
 	Gun_pickup(Obj_shuriken_pickup,Obj_shuriken);
 	Gun_pickup(Obj_guitargun_pickup,Obj_guitar_gun);
 	instance_destroy();
+	audio_play_sound(Snd_weapon_pickup,6,false);
 }
 
 vsp += 0.1;

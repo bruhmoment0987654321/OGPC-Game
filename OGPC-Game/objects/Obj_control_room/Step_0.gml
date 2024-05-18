@@ -4,4 +4,5 @@ if exit_room {
 	global.first_time_playing = false;
 	global.starting_over = true;
 	if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
+	audio_sound_gain(Snd_tutorial,0,3*60);
 }

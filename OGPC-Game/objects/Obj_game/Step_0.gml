@@ -34,7 +34,7 @@ if global.midTransition {
 //increaing difficulty in levels
 if global.battery_amount == global.round_difficulty_increase {
 	global.round_counter += 1;
-	global.battery_amount = 0;	
+	global.battery_amount = 0;
 }
 
 //max resources in gameplay

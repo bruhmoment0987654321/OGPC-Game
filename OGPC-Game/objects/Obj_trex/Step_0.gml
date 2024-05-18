@@ -152,7 +152,15 @@ switch state {
 	#endregion
 	#region dead
 	case "dead":
-		instance_destroy();
+	death_timer--;
+		if instance_exists(mach_effect) instance_destroy(mach_effect);
+		collide = false;
+			x += sin(death_timer)*0.2;
+			y -= 10;
+		image_angle += 15;
+		if death_timer <= 0 {
+			instance_destroy();
+		}
 	break;
 	#endregion
 }
@@ -162,8 +170,10 @@ if hp <= 0 {
 }
 
 //mach effect hanging on to boss
-mach_effect.x = x;
-mach_effect.image_xscale = image_xscale;
+if instance_exists(mach_effect){
+	mach_effect.x = x;
+	mach_effect.image_xscale = image_xscale;
+}
 
 #region invincibility
 	i_frame_time--;
@@ -182,6 +192,5 @@ mach_effect.image_xscale = image_xscale;
 	}
 	flash--;
 #endregion
-
-collision(true,true);
+if collide collision(true,true);
 

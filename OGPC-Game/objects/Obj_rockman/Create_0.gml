@@ -21,4 +21,4 @@ grounded = false;
 //shoot variables
 throw_one = false;
 spd = 7;
-dist = 200;
+dist = 180;

@@ -40,7 +40,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 				//ladder
 				case "H":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize,
-					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Walls",Obj_ladder);
+					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Other",Obj_ladder);
 				break;
 				//random enemy
 				case "E":
@@ -50,7 +50,7 @@ function CreateSectionFromString(_x,_y,_sectionString){
 				//spring
 				case "T":
 					instance_create_layer((_currentXsection*sectionWidth)+(c % sectionTilesX*Gridsize)+Gridsize,
-					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Walls",Obj_spring);
+					(_currentYsection*sectionHeight)+(floor(c/sectionTilesX)*Gridsize)+Gridsize, "Other",Obj_spring);
 				break;
 				//battery
 				case "B":

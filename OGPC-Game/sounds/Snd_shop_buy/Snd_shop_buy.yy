@@ -17,7 +17,7 @@
   "soundFile": "Snd_shop_buy.wav",
   "duration": 0.681633,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sounds/Sound Effects/UI.yy",
+    "name": "Shop",
+    "path": "folders/Sounds/Sound Effects/Shop.yy",
   },
 }

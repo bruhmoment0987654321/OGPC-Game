@@ -7,6 +7,7 @@ if(object_index == Obj_health) && global.hp < global.max_hp {
 		global.max_health = true;
 		instance_destroy();
 	}
+	audio_play_sound(Snd_item_pickup,6,false);
 }
 if(object_index == Obj_bomb_pickup) && global.bomb_amount < global.bomb_max {
 	if(image_index = 0){
@@ -19,6 +20,7 @@ if(object_index == Obj_bomb_pickup) && global.bomb_amount < global.bomb_max {
 			instance_destroy();
 		}
 	}
+	audio_play_sound(Snd_item_pickup,6,false);
 }
 if(object_index == Obj_shield) && global.shield < global.shield_max {
 	if((global.shield+added_shield) < global.shield_max){
@@ -29,6 +31,7 @@ if(object_index == Obj_shield) && global.shield < global.shield_max {
 		global.max_shield = true;
 		instance_destroy();
 	}
+	audio_play_sound(Snd_item_pickup,6,false);
 }
 if(object_index == Obj_metal_currency){
 	if(image_index = 0){
@@ -46,4 +49,5 @@ if(object_index == Obj_metal_currency){
 		score += 500;
 	}
 	instance_destroy();
+	audio_play_sound(Snd_item_pickup,6,false);
 }

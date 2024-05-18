@@ -1,1 +1,1 @@
-instance_create_layer(x,y,"Items",Obj_threegun_pickup);
+instance_create_layer(x,y,"Guns",Obj_threegun_pickup);

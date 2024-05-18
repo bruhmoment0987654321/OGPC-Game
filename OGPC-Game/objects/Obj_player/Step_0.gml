@@ -101,11 +101,9 @@ switch(state){
 						if(other.jump_held) jump_velocity_multiplied = 8;
 						other.vsp -= other.jump_sp*jump_velocity_multiplied;
 						other.jumped = true;
-						if !audio_is_playing(Snd_spring){
 							var pitch_rand = random_range(0.9,1.1);
-							audio_play_sound(Snd_spring,5,false);
 							audio_sound_pitch(Snd_spring,pitch_rand);
-						}
+							audio_play_sound(Snd_spring,5,false);
 						Gummy(0.8,1.2);
 					}	
 				}	

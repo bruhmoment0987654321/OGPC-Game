@@ -1,6 +1,6 @@
 state = "norm";
 pre_state = "";
-hp_max = 1000;
+hp_max = 2000;
 hp = hp_max;
 
 //movement vars
@@ -46,8 +46,9 @@ friction_ = 0.2;
 	attack_radius = 90;
 	bite_damage = 25;
 	
-//tail vars
-tail_damage = 10;
+//death var
+death_timer = 5*60;
+push = false;
 //invincibility frames
 flash = 0;
 
@@ -57,3 +58,5 @@ yscale = 1;
 invincible = false
 i_frame_time = 0;
 i_frame_timer_max = 60;
+
+collide = true;

@@ -13,4 +13,5 @@ if(up)&&(!pressed){
 		}else{
 			instance_activate_object(Obj_shop_menu);	
 		}
+		audio_play_sound(Snd_shop_enter,7,false);
 }

@@ -19,7 +19,10 @@ Tutorial_area_text(fifth_area_start,fifth_area_end,,,
 Tutorial_area_text(sixth_area_start,sixth_area_end,,,
 "You can also use springs to jump around!\nJust hold Space to jump around!");
 
-Tutorial_area_text(seventh_area_start,seventh_area_end,,240,
-"Just press W to go through the door.\nGoing through that door goes to the game.\nSee ya soon!");
+Tutorial_area_text(seventh_area_start,seventh_area_end,,,
+"This is a battery!\nYou need to collect these to be able to progress.");
+
+Tutorial_area_text(eighth_area_start,eighth_area_end,,240,
+"If you were in a real level, then this would be a time machine.\nBut, it's just an exit. This will show you the\n REAL GAME!");
 
 

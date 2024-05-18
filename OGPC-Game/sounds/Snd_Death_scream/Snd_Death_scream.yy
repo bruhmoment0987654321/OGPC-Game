@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Snd_Death_scream",
+  "name": "Snd_death_scream",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.09,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Snd_Death_scream.wav",
+  "soundFile": "Snd_death_scream.wav",
   "duration": 5.108005,
   "parent": {
     "name": "Player",

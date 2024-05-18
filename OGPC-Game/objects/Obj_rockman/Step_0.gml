@@ -31,9 +31,6 @@ switch(state){
 	case "shoot":
 		hsp = 0;
 		sprite_index = Spr_rockman_attack;
-		if(instance_exists(Obj_player)){
-			if Obj_player.x < x image_xscale = -1;
-		}
 		if In_between(image_index,4,5){
 			if throw_one{
 				with(instance_create_layer(x,y-32,"Guns",Obj_rock)){

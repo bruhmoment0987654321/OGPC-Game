@@ -17,7 +17,7 @@
   "soundFile": "Snd_level_transition.wav",
   "duration": 1.148027,
   "parent": {
-    "name": "Sound Effects",
-    "path": "folders/Sounds/Sound Effects.yy",
+    "name": "UI",
+    "path": "folders/Sounds/Sound Effects/UI.yy",
   },
 }

@@ -29,6 +29,8 @@ global.starting_over = false;
 
 global.first_time_playing = true;
 
+global.rounds = 1;
+
 //only used to present the game
 global.presentation_mode = false;
 
