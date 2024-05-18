@@ -34,6 +34,7 @@ if global.hp > 0 && instance_exists(Obj_player) {
 			}
 		}
 		draw_set_halign(fa_left);
+		
 	}
 	
 }
