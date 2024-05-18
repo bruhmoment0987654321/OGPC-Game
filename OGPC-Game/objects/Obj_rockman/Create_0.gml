@@ -19,6 +19,6 @@ stun_amount = 3;
 stun_timer = stun_amount;
 grounded = false;
 //shoot variables
-throw_one = false;
+throw_one = true;
 spd = 7;
 dist = 180;

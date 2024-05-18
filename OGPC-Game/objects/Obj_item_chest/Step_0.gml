@@ -6,6 +6,7 @@ if(place_meeting(x,y,Obj_player))&&(open){
 			Chest_chance(0.6,Obj_metal_currency);
 			Chest_chance(0.4,Obj_bomb_pickup);
 			Gummy(1.3,0.8);
+			audio_play_sound(Snd_chest,6,false);
 		}
 	}
 	triggered = true;

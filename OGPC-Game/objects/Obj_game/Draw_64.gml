@@ -6,18 +6,38 @@ var score_string = "Score:"+ string_repeat("0", 5-string_length(string(score))) 
 
 if global.hp > 0 && instance_exists(Obj_player) {
 	if room != Rm_title && global.show_GUI {
-		draw_text_transformed(50,50,"Health: "+ string(global.hp),scale,scale,0);
+			var string_health = "Health: "+ string(global.hp);
+			var width = string_width(string_health);
+			var height = string_height(string_health);
+			draw_sprite_ext(Spr_pixel,0,46,46,(width*2)+6,height+2,0,c_black,0.5);
+			draw_text_transformed(50,50,string_health,scale,scale,0);
 		if global.bomb_amount > 0 {
+			var string_ = "Bombs: " + string(global.bomb_amount);
+			var width = string_width(string_);
+			var height = string_height(string_);
+			
 			draw_set_color(#EED202);
-			draw_text_transformed(50,70,"Bombs: " + string(global.bomb_amount),scale,scale,0);	
+			draw_sprite_ext(Spr_pixel,0,46,71,(width*2)+6,height+2,0,c_black,0.5);
+			draw_text_transformed(50,75,string_,scale,scale,0);	
+			
 		}
 		if global.shield > 0 {
 			draw_set_color(c_blue);
-			draw_text_transformed(50,20,"Shield: "+ string(global.shield),scale,scale,0);
+			var string_ = "Shield: "+ string(global.shield);
+			var width = string_width(string_);
+			var height = string_height(string_);
+			
+			draw_sprite_ext(Spr_pixel,0,46,21,(width*2)+6,height+2,0,c_black,0.5);
+			draw_text_transformed(50,25,string_,scale,scale,0);
 		}
 		if global.money > 0 {
 			draw_set_color(#01A368);
-			draw_text_transformed(50,90,"Money: "+ string(global.money),scale,scale,0);	
+			var string_ = "Money: "+ string(global.money);
+			var width = string_width(string_);
+			var height = string_height(string_);
+			
+			draw_sprite_ext(Spr_pixel,0,46,96,(width*2)+6,height+3,0,c_black,0.5);
+			draw_text_transformed(50,100,string_,scale,scale,0);	
 		}
 		if global.holding_battery {
 			draw_sprite(Spr_battery_icon,0,50,130);	
@@ -37,6 +57,12 @@ if global.hp > 0 && instance_exists(Obj_player) {
 		
 	}
 	
+}
+
+if room == Rm_end && !global.midTransition {
+	draw_set_halign(fa_center);
+	draw_set_color(c_white);
+	draw_text_transformed(room_width/2,100,"HOORRAYYY!\n Hope you had fun!\nThis is only the beta, so, press Escape\nand you can start over again!",2,2,0);
 }
 
 if global.show_timer {

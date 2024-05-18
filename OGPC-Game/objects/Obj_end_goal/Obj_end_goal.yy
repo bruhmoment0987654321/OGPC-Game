@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_end_goal",
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_battery_3d",
+    "path": "sprites/Spr_battery_3d/Spr_battery_3d.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

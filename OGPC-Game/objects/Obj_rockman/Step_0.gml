@@ -38,6 +38,7 @@ switch(state){
 					speed = other.spd*image_xscale;
 					damage = other.Damage;
 				}
+				audio_play_sound(Snd_rock_throw,6,false);
 				throw_one = false;
 			}
 		}

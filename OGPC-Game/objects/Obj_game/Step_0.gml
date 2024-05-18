@@ -15,13 +15,6 @@ if instance_exists(Obj_player) {
 	}
 }
 
-//going back to the title after you finish the game
-if room == Rm_end && keyboard_check_pressed(global.pause_button){
-	Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
-	if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
-	global.starting_over = true;
-}
-
 var _x = window_get_x(), _y = window_get_y();
 var _w = window_get_x() + window_get_width(), _h = _y + room_height * window_get_height();
 
@@ -83,6 +76,14 @@ if room == Rm_logoboot {
 		}
 	}
 }
+
+//going back to the title after you finish the game
+if room == Rm_end && keyboard_check_pressed(global.pause_button){
+	Transition_Start(Rm_title,Sq_spike_out,Sq_spike_in);
+	if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
+	global.starting_over = true;
+}
+
 #region health and bombs
 if instance_exists(Obj_player) {
 	if(global.hp <= 0){

@@ -6,7 +6,7 @@ function Shoot_Bullets(){
 					speed = Obj_gun_par.spd;
 					direction = Obj_gun_par.dir;
 					image_xscale = max(1,speed/sprite_width);
-					audio_play_sound(Snd_Lasergunshoot,5,false)
+					audio_play_sound(Snd_Lasergunshoot,5,false);
 				}
 				Screenshake(2,10);
 			break;
@@ -28,6 +28,7 @@ function Shoot_Bullets(){
 					bounce = true;
 					sprite_index = Spr_bomb_shoot;
 				}
+				audio_play_sound(Snd_grenade_launch,6,false);
 				Screenshake(2,15);
 			break;
 		
@@ -41,6 +42,7 @@ function Shoot_Bullets(){
 					direction = Obj_gun_par.dir;
 					image_xscale = max(1,speed/sprite_width);
 				}
+				audio_play_sound(Snd_rock_throw,6,false);
 				Screenshake(2,5);
 			break;
 			case Obj_guitar_gun:
@@ -49,6 +51,7 @@ function Shoot_Bullets(){
 					direction = Obj_gun_par.dir;
 					image_xscale = max(1,speed/sprite_width);
 				}
+				audio_play_sound(Snd_cannon_shoot,6,false);
 				Screenshake(3,20);
 			break;
 		}

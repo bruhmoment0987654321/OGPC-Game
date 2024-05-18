@@ -6,6 +6,7 @@ if(instance_exists(Obj_player)){
 				var gun_choice = Gun_options(Obj_player.which_weapon_pickup);
 				Chest_chance(1,gun_choice);
 				Gummy(1.1,0.9);
+				audio_play_sound(Snd_chest,6,false);
 			}
 		}
 		triggered = true;

@@ -240,7 +240,7 @@ switch(state){
 		
 		//deaht sound
 		if(!sound){
-			audio_play_sound(Snd_Death_scream,10,false);
+			audio_play_sound(Snd_death_scream,10,false);
 			sound = true;
 		}
 		//character fades out

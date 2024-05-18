@@ -8,6 +8,7 @@ function Burst_Bullets(){
 					image_xscale = max(1,speed/sprite_width);
 				
 				}
+				audio_play_sound(Snd_Lasergunshoot,5,false);
 				Screenshake(3,5);
 				curve_pos = 0;
 				curve_spd = 0.05;
