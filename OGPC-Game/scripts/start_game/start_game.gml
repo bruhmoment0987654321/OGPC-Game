@@ -5,4 +5,5 @@ function start_game(){
 		Transition_Start(Rm_prehistoric,Sq_spike_out,Sq_spike_in);
 		global.playercant = false;
 	}
+	global.starting_over = true;
 }

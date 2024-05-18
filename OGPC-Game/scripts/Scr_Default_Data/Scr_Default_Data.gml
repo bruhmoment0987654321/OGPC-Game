@@ -8,4 +8,5 @@ function Default_Data(){
 	highscore_clear();
 	Load_Default_Scores();
 	Transition_Start(room,Sq_spike_out,Sq_spike_in);
+		if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 }

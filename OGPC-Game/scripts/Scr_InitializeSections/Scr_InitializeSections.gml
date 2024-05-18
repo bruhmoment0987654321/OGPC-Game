@@ -12,7 +12,7 @@ function InitializeZeroSection(){
 //shop right section
 function InitializeShopRSection(){
 	ds_list_add(sectionShopRight,
-	"1111111111000000000100000000010000000001000000000100000D000100000000011111111111");
+	"111111111100000000010000000001000000000100000000010000D0000100000000011111111111");
 }
 //this is for 1 section
 function InitializeLRSection(){

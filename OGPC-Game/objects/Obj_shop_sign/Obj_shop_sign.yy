@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_shop_sign",
-  "spriteId": {
-    "name": "Spr_shop_sign",
-    "path": "sprites/Spr_shop_sign/Spr_shop_sign.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

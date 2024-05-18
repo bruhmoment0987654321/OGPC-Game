@@ -9,7 +9,6 @@ if(select){
 				//start game
 				case 0: 
 					start_game();
-					global.starting_over = true;
 					if !audio_is_playing(Snd_level_transition) audio_play_sound(Snd_level_transition,7,false);
 				break;
 				//pick options
