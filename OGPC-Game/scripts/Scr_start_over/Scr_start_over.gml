@@ -9,6 +9,7 @@ function Start_over(){
 	global.first_item_added_cost = 0;
 	global.second_item_added_cost = 0;
 	global.third_item_added_cost = 0;
+	global.rounds = 1;
 	score = 0;
 	Obj_game.current_pickup = noone;
 	Obj_game.current_weapon = noone;

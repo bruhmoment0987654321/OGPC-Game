@@ -1,5 +1,4 @@
 global.pauseable = false;
-global.bomb_amount = 10;
 scale = 1.5;
 scale_for_outside = 2.0; //the size of the text used for the static text in the world
 //area that the player reaches. it checks the players x position

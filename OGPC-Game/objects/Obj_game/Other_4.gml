@@ -22,5 +22,3 @@ if room == Rm_ctrl_rm {
 	audio_sound_gain(Snd_tutorial,0,0);
 	audio_sound_gain(Snd_tutorial,0.2,5*60);
 }
-
-//when starting a 
